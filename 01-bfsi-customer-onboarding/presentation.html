@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFSI Customer Onboarding - Project Presentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a5fb4;
+            --primary-light: #e8f0fe;
+            --secondary: #26a269;
+            --warning: #e5a50a;
+            --danger: #c01c28;
+            --dark: #1c1c1c;
+            --light: #f6f5f4;
+            --text-muted: #5e5c64;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #1c1c1c;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .slide {
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 3rem;
+            position: relative;
+            scroll-snap-align: start;
+        }
+        .slide:nth-child(odd) { background: linear-gradient(135deg, #1c1c1c 0%, #2d2d2d 100%); }
+        .slide:nth-child(even) { background: linear-gradient(135deg, #1a3a6e 0%, #1a5fb4 100%); }
+        .slide-content {
+            max-width: 1000px;
+            width: 100%;
+        }
+        h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 1rem; line-height: 1.1; }
+        h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem; }
+        h3 { font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; }
+        p { font-size: 1.25rem; line-height: 1.6; opacity: 0.9; margin-bottom: 1rem; }
+        .subtitle { font-size: 1.5rem; opacity: 0.8; font-weight: 300; }
+        .author { margin-top: 2rem; font-size: 1.1rem; opacity: 0.7; }
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            padding: 0.5rem 1.25rem;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            backdrop-filter: blur(10px);
+        }
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+        .card {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 16px;
+            padding: 2rem;
+            backdrop-filter: blur(20px);
+            transition: transform 0.3s ease;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .card h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+        .card p { font-size: 1rem; opacity: 0.75; }
+        .metric { text-align: center; padding: 1.5rem; }
+        .metric-value {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff 0%, #a0c4ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .metric-label { font-size: 0.9rem; opacity: 0.7; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.5rem; }
+        .arrow { font-size: 2rem; text-align: center; opacity: 0.5; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        th { font-weight: 600; opacity: 0.7; }
+        .timeline {
+            position: relative;
+            padding-left: 3rem;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 1rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: rgba(255,255,255,0.2);
+        }
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.4rem;
+            top: 0.5rem;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--secondary);
+            border: 3px solid rgba(255,255,255,0.2);
+        }
+        .timeline-item.active::before { background: var(--warning); }
+        .timeline-item.future::before { background: rgba(255,255,255,0.3); }
+        .timeline-title { font-weight: 600; font-size: 1.2rem; }
+        .timeline-meta { opacity: 0.6; font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .progress-bar {
+            height: 8px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+        .progress-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 1s ease;
+        }
+        .nav-dots {
+            position: fixed;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            z-index: 100;
+        }
+        .nav-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .nav-dot.active { background: #fff; transform: scale(1.3); }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+        .tech-tag {
+            background: rgba(255,255,255,0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+        .cta-btn {
+            display: inline-block;
+            background: #fff;
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border-radius: 999px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        .cta-btn:hover { transform: scale(1.05); }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.75rem; }
+            .slide { padding: 2rem 1.5rem; }
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+            .nav-dots { display: none; }
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 0.8s ease forwards;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Dots -->
+<div class="nav-dots">
+    <div class="nav-dot active" onclick="goToSlide(0)"></div>
+    <div class="nav-dot" onclick="goToSlide(1)"></div>
+    <div class="nav-dot" onclick="goToSlide(2)"></div>
+    <div class="nav-dot" onclick="goToSlide(3)"></div>
+    <div class="nav-dot" onclick="goToSlide(4)"></div>
+    <div class="nav-dot" onclick="goToSlide(5)"></div>
+    <div class="nav-dot" onclick="goToSlide(6)"></div>
+    <div class="nav-dot" onclick="goToSlide(7)"></div>
+</div>
+
+<!-- Slide 1: Title -->
+<section class="slide" id="slide-0">
+    <div class="slide-content" style="text-align: center;">
+        <div class="fade-in"><span class="badge">Portfolio Project</span></div>
+        <h1 class="fade-in delay-1">BFSI Customer Onboarding</h1>
+        <p class="subtitle fade-in delay-2">Streamlining onboarding through digital transformation, automated KYC, and intelligent risk scoring</p>
+        <div class="author fade-in delay-3">
+            <strong>Sagar Kandelkar</strong><br>
+            Business Analyst & Data Professional
+        </div>
+        <a href="#slide-1" class="cta-btn fade-in delay-4">Explore Project →</a>
+    </div>
+</section>
+
+<!-- Slide 2: Problem Statement -->
+<section class="slide" id="slide-1">
+    <div class="slide-content">
+        <div class="fade-in"><span class="badge">The Challenge</span></div>
+        <h2 class="fade-in delay-1">Problem Statement</h2>
+        <p class="fade-in delay-2" style="font-size: 1.3rem; margin-bottom: 2rem;">
+            Legacy BFSI onboarding is slow, manual, and error-prone — leading to poor customer experience and regulatory risks.
+        </p>
+        <div class="grid-3 fade-in delay-3">
+            <div class="card">
+                <div class="card-icon">⏱️</div>
+                <h3>5–7 Days</h3>
+                <p>Average onboarding time vs. industry benchmark of &lt;24 hours</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">❌</div>
+                <h3>12% Rejection</h3>
+                <p>KYC rejection rate vs. target of &lt;5% due to manual errors</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💰</div>
+                <h3>₹2,500 Cost</h3>
+                <p>Per onboarding cost vs. industry benchmark of ₹800</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Slide 3: Solution Overview -->
+<section class="slide" id="slide-2">
+    <div class="slide-content">
+        <div class="fade-in"><span class="badge">The Solution</span></div>
+        <h2 class="fade-in delay-1">TO-BE Architecture</h2>
+        <div class="fade-in delay-2" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.5rem; margin: 2rem 0;">
+            <div style="background: rgba(255,255,255,0.1); padding: 1rem 1.5rem; border-radius: 12px; text-align: center; min-width: 150px;">
+                <div style="font-size: 1.5rem;">👤</div>
+                <div style="font-weight: 600; margin-top: 0.5rem;">Customer</div>
+                <div style="font-size: 0.8rem; opacity: 0.7;">Web / Mobile / Branch</div>
+            </div>
+            <div class="arrow">→</div>
+            <div style="background: rgba(255,255,255,0.1); padding: 1rem 1.5rem; border-radius: 12px; text-align: center; min-width: 150px;">
+                <div style="font-size: 1.5rem;">🤖</div>
+                <div style="font-weight: 600; margin-top: 0.5rem;">Digital Layer</div>
+                <div style="font-size: 0.8rem; opacity: 0.7;">OCR + Duplicate Check</div>
+            </div>
+            <div class="arrow">→</div>
+            <div style="background: rgba(255,255,255,0.1); padding: 1rem 1.5rem; border-radius: 12px; text-align: center; min-width: 150px;">
+                <div style="font-size: 1.5rem;">🛡️</div>
+                <div style="font-weight: 600; margin-top: 0.5rem;">Compliance</div>
+                <div style="font-size: 0.8rem; opacity: 0.7;">KYC + AML + Risk</div>
+            </div>
+            <div class="arrow">→</div>
+            <div style="background: rgba(255,255,255,0.1); padding: 1rem 1.5rem; border-radius: 12px; text-align: center; min-width: 150px;">
+                <div style="font-size: 1.5rem;">🏦</div>
+                <div style="font-weight: 600; margin-top: 0.5rem;">Core Banking</div>
+                <div style="font-size: 0.8rem; opacity: 0.7;">Account + Card Setup</div>
+            </div>
+        </div>
+        <div class="grid-2 fade-in delay-3">
+            <div class="card">
+                <h3>🎯 Key Features</h3>
+                <ul style="padding-left: 1.2rem; opacity: 0.85; line-height: 1.8;">
+                    <li>Multi-channel application intake</li>
+                    <li>Real-time KYC via UIDAI/NSDL APIs</li>
+                    <li>Automated AML watchlist screening</li>
+                    <li>AI-powered document OCR & validation</li>
+                    <li>Risk-based auto-approval engine</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>📈 Expected Outcomes</h3>
+                <ul style="padding-left: 1.2rem; opacity: 0.85; line-height: 1.8;">
+                    <li>60% reduction in onboarding time</li>
+                    <li>90% reduction in data entry errors</li>
+                    <li>₹1,200 cost savings per onboarding</li>
+                    <li>100% real-time regulatory compliance</li>
+                    <li>25% improvement in CSAT scores</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Slide 4: Requirements -->
+<section class="slide" id="slide-3">
+    <div class="slide-content">
+        <div class="fade-in"><span class="badge">Requirements</span></div>
+        <h2 class="fade-in delay-1">What We Built</h2>
+        <div class="grid-2 fade-in delay-2">
+            <div class="card">
+                <h3>📋 Functional Requirements</h3>
+                <table>
+                    <tr><th>ID</th><th>Requirement</th><th>Priority</th></tr>
+                    <tr><td>FR-001</td><td>Multi-Channel Application</td><td>High</td></tr>
+                    <tr><td>FR-002</td><td>Duplicate Detection</td><td>High</td></tr>
+                    <tr><td>FR-003</td><td>Digital Document Upload</td><td>High</td></tr>
+                    <tr><td>FR-005</td><td>KYC Validation (API)</td><td>Critical</td></tr>
+                    <tr><td>FR-006</td><td>AML Screening</td><td>Critical</td></tr>
+                    <tr><td>FR-008</td><td>Risk Scoring Engine</td><td>Medium</td></tr>
+                </table>
+            </div>
+            <div class="card">
+                <h3>⚙️ Non-Functional Requirements</h3>
+                <table>
+                    <tr><th>Metric</th><th>Target</th></tr>
+                    <tr><td>System Availability</td><td>99.9% uptime</td></tr>
+                    <tr><td>Response Time</td><td>&lt; 3 seconds</td></tr>
+                    <tr><td>Concurrent Users</td><td>10,000 simultaneous</td></tr>
+                    <tr><td>Data Retention</td><td>7 years (RBI)</td></tr>
+                    <tr><td>Security</td><td>PCI-DSS compliant</td></tr>
+                    <tr><td>Audit Trail</td><td>Immutable logs</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Slide 5: Gap Analysis -->
+<section class="slide" id="slide-4">
+    <div class="slide-content">
+        <div class="fade-in"><span class="badge">Gap Analysis</span></div>
+        <h2 class="fade-in delay-1">AS-IS vs. TO-BE Metrics</h2>
+        <div class="fade-in delay-2" style="margin: 2rem 0;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; font-weight: 600; opacity: 0.7; text-transform: uppercase; font-size: 0.85rem;">
+                <div>Metric</div>
+                <div style="text-align: center;">Current</div>
+                <div style="text-align: right;">Target</div>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span>Onboarding Time</span>
+                    <span><strong style="color: var(--danger);">5–7 days</strong> → <strong style="color: var(--secondary);">&lt;24 hrs</strong></span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 15%; background: linear-gradient(90deg, var(--danger), var(--secondary));"></div></div>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span>KYC Rejection Rate</span>
+                    <span><strong style="color: var(--danger);">12%</strong> → <strong style="color: var(--secondary);">&lt;5%</strong></span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 40%; background: linear-gradient(90deg, var(--danger), var(--secondary));"></div></div>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span>Data Entry Errors</span>
+                    <span><strong style="color: var(--danger);">8%</strong> → <strong style="color: var(--secondary);">&lt;1%</strong></span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 10%; background: linear-gradient(90deg, var(--danger), var(--secondary));"></div></div>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span>Cost per Onboarding</span>
+                    <span><strong style="color: var(--danger);">₹2,500</strong> → <strong style="color: var(--secondary);">₹1,300</strong></span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 48%; background: linear-gradient(90deg, var(--danger), var(--secondary));"></div></div>
+            </div>
+
+            <div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span>Customer Complaints</span>
+                    <span><strong style="color: var(--danger);">15%</strong> → <strong style="color: var(--secondary);">&lt;5%</strong></span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 30%; background: linear-gradient(90deg, var(--danger), var(--secondary));"></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Slide 6: Implementation Roadmap -->
+<section class="slide" id="slide-5">
+    <div class="slide-content">
+        <div class="fade-in"><span class="badge">Roadmap</span></div>
+        <h2 class="fade-in delay-1">12-Month Rollout Plan</h2>
+        <div class="fade-in delay-2">
+            <div class="timeline">
+                <div class="timeline-item done">
+                    <div class="timeline-title">Phase 1: Quick Wins</div>
+                    <div class="timeline-meta">Months 1–3 | Budget: ₹71.5L</div>
+                    <p style="font-size: 1rem;">Digital forms, status tracker, notifications, intake dashboard</p>
+                </div>
+                <div class="timeline-item done">
+                    <div class="timeline-title">Phase 2: Foundation</div>
+                    <div class="timeline-meta">Months 4–6 | Budget: ₹126.5L</div>
+                    <p style="font-size: 1rem;">KYC APIs, OCR document upload, operations dashboard, data warehouse</p>
+                </div>
+                <div class="timeline-item active">
+                    <div class="timeline-title">Phase 3: Automation</div>
+                    <div class="timeline-meta">Months 7–9 | Budget: ₹121L</div>
+                    <p style="font-size: 1rem;">AML engine, credit bureau integration, auto-approval, compliance reporting</p>
+                </div>
+                <div class="timeline-item future">
+                    <div class="timeline-title">Phase 4: Optimization</div>
+                    <div class="timeline-meta">Months 10–12 | Budget: ₹88L</div>
+                    <p style="font-size: 1rem;">AI document verification, predictive analytics, chatbot, full paperless</p>
+                </div>
+            </div>
+        </div>
+        <div class="fade-in delay-3" style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.05); border-radius: 12px;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+                <div style="text-align: center;">
+                    <div style="font-size: 1.5rem; font-weight: 700;">₹407L</div>
+                    <div style="font-size: 0.85rem; opacity: 0.7;">Total Investment</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 1.5rem; font-weight: 700;">12 Months</div>
+                    <div style="font-size: 0.85rem; opacity: 0.7;">Timeline</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 1.5rem; font-weight: 700;">10–12 People</div>
+                    <div style="font-size: 0.85rem; opacity: 0.7;">Team Size (Peak)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Slide 7: Data Model -->
+<section class="slide" id="slide-6">
+    <div class="slide-content">
+        <div class="fade-in"><span class="badge">Data Architecture</span></div>
+        <h2 class="fade-in delay-1">Entity Relationship Diagram</h2>
+        <div class="fade-in delay-2" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 2rem 0;">
+            <div style="background: #1a5fb4; padding: 1.5rem; border-radius: 12px; min-width: 200px; text-align: center;">
+                <div style="font-weight: 700; font-size: 1.1rem;">Customer</div>
+                <div style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.5rem;">PK: customer_id<br>Name, DOB, Gender</div>
+            </div>
+            <div style="display: flex; align-items: center; font-size: 1.5rem;">⟷ 1:N</div>
+            <div style="background: #26a269; padding: 1.5rem; border-radius: 12px; min-width: 200px; text-align: center;">
+                <div style="font-weight: 700; font-size: 1.1rem;">Application</div>
+                <div style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.5rem;">PK: application_id<br>Channel, Product, Status</div>
+            </div>
+        </div>
+        <div class="grid-3 fade-in delay-3">
+            <div class="card" style="border-top: 3px solid #e5a50a;">
+                <h3>📄 Document</h3>
+                <p>Linked to Application (1:N)</p>
+                <div style="font-size: 0.85rem; opacity: 0.7;"><pre>PK: document_id
+FK: application_id
+document_type
+verification_status</pre></div>
+            </div>
+            <div class="card" style="border-top: 3px solid #c01c28;">
+                <h3>🛡️ Risk_Assessment</h3>
+                <p>Linked to Application (1:1)</p>
+                <div style="font-size: 0.85rem; opacity: 0.7;"><pre>PK: risk_id
+FK: application_id
+credit_score, aml_risk
+kyc_status, overall_risk</pre></div>
+            </div>
+            <div class="card" style="border-top: 3px solid #9c5c5c;">
+                <h3>📝 Audit_Log</h3>
+                <p>Linked to Application (1:N)</p>
+                <div style="font-size: 0.85rem; opacity: 0.7;"><pre>PK: audit_id
+FK: application_id
+action, performed_by
+timestamp</pre></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Slide 8: Tech Stack & CTA -->
+<section class="slide" id="slide-7">
+    <div class="slide-content" style="text-align: center;">
+        <div class="fade-in"><span class="badge">Deliverables</span></div>
+        <h2 class="fade-in delay-1">What Was Delivered</h2>
+        <div class="fade-in delay-2" style="margin: 2rem 0;">
+            <div class="tech-stack" style="justify-content: center;">
+                <span class="tech-tag">📊 Sample Dataset (CSV)</span>
+                <span class="tech-tag">📖 Data Dictionary</span>
+                <span class="tech-tag">📝 Requirements Doc</span>
+                <span class="tech-tag">📉 Gap Analysis</span>
+                <span class="tech-tag">🗺️ Implementation Roadmap</span>
+                <span class="tech-tag">🔄 Process Flow (Draw.io)</span>
+                <span class="tech-tag">🗄️ ERD (Draw.io)</span>
+                <span class="tech-tag">📱 Interactive Dashboard</span>
+            </div>
+        </div>
+
+        <h3 class="fade-in delay-3" style="margin-top: 2rem;">Tech Stack</h3>
+        <div class="fade-in delay-3" style="margin: 1rem 0;">
+            <div class="tech-stack" style="justify-content: center;">
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Python / Pandas</span>
+                <span class="tech-tag">Power BI</span>
+                <span class="tech-tag">Tableau</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">OCR / AI</span>
+                <span class="tech-tag">Git / GitHub</span>
+            </div>
+        </div>
+
+        <div class="fade-in delay-4" style="margin-top: 2rem;">
+            <p style="font-size: 1rem; opacity: 0.7;">
+                View full project on GitHub
+            </p>
+            <a href="https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio" target="_blank" class="cta-btn">
+                github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio
+            </a>
+        </div>
+
+        <div class="author fade-in delay-4" style="margin-top: 3rem;">
+            <strong>Sagar Kandelkar</strong><br>
+            <a href="https://linkedin.com/in/sagarkandelkar" style="color: #fff; opacity: 0.7;">LinkedIn</a> |
+            <a href="https://github.com/sagarkandelkar" style="color: #fff; opacity: 0.7;">GitHub</a>
+        </div>
+    </div>
+</section>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.nav-dot');
+
+    function updateDots() {
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentSlide);
+        });
+    }
+
+    function goToSlide(index) {
+        if (index >= 0 && index < slides.length) {
+            currentSlide = index;
+            slides[index].scrollIntoView({ behavior: 'smooth' });
+            updateDots();
+        }
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') {
+            e.preventDefault();
+            goToSlide(currentSlide + 1);
+        } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft' || e.key === 'PageUp') {
+            e.preventDefault();
+            goToSlide(currentSlide - 1);
+        } else if (e.key === 'Home') {
+            e.preventDefault();
+            goToSlide(0);
+        } else if (e.key === 'End') {
+            e.preventDefault();
+            goToSlide(slides.length - 1);
+        }
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const index = Array.from(slides).indexOf(entry.target);
+                currentSlide = index;
+                updateDots();
+            }
+        });
+    }, { threshold: 0.5 });
+
+    slides.forEach(slide => observer.observe(slide));
+</script>
+
+</body>
+</html>
