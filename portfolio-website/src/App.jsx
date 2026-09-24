@@ -2,6 +2,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Capabilities from './components/Capabilities'
+import FeaturedCaseStudy from './components/FeaturedCaseStudy'
 import Skills from './components/Skills'
 import CaseStudies from './components/CaseStudies'
 import Projects from './components/Projects'
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <About />
       <Capabilities />
+      <FeaturedCaseStudy />
       <Skills />
       <CaseStudies />
       <Projects />

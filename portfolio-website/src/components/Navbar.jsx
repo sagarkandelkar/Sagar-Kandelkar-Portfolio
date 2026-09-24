@@ -7,6 +7,7 @@ export default function Navbar() {
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
     { href: '#capabilities', label: 'Capabilities' },
+    { href: '#featured-case', label: 'Featured Case' },
     { href: '#skills', label: 'Skills' },
     { href: '#case-studies', label: 'BFSI Case Studies' },
     { href: '#projects', label: 'Projects' },

@@ -26,6 +26,9 @@ This portfolio case study analyzes the complete Forex card lifecycle — from ap
 
 | Category | Files |
 |----------|-------|
+| **Journey Map** | `customer_journey.md` — AS-IS vs TO-BE touchpoints, emotions, metrics |
+| **Pain Points** | `pain_points_opportunities.md` — 12 pain points with opportunity matrix |
+| **Business Impact** | `business_impact.md` — ROI analysis: ₹4.2 Cr benefits, 7.7x ROI |
 | **Data** | `forex_customers.csv` — 20 customer records with LRS limits |
 | **Data** | `forex_transactions.csv` — 30 transactions across 5 currencies |
 | **Data** | `fx_rates.csv` — 6 currency pairs with buy/sell rates |
@@ -33,9 +36,9 @@ This portfolio case study analyzes the complete Forex card lifecycle — from ap
 | **Data Dictionary** | `data_dictionary.md` — Field definitions |
 | **SQL Schema** | `schema.sql` — PostgreSQL DDL with views |
 | **EDA Notebook** | `analysis/eda.ipynb` — Currency usage, spend patterns, limit tracking |
-| **Requirements** | `docs/requirements.md` — Functional & non-functional requirements |
-| **Gap Analysis** | `docs/gap_analysis.md` — AS-IS vs TO-BE |
-| **Roadmap** | `docs/implementation_roadmap.md` — Enhancement timeline |
+| **Requirements** | `requirements.md` — Functional & non-functional requirements |
+| **Gap Analysis** | `gap_analysis.md` — AS-IS vs TO-BE |
+| **Roadmap** | `implementation_roadmap.md` — Enhancement timeline |
 
 ## Data Disclaimer
 
