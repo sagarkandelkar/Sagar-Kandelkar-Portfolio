@@ -7,6 +7,12 @@ export default function Projects() {
       repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/01-bfsi-customer-onboarding',
     },
     {
+      title: 'Retail Analytics — Customer Segmentation',
+      desc: 'RFM-based customer segmentation, sales performance analysis, campaign ROI tracking, and churn prediction for retail.',
+      status: 'completed',
+      repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/02-retail-analytics',
+    },
+    {
       title: 'BFSI Data Analysis & Dashboard',
       desc: 'Exploratory data analysis and interactive dashboard design for BFSI application pipeline metrics.',
       status: 'completed',
@@ -17,6 +23,12 @@ export default function Projects() {
       desc: 'Relational database design for customer onboarding with tables, views, and sample data.',
       status: 'completed',
       repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/01-bfsi-customer-onboarding/data',
+    },
+    {
+      title: 'Retail Sales Optimization',
+      desc: 'Sales trend analysis, product performance ranking, and inventory optimization recommendations.',
+      status: 'completed',
+      repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/02-retail-analytics',
     },
     {
       title: 'Forex Card Enhancement Study',
