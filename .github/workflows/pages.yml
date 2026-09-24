@@ -1,8 +1,8 @@
 name: Deploy Portfolio Demo to GitHub Pages
 
 on:
-  push:
-    branches: [main]
+  # Disabled auto-trigger to avoid conflict with deploy.yml
+  # Use workflow_dispatch to manually deploy static assets if needed
   workflow_dispatch:
 
 permissions:

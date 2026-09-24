@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFSI Onboarding - Power BI Style Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg: #f3f2f1;
+            --card: #ffffff;
+            --text: #323130;
+            --text-secondary: #605e5c;
+            --primary: #0078d4;
+            --border: #edebe9;
+            --success: #107c10;
+            --warning: #ffc107;
+            --danger: #d83b01;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+        .top-bar {
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .top-bar h1 { font-size: 1.1rem; font-weight: 600; }
+        .top-bar .filters {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.85rem;
+        }
+        .filter-btn {
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 0.35rem 0.75rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .main { padding: 1.5rem; max-width: 1400px; margin: 0 auto; }
+        .grid { display: grid; gap: 1rem; }
+        .grid-5 { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+        .grid-3 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+        .grid-2 { grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); }
+        .kpi-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            padding: 1rem;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            position: relative;
+            border-left: 4px solid var(--primary);
+        }
+        .kpi-card.success { border-left-color: var(--success); }
+        .kpi-card.warning { border-left-color: var(--warning); }
+        .kpi-card.danger { border-left-color: var(--danger); }
+        .kpi-title {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+        .kpi-value {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .kpi-delta {
+            font-size: 0.8rem;
+            margin-top: 0.25rem;
+        }
+        .kpi-delta.positive { color: var(--success); }
+        .kpi-delta.negative { color: var(--danger); }
+        .chart-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            padding: 1rem;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .chart-title { font-size: 0.9rem; font-weight: 600; }
+        .chart-actions { font-size: 0.75rem; color: var(--text-secondary); }
+        .chart-container { position: relative; height: 250px; }
+        .table-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            padding: 1rem;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8rem;
+        }
+        th {
+            background: #f8f8f8;
+            padding: 0.6rem;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 1px solid var(--border);
+        }
+        td { padding: 0.6rem; border-bottom: 1px solid var(--border); }
+        tr:hover { background: #fafafa; }
+        .status {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            border-radius: 2px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+        .status.completed { background: #dff6dd; color: var(--success); }
+        .status.progress { background: #fff4ce; color: #8a6d02; }
+        .status.hold { background: #fde7e9; color: var(--danger); }
+        .status.rejected { background: #f5c6cb; color: #721c24; }
+        .risk-low { color: var(--success); font-weight: 600; }
+        .risk-medium { color: #8a6d02; font-weight: 600; }
+        .risk-high { color: var(--danger); font-weight: 600; }
+        .slicer {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .slicer-title { font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .slicer-options { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .slicer-option {
+            background: #f3f2f1;
+            border: 1px solid var(--border);
+            padding: 0.3rem 0.75rem;
+            border-radius: 2px;
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+        .slicer-option.active { background: var(--primary); color: white; border-color: var(--primary); }
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border);
+            margin-top: 1rem;
+        }
+        @media (max-width: 768px) {
+            .grid-5, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+            .top-bar { flex-direction: column; gap: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <h1>🏦 BFSI Customer Onboarding Analytics</h1>
+        <div class="filters">
+            <span class="filter-btn">📅 Last 30 Days</span>
+            <span class="filter-btn">🔄 Refresh</span>
+            <span class="filter-btn">⬇️ Export</span>
+        </div>
+    </div>
+
+    <div class="main">
+        <!-- Slicers -->
+        <div class="slicer">
+            <div class="slicer-title">Filters: Channel</div>
+            <div class="slicer-options">
+                <span class="slicer-option active">All</span>
+                <span class="slicer-option">Digital</span>
+                <span class="slicer-option">Branch</span>
+            </div>
+        </div>
+
+        <!-- KPI Row -->
+        <div class="grid grid-5">
+            <div class="kpi-card">
+                <div class="kpi-title">Total Applications</div>
+                <div class="kpi-value">15</div>
+                <div class="kpi-delta positive">▲ 8% vs last month</div>
+            </div>
+            <div class="kpi-card success">
+                <div class="kpi-title">Completed</div>
+                <div class="kpi-value" style="color: var(--success);">7</div>
+                <div class="kpi-delta">46.7% conversion</div>
+            </div>
+            <div class="kpi-card warning">
+                <div class="kpi-title">In Progress</div>
+                <div class="kpi-value" style="color: #8a6d02;">3</div>
+                <div class="kpi-delta">20% of pipeline</div>
+            </div>
+            <div class="kpi-card danger">
+                <div class="kpi-title">On Hold / Rejected</div>
+                <div class="kpi-value" style="color: var(--danger);">4</div>
+                <div class="kpi-delta negative">26.7% attrition</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-title">Avg Processing Time</div>
+                <div class="kpi-value">2.3d</div>
+                <div class="kpi-delta">Target: &lt;24h</div>
+            </div>
+        </div>
+
+        <!-- Charts Row 1 -->
+        <div class="grid grid-3" style="margin-top: 1rem;">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <span class="chart-title">Applications by Channel</span>
+                    <span class="chart-actions">⋯</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="channelChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-header">
+                    <span class="chart-title">Onboarding Funnel</span>
+                    <span class="chart-actions">⋯</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="funnelChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-header">
+                    <span class="chart-title">Risk Distribution</span>
+                    <span class="chart-actions">⋯</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="riskChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Row 2 -->
+        <div class="grid grid-2" style="margin-top: 1rem;">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <span class="chart-title">Credit Score vs Annual Income</span>
+                    <span class="chart-actions">⋯</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="scatterChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-header">
+                    <span class="chart-title">Product Mix Trend</span>
+                    <span class="chart-actions">⋯</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="productChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Table -->
+        <div class="table-card" style="margin-top: 1rem;">
+            <div class="chart-header">
+                <span class="chart-title">Application Details</span>
+                <span class="chart-actions">Showing 10 of 15 records</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>App ID</th>
+                        <th>Customer</th>
+                        <th>Channel</th>
+                        <th>Product</th>
+                        <th>Income (₹)</th>
+                        <th>Credit Score</th>
+                        <th>AML Risk</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>APP-2026-0001</td><td>Rahul Sharma</td><td>Digital</td><td>Savings Account</td><td>₹8.5L</td><td>780</td><td class="risk-low">Low</td><td><span class="status completed">Completed</span></td></tr>
+                    <tr><td>APP-2026-0002</td><td>Priya Patel</td><td>Branch</td><td>Current Account</td><td>₹12.0L</td><td>720</td><td class="risk-medium">Medium</td><td><span class="status progress">In Progress</span></td></tr>
+                    <tr><td>APP-2026-0003</td><td>Amit Kumar</td><td>Digital</td><td>Savings Account</td><td>₹6.5L</td><td>810</td><td class="risk-low">Low</td><td><span class="status completed">Completed</span></td></tr>
+                    <tr><td>APP-2026-0004</td><td>Sneha Gupta</td><td>Digital</td><td>Fixed Deposit</td><td>₹4.5L</td><td>650</td><td class="risk-high">High</td><td><span class="status hold">On Hold</span></td></tr>
+                    <tr><td>APP-2026-0005</td><td>Vikram Reddy</td><td>Branch</td><td>Current Account</td><td>₹25.0L</td><td>745</td><td class="risk-medium">Medium</td><td><span class="status progress">In Progress</span></td></tr>
+                    <tr><td>APP-2026-0006</td><td>Ananya Desai</td><td>Digital</td><td>Savings Account</td><td>₹9.2L</td><td>795</td><td class="risk-low">Low</td><td><span class="status completed">Completed</span></td></tr>
+                    <tr><td>APP-2026-0007</td><td>Arjun Malhotra</td><td>Branch</td><td>Recurring Deposit</td><td>₹5.5L</td><td>770</td><td class="risk-low">Low</td><td><span class="status completed">Completed</span></td></tr>
+                    <tr><td>APP-2026-0008</td><td>Meera Iyer</td><td>Digital</td><td>Savings Account</td><td>₹7.8L</td><td>700</td><td class="risk-medium">Medium</td><td><span class="status hold">On Hold</span></td></tr>
+                    <tr><td>APP-2026-0009</td><td>Rajesh Khanna</td><td>Branch</td><td>Savings Account</td><td>₹11.0L</td><td>680</td><td class="risk-high">High</td><td><span class="status rejected">Rejected</span></td></tr>
+                    <tr><td>APP-2026-0010</td><td>Divya Nair</td><td>Digital</td><td>Fixed Deposit</td><td>₹6.0L</td><td>760</td><td class="risk-low">Low</td><td><span class="status completed">Completed</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        BFSI Customer Onboarding Analytics | Data refreshed: September 2026 | Created by Sagar Kandelkar
+    </div>
+
+    <script>
+        // Channel Chart
+        new Chart(document.getElementById('channelChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Digital (60%)', 'Branch (40%)'],
+                datasets: [{
+                    data: [60, 40],
+                    backgroundColor: ['#0078d4', '#107c10'],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: '65%',
+                plugins: {
+                    legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 11 } } }
+                }
+            }
+        });
+
+        // Funnel Chart
+        new Chart(document.getElementById('funnelChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Submitted', 'KYC Verified', 'Risk Cleared', 'Completed'],
+                datasets: [{
+                    label: 'Count',
+                    data: [15, 12, 10, 7],
+                    backgroundColor: ['#0078d4', '#2b88d8', '#71afe5', '#107c10'],
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { beginAtZero: true, grid: { display: false } },
+                    y: { grid: { display: false } }
+                }
+            }
+        });
+
+        // Risk Chart
+        new Chart(document.getElementById('riskChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Low', 'Medium', 'High'],
+                datasets: [{
+                    label: 'Applications',
+                    data: [9, 5, 1],
+                    backgroundColor: ['#107c10', '#ffc107', '#d83b01'],
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, ticks: { stepSize: 1 } }
+                }
+            }
+        });
+
+        // Scatter Chart
+        new Chart(document.getElementById('scatterChart'), {
+            type: 'scatter',
+            data: {
+                datasets: [
+                    { label: 'Low Risk', data: [{x:8.5,y:780},{x:6.5,y:810},{x:9.2,y:795},{x:5.5,y:770},{x:6.0,y:760}], backgroundColor: '#107c10', pointRadius: 6 },
+                    { label: 'Medium Risk', data: [{x:12.0,y:720},{x:25.0,y:745},{x:7.8,y:700}], backgroundColor: '#ffc107', pointRadius: 6 },
+                    { label: 'High Risk', data: [{x:4.5,y:650},{x:11.0,y:680}], backgroundColor: '#d83b01', pointRadius: 6 }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { position: 'bottom', labels: { boxWidth: 8, font: { size: 10 } } } },
+                scales: {
+                    x: { title: { display: true, text: 'Annual Income (₹ Lakhs)' } },
+                    y: { title: { display: true, text: 'Credit Score' }, min: 600, max: 850 }
+                }
+            }
+        });
+
+        // Product Chart
+        new Chart(document.getElementById('productChart'), {
+            type: 'line',
+            data: {
+                labels: ['Sep 1', 'Sep 3', 'Sep 5', 'Sep 7', 'Sep 8'],
+                datasets: [
+                    { label: 'Savings', data: [2, 4, 5, 7, 8], borderColor: '#0078d4', tension: 0.3, fill: false },
+                    { label: 'Current', data: [0, 1, 2, 2, 3], borderColor: '#107c10', tension: 0.3, fill: false },
+                    { label: 'Fixed Deposit', data: [0, 1, 1, 2, 2], borderColor: '#ffc107', tension: 0.3, fill: false },
+                    { label: 'Recurring', data: [0, 0, 1, 1, 2], borderColor: '#d83b01', tension: 0.3, fill: false }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { position: 'bottom', labels: { boxWidth: 8, font: { size: 10 } } } },
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+    </script>
+</body>
+</html>

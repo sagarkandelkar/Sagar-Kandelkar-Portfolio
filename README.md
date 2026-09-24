@@ -7,9 +7,14 @@ Welcome to my professional portfolio repository. This repository showcases my pr
 ```
 Sagar-Kandelkar-Portfolio/
 ├── 01-bfsi-customer-onboarding/    # BFSI Customer Onboarding Project
+│   ├── analysis/                    # Python EDA notebooks
+│   ├── dashboard/                   # Power BI / Tableau style dashboards
 │   ├── data/                        # Sample datasets, dictionaries, and SQL schema
 │   ├── diagrams/                    # Architecture, ERD, and process flow diagrams
 │   └── docs/                        # Project documentation and case studies
+├── .github/workflows/               # CI/CD workflows
+│   ├── deploy.yml                   # React + Vite portfolio deployment
+│   └── pages.yml                    # Static site deployment (manual)
 └── README.md                        # This file
 ```
 
@@ -30,7 +35,9 @@ A comprehensive project focused on streamlining and optimizing the customer onbo
 |----------|-------|
 | **Data** | `customer_applications.csv` — Sample dataset with 15 applications across channels and statuses |
 | **Data Dictionary** | `data_dictionary.md` — Field definitions and data quality notes |
-| **SQL Schema** | `schema.sql` — Database table creation scripts from the ERD |
+| **SQL Schema** | `schema.sql` — PostgreSQL DDL with tables, views, indexes, and sample data |
+| **EDA Notebook** | `analysis/eda.ipynb` — Python Jupyter notebook with full exploratory data analysis |
+| **BI Dashboard** | `dashboard/powerbi-style-dashboard.html` — Power BI-style interactive HTML dashboard |
 | **Documentation** | `docs/README.md` — Project overview and objectives |
 | **Requirements** | `requirements.md` — Functional and non-functional requirements |
 | **Gap Analysis** | `gap_analysis.md` — AS-IS vs TO-BE assessment with metrics |
@@ -125,11 +132,11 @@ erDiagram
 
 ## 🛠️ Tech Stack
 
-- **Data:** SQL, Python, Excel
-- **Visualization:** Power BI, Tableau, Draw.io
+- **Data:** SQL, Python (Pandas, NumPy, Matplotlib, Seaborn), Excel
+- **Visualization:** Power BI, Tableau, Draw.io, Chart.js
 - **Documentation:** Markdown, Confluence
 - **Version Control:** Git, GitHub
-- **CI/CD:** GitHub Actions (GitHub Pages deployment)
+- **CI/CD:** GitHub Actions (GitHub Pages deployment for React + Vite)
 
 ## 📫 Contact
 
