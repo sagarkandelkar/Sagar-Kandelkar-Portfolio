@@ -388,6 +388,20 @@ erDiagram
 
 ---
 
+## 📚 SAP / ERP Learning Resources
+
+As part of my continuous development as a BFSI Business Analyst, I am building SAP literacy to bridge business requirements with enterprise implementations. The following resources are part of my AI-assisted learning journey:
+
+| Resource | Description |
+|----------|-------------|
+| **SAP BA Mastery Roadmap** | [`docs/sap-ba-mastery-roadmap.md`](docs/sap-ba-mastery-roadmap.md) — 4-week learning plan for non-coders to master SAP from a BA perspective |
+| **SAP-Aligned BRD Sample** | [`docs/sap-aligned-brd-sample.md`](docs/sap-aligned-brd-sample.md) — Complete Business Requirements Document written for SAP FS-CML (Loans Management) |
+| **AI Prompt Cheat Sheet** | [`docs/ai-prompt-cheat-sheet.md`](docs/ai-prompt-cheat-sheet.md) — Reusable AI prompts to learn SAP concepts, map processes, and practice interviews |
+
+**Key SAP Modules Covered:** FS-CML (Loans), FS-BP (Business Partner), FI (Financial Accounting), GRC (Risk/Compliance), CRM (Customer Management)
+
+---
+
 ## 🛠️ Tech Stack
 
 - **Data:** SQL, Python (Pandas, NumPy, Matplotlib, Seaborn), Excel
