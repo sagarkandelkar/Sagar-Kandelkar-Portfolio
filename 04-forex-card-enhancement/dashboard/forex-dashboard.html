@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forex Card Dashboard — Sagar Kandelkar Portfolio</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<style>
+:root{--navy:#0a1628;--blue:#2563eb;--light:#f4f6fb;--text:#1e293b;--muted:#64748b;--white:#fff;--gold:#d4af37;}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI',Inter,system-ui,sans-serif;}
+body{background:var(--light);color:var(--text);line-height:1.6;}
+header{background:var(--navy);color:var(--white);padding:2rem 1rem;text-align:center;}
+header h1{font-size:1.6rem;font-weight:700;}
+header p{color:#94a3b8;margin-top:.25rem;font-size:.9rem;}
+.container{max-width:1200px;margin:0 auto;padding:2rem 1rem;}
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:2rem;}
+.kpi-card{background:var(--white);border-radius:10px;padding:1.25rem;box-shadow:0 1px 4px rgba(0,0,0,.06);text-align:center;}
+.kpi-card h3{font-size:1.75rem;color:var(--blue);}
+.kpi-card p{font-size:.8rem;color:var(--muted);margin-top:.25rem;}
+.chart-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:1.5rem;}
+.chart-card{background:var(--white);border-radius:10px;padding:1.25rem;box-shadow:0 1px 4px rgba(0,0,0,.06);}
+.chart-card h3{font-size:1rem;margin-bottom:.75rem;color:var(--navy);}
+.footer{text-align:center;padding:2rem;color:var(--muted);font-size:.8rem;}
+</style>
+</head>
+<body>
+<header>
+<h1>Forex Card Analytics Dashboard</h1>
+<p>Multi-Currency Usage, LRS Tracking & Customer Insights | Synthetic Data</p>
+</header>
+<div class="container">
+<div class="kpi-grid">
+<div class="kpi-card"><h3>20</h3><p>Active Customers</p></div>
+<div class="kpi-card"><h3>18</h3><p>Active Cards</p></div>
+<div class="kpi-card"><h3>9</h3><p>Currencies</p></div>
+<div class="kpi-card"><h3>₹38.4L</h3><p>Total FX Volume</p></div>
+</div>
+<div class="chart-grid">
+<div class="chart-card"><h3>Card Status Distribution</h3><canvas id="statusChart"></canvas></div>
+<div class="chart-card"><h3>Transaction Volume by Currency</h3><canvas id="currencyChart"></canvas></div>
+<div class="chart-card"><h3>LRS Utilization Distribution</h3><canvas id="lrsChart"></canvas></div>
+<div class="chart-card"><h3>Transaction Type Split</h3><canvas id="typeChart"></canvas></div>
+<div class="chart-card"><h3>Top Merchant Countries</h3><canvas id="countryChart"></canvas></div>
+<div class="chart-card"><h3>Monthly Transaction Trend</h3><canvas id="monthlyChart"></canvas></div>
+</div>
+</div>
+<div class="footer">Portfolio Case Study — Synthetic Data | Analyst: Sagar Kandelkar | September 2026</div>
+<script>
+Chart.defaults.font.family="'Segoe UI',Inter,sans-serif";
+Chart.defaults.color='#64748b';
+const colors=['#2563eb','#0f172a','#dc2626','#f59e0b','#10b981','#8b5cf6'];
+
+new Chart(document.getElementById('statusChart'),{type:'doughnut',data:{labels:['Active','Blocked','Pending Activation'],datasets:[{data:[18,2,1],backgroundColor:[colors[0],colors[2],colors[3]]}]},options:{responsive:true,plugins:{legend:{position:'bottom'}}}});
+new Chart(document.getElementById('currencyChart'),{type:'bar',data:{labels:['USD','GBP','EUR','JPY','AED','SGD','AUD','CAD','THB'],datasets:[{label:'Volume (INR)',data:[420000,275000,162000,8250,29250,12300,3300,10800,6600],backgroundColor:colors[0]}]},options:{responsive:true,plugins:{legend:{display:false}}}});
+new Chart(document.getElementById('lrsChart'),{type:'bar',data:{labels:['0-20%','20-40%','40-60%','60-80%','80-100%'],datasets:[{label:'Customers',data:[4,5,4,3,4],backgroundColor:colors[0]}]},options:{responsive:true,plugins:{legend:{display:false}}}});
+new Chart(document.getElementById('typeChart'),{type:'pie',data:{labels:['POS','ATM','E-Commerce'],datasets:[{data:[17,6,7],backgroundColor:colors}]},options:{responsive:true,plugins:{legend:{position:'bottom'}}}});
+new Chart(document.getElementById('countryChart'),{type:'bar',data:{labels:['USA','UK','France','Japan','UAE','Germany','Singapore','Spain','Australia','Thailand','Canada'],datasets:[{label:'Volume (INR)',data:[420000,275000,162000,8250,29250,12750,12300,19800,3300,6600,10800],backgroundColor:colors[0]}]},options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false}}}});
+new Chart(document.getElementById('monthlyChart'),{type:'line',data:{labels:['Jan','Feb','Mar','Apr','May','Jun','Jul'],datasets:[{label:'Transactions',data:[3,5,4,5,5,4,4],borderColor:colors[0],backgroundColor:'rgba(37,99,235,0.1)',fill:true,tension:0.3}]},options:{responsive:true,scales:{y:{beginAtZero:true}}}});
+</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Payments — Presentation | Sagar Kandelkar</title>
+<style>
+:root{--navy:#0a1628;--blue:#2563eb;--text:#1e293b;--muted:#64748b;--light:#f4f6fb;--white:#fff;}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI',Inter,system-ui,sans-serif;}
+body{background:var(--navy);color:var(--text);line-height:1.6;overflow:hidden;}
+.slide{width:100vw;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:3rem 2rem;text-align:center;position:absolute;inset:0;opacity:0;transition:opacity .5s;pointer-events:none;background:var(--light);}
+.slide.active{opacity:1;pointer-events:auto;z-index:1;}
+.slide-hero{background:var(--navy);color:var(--white);}
+.slide-hero h1{font-size:3rem;margin-bottom:.5rem;}
+.slide-hero p{color:#94a3b8;font-size:1.1rem;}
+.slide-hero .badge{background:var(--blue);color:var(--white);padding:.4rem 1rem;border-radius:20px;font-size:.8rem;display:inline-block;margin-top:1.5rem;}
+.slide h2{font-size:1.8rem;color:var(--navy);margin-bottom:1.5rem;}
+.slide p,.slide li{font-size:1.05rem;color:var(--text);max-width:700px;text-align:left;margin:0 auto .5rem;}
+.slide ul{list-style:disc;padding-left:1.5rem;max-width:700px;margin:0 auto;}
+.slide table{width:100%;max-width:800px;border-collapse:collapse;margin:1rem auto;font-size:.95rem;}
+.slide th,.slide td{padding:.75rem;border:1px solid #cbd5e1;text-align:left;}
+.slide th{background:var(--navy);color:var(--white);}
+.slide td{background:var(--white);}
+.nav{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;gap:1rem;z-index:10;}
+.nav button{background:var(--navy);color:var(--white);border:none;padding:.6rem 1.5rem;border-radius:6px;cursor:pointer;font-size:.85rem;}
+.nav button:hover{background:var(--blue);}
+.slide-num{position:fixed;bottom:2rem;right:2rem;color:var(--muted);font-size:.8rem;z-index:10;}
+</style>
+</head>
+<body>
+
+<!-- Slide 1: Title -->
+<div class="slide slide-hero active">
+<h1>Digital Payments Process Analysis</h1>
+<p>Failure Reduction, Settlement Optimization & Customer Experience</p>
+<span class="badge">Portfolio Case Study — Synthetic Data</span>
+</div>
+
+<!-- Slide 2: Problem Statement -->
+<div class="slide">
+<h2>Problem Statement</h2>
+<ul>
+<li>High UPI failure rate during peak hours (11% below target)</li>
+<li>No intelligent retry — permanent failures that could recover</li>
+<li>Merchant settlement delays beyond T+1 cause cash flow issues</li>
+<li>Limited failure root cause visibility — reactive maintenance</li>
+<li>No customer-side failure recovery — high support ticket volume</li>
+</ul>
+</div>
+
+<!-- Slide 3: Approach -->
+<div class="slide">
+<h2>Approach & Methodology</h2>
+<ul>
+<li><strong>Success Rate Analysis:</strong> By payment method (UPI, Wallet, Card, NetBanking)</li>
+<li><strong>Failure Classification:</strong> Categorize by root cause and recovery potential</li>
+<li><strong>Settlement Tracking:</strong> Compare actual vs expected settlement timelines</li>
+<li><strong>Merchant Performance:</strong> Volume, chargeback rate, and status analysis</li>
+</ul>
+</div>
+
+<!-- Slide 4: Key Findings -->
+<div class="slide">
+<h2>Key Findings</h2>
+<ul>
+<li><strong>Overall success rate: 80%</strong> — needs improvement to >98%</li>
+<li><strong>Bank timeouts and insufficient funds</strong> are top failure reasons</li>
+<li><strong>E-commerce and Travel</strong> merchants drive highest volumes</li>
+<li><strong>NetBanking</strong> has longest settlement cycles but highest success rate</li>
+<li><strong>UPI preferred by high-LTV customers</strong> — invest in UPI reliability</li>
+</ul>
+</div>
+
+<!-- Slide 5: Recommendations -->
+<div class="slide">
+<h2>Recommendations</h2>
+<ul>
+<li>Deploy smart gateway routing with health checks and fallback</li>
+<li>Implement pre-transaction balance validation for wallets and accounts</li>
+<li>Add automatic retry with exponential backoff for network failures</li>
+<li>Proactively notify customers of expired cards 30 days before expiry</li>
+<li>Build merchant settlement tracking portal with delay alerts</li>
+</ul>
+</div>
+
+<!-- Slide 6: Thank You -->
+<div class="slide slide-hero">
+<h1>Thank You</h1>
+<p>Questions? Let's discuss resilient payment infrastructure.</p>
+<span class="badge">Analyst: Sagar Kandelkar | September 2026</span>
+</div>
+
+<div class="nav">
+<button onclick="prevSlide()">← Previous</button>
+<button onclick="nextSlide()">Next →</button>
+</div>
+<div class="slide-num" id="slideNum">1 / 6</div>
+
+<script>
+let current=0;
+const slides=document.querySelectorAll('.slide');
+function showSlide(n){
+  slides.forEach(s=>s.classList.remove('active'));
+  slides[n].classList.add('active');
+  document.getElementById('slideNum').textContent=(n+1)+' / '+slides.length;
+}
+function nextSlide(){if(current<slides.length-1){current++;showSlide(current);}}
+function prevSlide(){if(current>0){current--;showSlide(current);}}
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')nextSlide();if(e.key==='ArrowLeft')prevSlide();});
+</script>
+</body>
+</html>

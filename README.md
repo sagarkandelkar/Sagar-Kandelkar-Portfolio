@@ -8,34 +8,35 @@ Welcome to my professional portfolio repository. This repository showcases my pr
 Sagar-Kandelkar-Portfolio/
 ├── 01-bfsi-customer-onboarding/    # BFSI Customer Onboarding Project
 │   ├── analysis/                    # Python EDA notebooks
-│   ├── dashboard/                   # Power BI / Tableau style dashboards
+│   ├── dashboard/                   # Interactive HTML dashboards & presentations
 │   ├── data/                        # Sample datasets, dictionaries, and SQL schema
 │   ├── diagrams/                    # Architecture, ERD, and process flow diagrams
 │   └── docs/                        # Project documentation and case studies
 ├── 02-retail-analytics/            # Retail Analytics — Customer Segmentation & Sales Optimization
 │   ├── analysis/                    # Python EDA notebooks
+│   ├── dashboard/                   # Interactive HTML dashboards & presentations
 │   ├── data/                        # Sample datasets, dictionaries, and SQL schema
 │   └── docs/                        # Project documentation and requirements
 ├── 03-fraud-risk-analytics/        # Fraud Detection & Risk Analytics in BFSI
 │   ├── analysis/                    # Python EDA notebooks
-│   ├── data/                        # Sample datasets, dictionaries, and SQL schema
-│   └── docs/                        # Project documentation and requirements
-├── 03-fraud-risk-analytics/        # Fraud Detection & Risk Analytics in BFSI
-│   ├── analysis/                    # Python EDA notebooks
+│   ├── dashboard/                   # Interactive HTML dashboards & presentations
 │   ├── data/                        # Sample datasets, dictionaries, and SQL schema
 │   └── docs/                        # Project documentation and requirements
 ├── 04-forex-card-enhancement/        # Forex Card Lifecycle & Digital Enhancement
 │   ├── analysis/                    # Python EDA notebooks
+│   ├── dashboard/                   # Interactive HTML dashboards & presentations
 │   ├── data/                        # Sample datasets, dictionaries, and SQL schema
 │   ├── diagrams/                    # Process flows and journey maps
 │   └── docs/                        # Project documentation and requirements
 ├── 05-digital-payments-analysis/     # Digital Payments Process Analysis
 │   ├── analysis/                    # Python EDA notebooks
+│   ├── dashboard/                   # Interactive HTML dashboards & presentations
 │   ├── data/                        # Sample datasets, dictionaries, and SQL schema
 │   ├── diagrams/                    # Payment flow diagrams
 │   └── docs/                        # Project documentation and requirements
 ├── 06-credit-card-journey/           # Credit Card Customer Journey Mapping
 │   ├── analysis/                    # Python EDA notebooks
+│   ├── dashboard/                   # Interactive HTML dashboards & presentations
 │   ├── data/                        # Sample datasets, dictionaries, and SQL schema
 │   ├── diagrams/                    # Customer journey maps
 │   └── docs/                        # Project documentation and requirements
@@ -99,12 +100,14 @@ A data-driven retail analytics project demonstrating customer segmentation (RFM 
 | **Data Dictionary** | `data_dictionary.md` — Field definitions for all datasets |
 | **SQL Schema** | `schema.sql` — PostgreSQL DDL for customers, products, transactions, campaigns |
 | **EDA Notebook** | `analysis/eda.ipynb` — Python notebook with RFM analysis, sales trends, campaign ROI |
+| **Dashboard** | `dashboard/retail-dashboard.html` — Interactive HTML dashboard with Chart.js |
+| **Presentation** | `dashboard/presentation.html` — Scrollable slide deck for interviews |
 | **Documentation** | `docs/README.md` — Project overview and objectives |
 | **Requirements** | `requirements.md` — Functional requirements for segmentation, analytics, campaigns |
 | **Gap Analysis** | `gap_analysis.md` — AS-IS vs TO-BE assessment with recommendations |
 | **Roadmap** | `implementation_roadmap.md` — 3-phase rollout plan |
 
-**Live Demo:** Dashboard coming soon
+**Live Demo:** [Retail Dashboard](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/02-retail-analytics/dashboard/retail-dashboard.html)
 
 ---
 
@@ -127,10 +130,14 @@ A BFSI fraud analytics portfolio case study demonstrating real-time risk scoring
 | **Data Dictionary** | `data_dictionary.md` — Field definitions for transactions and alerts |
 | **SQL Schema** | `schema.sql` — PostgreSQL DDL with tables and 5 analytical views |
 | **EDA Notebook** | `analysis/eda.ipynb` — Python notebook with fraud distribution, hourly patterns, channel risk, correlation |
+| **Dashboard** | `dashboard/fraud-dashboard.html` — Interactive HTML dashboard with Chart.js |
+| **Presentation** | `dashboard/presentation.html` — Scrollable slide deck for interviews |
 | **Documentation** | `docs/README.md` — Project overview and synthetic data disclaimer |
 | **Requirements** | `docs/requirements.md` — Functional and non-functional requirements |
 | **Gap Analysis** | `docs/gap_analysis.md` — AS-IS vs TO-BE with metrics and recommendations |
 | **Roadmap** | `docs/implementation_roadmap.md` — 3-phase rollout with timeline and budget |
+
+**Live Demo:** [Fraud Detection Dashboard](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/03-fraud-risk-analytics/dashboard/fraud-dashboard.html)
 
 ---
 
@@ -155,10 +162,14 @@ A BFSI product enhancement case study analyzing the complete Forex card lifecycl
 | **Data Dictionary** | `data_dictionary.md` — Field definitions |
 | **SQL Schema** | `schema.sql` — PostgreSQL DDL with 6 analytical views |
 | **EDA Notebook** | `analysis/eda.ipynb` — Currency usage, spend patterns, LRS tracking |
+| **Dashboard** | `dashboard/forex-dashboard.html` — Interactive HTML dashboard with Chart.js |
+| **Presentation** | `dashboard/presentation.html` — Scrollable slide deck for interviews |
 | **Documentation** | `docs/README.md` — Project overview |
 | **Requirements** | `docs/requirements.md` — Functional and non-functional requirements |
 | **Gap Analysis** | `docs/gap_analysis.md` — AS-IS vs TO-BE with metrics |
 | **Roadmap** | `docs/implementation_roadmap.md` — 6-month enhancement timeline |
+
+**Live Demo:** [Forex Card Dashboard](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/04-forex-card-enhancement/dashboard/forex-dashboard.html)
 
 ---
 
@@ -183,10 +194,14 @@ A process improvement case study analyzing digital payment ecosystems — UPI, w
 | **Data Dictionary** | `data_dictionary.md` — Field definitions |
 | **SQL Schema** | `schema.sql` — PostgreSQL DDL with 5 analytical views |
 | **EDA Notebook** | `analysis/eda.ipynb` — Failure analysis, channel trends, settlement delays |
+| **Dashboard** | `dashboard/payments-dashboard.html` — Interactive HTML dashboard with Chart.js |
+| **Presentation** | `dashboard/presentation.html` — Scrollable slide deck for interviews |
 | **Documentation** | `docs/README.md` — Project overview |
 | **Requirements** | `docs/requirements.md` — Functional and non-functional requirements |
 | **Gap Analysis** | `docs/gap_analysis.md` — AS-IS vs TO-BE with metrics |
 | **Roadmap** | `docs/implementation_roadmap.md` — 6-month improvement timeline |
+
+**Live Demo:** [Digital Payments Dashboard](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/05-digital-payments-analysis/dashboard/payments-dashboard.html)
 
 ---
 
@@ -211,10 +226,14 @@ A customer experience case study mapping the complete credit card lifecycle — 
 | **Data Dictionary** | `data_dictionary.md` — Field definitions |
 | **SQL Schema** | `schema.sql` — PostgreSQL DDL with 6 analytical views |
 | **EDA Notebook** | `analysis/eda.ipynb` — Funnel analysis, spend patterns, rewards utilization |
+| **Dashboard** | `dashboard/creditcard-dashboard.html` — Interactive HTML dashboard with Chart.js |
+| **Presentation** | `dashboard/presentation.html` — Scrollable slide deck for interviews |
 | **Documentation** | `docs/README.md` — Project overview |
 | **Requirements** | `docs/requirements.md` — Functional and non-functional requirements |
 | **Gap Analysis** | `docs/gap_analysis.md` — AS-IS vs TO-BE with metrics |
 | **Roadmap** | `docs/implementation_roadmap.md` — 6-month enhancement timeline |
+
+**Live Demo:** [Credit Card Journey Dashboard](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/06-credit-card-journey/dashboard/creditcard-dashboard.html)
 
 ---
 
