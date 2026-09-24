@@ -1,63 +1,16 @@
-# Portfolio Website (React + Vite)
+# React + Vite
 
-This directory is reserved for the React + Vite portfolio website.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## Setup Instructions
+Currently, two official plugins are available:
 
-1. **Create your React + Vite app here:**
-   ```bash
-   cd portfolio-website
-   npm create vite@latest . -- --template react
-   npm install
-   ```
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-2. **Configure `vite.config.js` for GitHub Pages:**
-   ```js
-   import { defineConfig } from 'vite'
-   import react from '@vitejs/plugin-react'
+## React Compiler
 
-   export default defineConfig({
-     base: '/Sagar-Kandelkar-Portfolio/',
-     plugins: [react()],
-   })
-   ```
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-3. **Build locally to verify:**
-   ```bash
-   npm run build
-   ```
+## Expanding the Oxlint configuration
 
-4. **Push to GitHub** — the `.github/workflows/deploy.yml` will automatically:
-   - Build the app on every push to `main`
-   - Deploy the `dist/` folder to GitHub Pages
-
-## GitHub Pages Configuration
-
-- Go to **Settings > Pages > Source** and select **GitHub Actions**
-- The workflow at `.github/workflows/deploy.yml` handles the rest
-
-## Important Notes
-
-- **Do NOT** use absolute paths (`/assets/...`) in your code
-- Vite's `base` config ensures all assets use the correct subpath
-- The workflow only triggers when files in `portfolio-website/` change
-- Other project folders (`01-bfsi-customer-onboarding/`) are NOT affected
-
-## Expected File Structure
-
-```
-portfolio-website/
-├── public/
-├── src/
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── ...
-├── index.html
-├── package.json
-├── vite.config.js   ← Must include base: '/Sagar-Kandelkar-Portfolio/'
-└── README.md
-```
-
----
-
-*This placeholder was created by Sagar Kandelkar's portfolio setup.*
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
