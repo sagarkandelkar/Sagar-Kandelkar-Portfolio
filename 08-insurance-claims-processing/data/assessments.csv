@@ -1,0 +1,16 @@
+assessment_id,claim_id,surveyor_name,survey_date,damage_estimate,depreciation_percent,net_payable,surveyor_remarks,approved_by
+ASMT001,CLM001,Rajesh Kumar,2025-01-12,500000,10,450000,Kitchen fire verified,Manager A
+ASMT002,CLM002,Sunita Patel,2025-01-14,95000,10,85500,Hospital bills verified,Manager B
+ASMT003,CLM003,Vikram Singh,2025-01-17,130000,8,119600,Bumper damage confirmed,Manager A
+ASMT004,CLM004,Anita Sharma,2025-01-22,820000,9,746200,Water damage verified,Manager B
+ASMT005,CLM005,Rohit Desai,2025-01-24,165000,9,150150,Cardiac procedure confirmed,Manager A
+ASMT006,CLM006,Meera Joshi,2025-01-26,92000,8,84640,Windshield replacement needed,Manager B
+ASMT007,CLM007,Arun Nair,2025-02-05,280000,12,246400,Theft FIR pending,Manager A
+ASMT008,CLM008,Priya Gupta,2025-02-10,280000,11,249200,Cancer treatment verified,Manager B
+ASMT009,CLM009,Rajesh Kumar,2025-02-12,215000,9,195650,Side impact verified,Manager A
+ASMT010,CLM010,Sunita Patel,2025-02-15,1050000,10,945000,Roof collapse confirmed,Manager B
+ASMT011,CLM011,Vikram Singh,2025-02-16,48000,10,43200,Fracture X-ray verified,Manager A
+ASMT012,CLM012,Anita Sharma,2025-02-18,400000,12,352000,Flood damage - total loss,Manager B
+ASMT013,CLM013,Rohit Desai,2025-02-22,195000,10,175500,Electrical damage verified,Manager A
+ASMT014,CLM014,Meera Joshi,2025-02-25,130000,11,115700,Appendectomy confirmed,Manager B
+ASMT015,CLM015,Arun Nair,2025-02-26,70000,11,62300,Minor scratch verified,Manager A

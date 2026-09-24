@@ -54,6 +54,18 @@ export default function Projects() {
       status: 'completed',
       repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/06-credit-card-journey',
     },
+    {
+      title: 'Loan Origination Process Analysis',
+      desc: 'Complete loan lifecycle analysis from digital application and credit appraisal to sanction, disbursement, and STP optimization.',
+      status: 'completed',
+      repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/07-loan-origination-process',
+    },
+    {
+      title: 'Insurance Claims Processing Analysis',
+      desc: 'Insurance claims lifecycle analysis from intimation and survey through assessment, settlement, and claims automation opportunities.',
+      status: 'completed',
+      repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/08-insurance-claims-processing',
+    },
   ];
 
   return (

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insurance Claims Dashboard — Sagar Kandelkar Portfolio</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<style>
+:root{--navy:#0a1628;--blue:#2563eb;--light:#f4f6fb;--text:#1e293b;--muted:#64748b;--white:#fff;}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI',Inter,system-ui,sans-serif;}
+body{background:var(--light);color:var(--text);line-height:1.6;}
+header{background:var(--navy);color:var(--white);padding:2rem 1rem;text-align:center;}
+header h1{font-size:1.6rem;font-weight:700;}
+header p{color:#94a3b8;margin-top:.25rem;font-size:.9rem;}
+.container{max-width:1200px;margin:0 auto;padding:2rem 1rem;}
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:2rem;}
+.kpi-card{background:var(--white);border-radius:10px;padding:1.25rem;box-shadow:0 1px 4px rgba(0,0,0,.06);text-align:center;}
+.kpi-card h3{font-size:1.75rem;color:var(--blue);}
+.kpi-card p{font-size:.8rem;color:var(--muted);margin-top:.25rem;}
+.chart-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:1.5rem;}
+.chart-card{background:var(--white);border-radius:10px;padding:1.25rem;box-shadow:0 1px 4px rgba(0,0,0,.06);}
+.chart-card h3{font-size:1rem;margin-bottom:.75rem;color:var(--navy);}
+.footer{text-align:center;padding:2rem;color:var(--muted);font-size:.8rem;}
+</style>
+</head>
+<body>
+<header>
+<h1>Insurance Claims Analytics Dashboard</h1>
+<p>Claims Analysis, Settlement Trends & TAT Monitoring | Synthetic Data</p>
+</header>
+<div class="container">
+<div class="kpi-grid">
+<div class="kpi-card"><h3>20</h3><p>Total Claims</p></div>
+<div class="kpi-card"><h3>85%</h3><p>Approval Rate</p></div>
+<div class="kpi-card"><h3>12</h3><p>Avg TAT (Days)</p></div>
+<div class="kpi-card"><h3>₹51.3L</h3><p>Total Settled</p></div>
+</div>
+<div class="chart-grid">
+<div class="chart-card"><h3>Claim Status Distribution</h3><canvas id="statusChart"></canvas></div>
+<div class="chart-card"><h3>Claim Type Analysis</h3><canvas id="typeChart"></canvas></div>
+<div class="chart-card"><h3>Settlement Ratio</h3><canvas id="ratioChart"></canvas></div>
+<div class="chart-card"><h3>Monthly TAT Trend</h3><canvas id="tatChart"></canvas></div>
+</div>
+</div>
+<div class="footer">Portfolio Case Study — Synthetic Data | Analyst: Sagar Kandelkar | September 2026</div>
+<script>
+Chart.defaults.font.family="'Segoe UI',Inter,sans-serif";
+Chart.defaults.color='#64748b';
+const colors=['#2563eb','#f59e0b','#dc2626','#10b981'];
+
+new Chart(document.getElementById('statusChart'),{type:'doughnut',data:{labels:['Approved','Pending','Rejected'],datasets:[{data:[17,2,1],backgroundColor:colors}]},options:{responsive:true,plugins:{legend:{position:'bottom'}}}});
+new Chart(document.getElementById('typeChart'),{type:'bar',data:{labels:['Property','Medical','Motor'],datasets:[{label:'Avg Claim (INR)',data:[587500,136667,108333],backgroundColor:colors[0]},{label:'Avg TAT (Days)',data:[12.4,11.7,11.0],backgroundColor:colors[2]}]},options:{responsive:true,plugins:{legend:{position:'bottom'}}}});
+new Chart(document.getElementById('ratioChart'),{type:'bar',data:{labels:['CLM001','CLM002','CLM003','CLM004','CLM005','CLM008','CLM009','CLM010'],datasets:[{label:'Settlement %',data:[93.3,94.1,95.8,93.3,96.7,96.0,97.5,94.7],backgroundColor:colors[0]}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,max:100}}}});
+new Chart(document.getElementById('tatChart'),{type:'line',data:{labels:['Jan','Feb','Mar'],datasets:[{label:'Avg TAT',data:[10.4,11.7,13.3],borderColor:colors[2],backgroundColor:'rgba(220,38,38,0.1)',fill:true,tension:0.3}]},options:{responsive:true,scales:{y:{beginAtZero:true}}}});
+</script>
+</body>
+</html>

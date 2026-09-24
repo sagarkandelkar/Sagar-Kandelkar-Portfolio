@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loan Origination Dashboard — Sagar Kandelkar Portfolio</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<style>
+:root{--navy:#0a1628;--blue:#2563eb;--light:#f4f6fb;--text:#1e293b;--muted:#64748b;--white:#fff;}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI',Inter,system-ui,sans-serif;}
+body{background:var(--light);color:var(--text);line-height:1.6;}
+header{background:var(--navy);color:var(--white);padding:2rem 1rem;text-align:center;}
+header h1{font-size:1.6rem;font-weight:700;}
+header p{color:#94a3b8;margin-top:.25rem;font-size:.9rem;}
+.container{max-width:1200px;margin:0 auto;padding:2rem 1rem;}
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:2rem;}
+.kpi-card{background:var(--white);border-radius:10px;padding:1.25rem;box-shadow:0 1px 4px rgba(0,0,0,.06);text-align:center;}
+.kpi-card h3{font-size:1.75rem;color:var(--blue);}
+.kpi-card p{font-size:.8rem;color:var(--muted);margin-top:.25rem;}
+.chart-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:1.5rem;}
+.chart-card{background:var(--white);border-radius:10px;padding:1.25rem;box-shadow:0 1px 4px rgba(0,0,0,.06);}
+.chart-card h3{font-size:1rem;margin-bottom:.75rem;color:var(--navy);}
+.footer{text-align:center;padding:2rem;color:var(--muted);font-size:.8rem;}
+</style>
+</head>
+<body>
+<header>
+<h1>Loan Origination Analytics Dashboard</h1>
+<p>Approval Funnel, Risk Analysis & Disbursement Tracking | Synthetic Data</p>
+</header>
+<div class="container">
+<div class="kpi-grid">
+<div class="kpi-card"><h3>20</h3><p>Applications</p></div>
+<div class="kpi-card"><h3>75%</h3><p>Approval Rate</p></div>
+<div class="kpi-card"><h3>15</h3><p>Disbursed</p></div>
+<div class="kpi-card"><h3>₹2.4Cr</h3><p>Total Disbursed</p></div>
+</div>
+<div class="chart-grid">
+<div class="chart-card"><h3>Application Status</h3><canvas id="statusChart"></canvas></div>
+<div class="chart-card"><h3>Loan Type Volume</h3><canvas id="typeChart"></canvas></div>
+<div class="chart-card"><h3>Risk Grade Distribution</h3><canvas id="gradeChart"></canvas></div>
+<div class="chart-card"><h3>Channel Performance</h3><canvas id="channelChart"></canvas></div>
+</div>
+</div>
+<div class="footer">Portfolio Case Study — Synthetic Data | Analyst: Sagar Kandelkar | September 2026</div>
+<script>
+Chart.defaults.font.family="'Segoe UI',Inter,sans-serif";
+Chart.defaults.color='#64748b';
+const colors=['#2563eb','#0f172a','#dc2626','#f59e0b','#10b981'];
+
+new Chart(document.getElementById('statusChart'),{type:'doughnut',data:{labels:['Approved','Rejected','Pending'],datasets:[{data:[15,3,2],backgroundColor:[colors[0],colors[2],colors[3]]}]},options:{responsive:true,plugins:{legend:{position:'bottom'}}}});
+new Chart(document.getElementById('typeChart'),{type:'bar',data:{labels:['Home Loan','Personal Loan','Car Loan','Education Loan'],datasets:[{label:'Count',data:[7,6,3,2],backgroundColor:colors[0]},{label:'Amount (Lakh)',data:[200,35,42,14],backgroundColor:colors[2]}]},options:{responsive:true,plugins:{legend:{position:'bottom'}}}});
+new Chart(document.getElementById('gradeChart'),{type:'bar',data:{labels:['Grade A','Grade B','Grade C','Grade D'],datasets:[{label:'Count',data:[7,6,5,2],backgroundColor:colors}]},options:{responsive:true,plugins:{legend:{display:false}}}});
+new Chart(document.getElementById('channelChart'),{type:'bar',data:{labels:['Mobile','Web','Branch'],datasets:[{label:'Approved',data:[5,6,4],backgroundColor:colors[0]},{label:'Rejected',data:[1,1,1],backgroundColor:colors[2]}]},options:{responsive:true,plugins:{legend:{position:'bottom'}}}});
+</script>
+</body>
+</html>

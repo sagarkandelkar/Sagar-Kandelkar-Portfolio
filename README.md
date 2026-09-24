@@ -40,6 +40,16 @@ Sagar-Kandelkar-Portfolio/
 │   ├── data/                        # Sample datasets, dictionaries, and SQL schema
 │   ├── diagrams/                    # Customer journey maps
 │   └── docs/                        # Project documentation and requirements
+├── 07-loan-origination-process/      # Loan Origination Process Analysis
+│   ├── analysis/                    # Python EDA notebooks
+│   ├── dashboard/                   # Interactive HTML dashboards & presentations
+│   ├── data/                        # Sample datasets, dictionaries, and SQL schema
+│   └── docs/                        # Project documentation and requirements
+├── 08-insurance-claims-processing/   # Insurance Claims Processing Analysis
+│   ├── analysis/                    # Python EDA notebooks
+│   ├── dashboard/                   # Interactive HTML dashboards & presentations
+│   ├── data/                        # Sample datasets, dictionaries, and SQL schema
+│   └── docs/                        # Project documentation and requirements
 ├── .github/workflows/               # CI/CD workflows
 │   ├── deploy.yml                   # React + Vite portfolio deployment
 │   └── pages.yml                    # Static site deployment (manual)
@@ -234,6 +244,68 @@ A customer experience case study mapping the complete credit card lifecycle — 
 | **Roadmap** | `docs/implementation_roadmap.md` — 6-month enhancement timeline |
 
 **Live Demo:** [Credit Card Journey Dashboard](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/06-credit-card-journey/dashboard/creditcard-dashboard.html)
+
+---
+
+### 7. Loan Origination Process Analysis
+A lending operations case study analyzing the complete loan lifecycle — from digital application and credit appraisal through sanction and disbursement — to identify straight-through processing opportunities.
+
+**Key Areas:**
+- Digital loan application and eligibility calculator
+- Credit appraisal: CIBIL, DTI, FOIR, LTV analysis
+- Risk grading and automated approval workflows
+- Disbursement tracking and EMI scheduling
+- STP gap assessment for digital lending
+
+**Project Deliverables:**
+
+| Category | Files |
+|----------|-------|
+| **Data** | `loan_applications.csv` — 20 applications across loan types |
+| **Data** | `credit_appraisal.csv` — 20 appraisal records with risk grades |
+| **Data** | `disbursements.csv` — 15 disbursement records |
+| **Data Dictionary** | `data_dictionary.md` — Field definitions |
+| **SQL Schema** | `schema.sql` — PostgreSQL DDL with 5 analytical views |
+| **EDA Notebook** | `analysis/eda.ipynb` — Approval funnel, risk analysis, disbursement trends |
+| **Dashboard** | `dashboard/loan-dashboard.html` — Interactive HTML dashboard with Chart.js |
+| **Presentation** | `dashboard/presentation.html` — Scrollable slide deck for interviews |
+| **Documentation** | `docs/README.md` — Project overview |
+| **Requirements** | `docs/requirements.md` — Functional and non-functional requirements |
+| **Gap Analysis** | `docs/gap_analysis.md` — AS-IS vs TO-BE with metrics |
+| **Roadmap** | `docs/implementation_roadmap.md` — STP enhancement timeline |
+
+**Live Demo:** [Loan Origination Dashboard](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/07-loan-origination-process/dashboard/loan-dashboard.html)
+
+---
+
+### 8. Insurance Claims Processing Analysis
+An insurance operations case study analyzing the complete claims lifecycle — from intimation and survey through assessment and settlement — to identify automation and customer experience improvements.
+
+**Key Areas:**
+- Digital claim intimation and photo upload
+- Surveyor assignment and video survey
+- Damage assessment and depreciation calculation
+- Settlement tracking and TAT analysis
+- Claims fraud detection patterns
+
+**Project Deliverables:**
+
+| Category | Files |
+|----------|-------|
+| **Data** | `claims.csv` — 20 claim records across statuses |
+| **Data** | `policyholders.csv` — 20 policyholder profiles |
+| **Data** | `assessments.csv` — 15 assessment records |
+| **Data Dictionary** | `data_dictionary.md` — Field definitions |
+| **SQL Schema** | `schema.sql` — PostgreSQL DDL with 4 analytical views |
+| **EDA Notebook** | `analysis/eda.ipynb` — Claims analysis, settlement trends, TAT monitoring |
+| **Dashboard** | `dashboard/claims-dashboard.html` — Interactive HTML dashboard with Chart.js |
+| **Presentation** | `dashboard/presentation.html` — Scrollable slide deck for interviews |
+| **Documentation** | `docs/README.md` — Project overview |
+| **Requirements** | `docs/requirements.md` — Functional and non-functional requirements |
+| **Gap Analysis** | `docs/gap_analysis.md` — AS-IS vs TO-BE with metrics |
+| **Roadmap** | `docs/implementation_roadmap.md` — Claims automation timeline |
+
+**Live Demo:** [Insurance Claims Dashboard](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/08-insurance-claims-processing/dashboard/claims-dashboard.html)
 
 ---
 

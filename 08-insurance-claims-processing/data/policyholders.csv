@@ -1,0 +1,21 @@
+policyholder_id,policyholder_name,email,phone,policy_type,policy_start_date,policy_end_date,sum_insured,premium_amount,claims_count,claims_history
+POL001,Arjun Mehta,arjun@email.com,9876543300,Home,2024-01-10,2025-01-09,2000000,25000,1,good
+POL002,Priya Sharma,priya@email.com,9876543301,Health,2024-02-15,2025-02-14,500000,18000,1,good
+POL003,Rahul Kapoor,rahul@email.com,9876543302,Motor,2024-03-20,2025-03-19,500000,12000,1,good
+POL004,Ananya Gupta,ananya@email.com,9876543303,Home,2024-04-05,2025-04-04,1500000,20000,1,good
+POL005,Vikram Singh,vikram@email.com,9876543304,Health,2024-05-18,2025-05-17,1000000,22000,1,good
+POL006,Neha Patel,neha@email.com,9876543305,Motor,2024-06-01,2025-05-31,400000,10000,1,good
+POL007,Karan Malhotra,karan@email.com,9876543306,Home,2024-07-14,2025-07-13,3000000,35000,1,average
+POL008,Sneha Reddy,sneha@email.com,9876543307,Health,2024-08-22,2025-08-21,2000000,35000,1,good
+POL009,Aditya Nair,aditya@email.com,9876543308,Motor,2024-09-10,2025-09-09,600000,14000,1,good
+POL010,Divya Iyer,divya@email.com,9876543309,Home,2024-10-05,2025-10-04,2500000,28000,1,good
+POL011,Rohit Desai,rohit@email.com,9876543310,Health,2024-11-12,2025-11-11,800000,15000,1,good
+POL012,Meera Joshi,meera@email.com,9876543311,Motor,2024-12-01,2025-11-30,450000,11000,1,poor
+POL013,Siddharth Rao,siddharth@email.com,9876543312,Home,2024-01-15,2025-01-14,1800000,22000,1,good
+POL014,Tanya Bose,tanya@email.com,9876543313,Health,2024-02-20,2025-02-19,1200000,28000,1,good
+POL015,Nikhil Menon,nikhil@email.com,9876543314,Motor,2024-03-08,2025-03-07,550000,13000,1,good
+POL016,Pooja Agarwal,pooja@email.com,9876543315,Home,2024-04-18,2025-04-17,2200000,26000,1,average
+POL017,Varun Khanna,varun@email.com,9876543316,Health,2024-05-25,2025-05-24,1500000,32000,1,good
+POL018,Kavita Mishra,kavita@email.com,9876543317,Motor,2024-06-30,2025-06-29,350000,9000,1,good
+POL019,Manoj Tiwari,manoj@email.com,9876543318,Home,2024-07-14,2025-07-13,3500000,40000,1,good
+POL020,Shalini Verma,shalini@email.com,9876543319,Health,2024-08-22,2025-08-21,2500000,42000,1,good
