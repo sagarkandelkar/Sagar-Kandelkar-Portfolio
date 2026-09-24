@@ -45,3 +45,22 @@ All data in this project is **synthetic and self-created** for demonstration pur
 ---
 
 *Created: September 2026 | Analyst: Sagar Kandelkar*
+
+## 📊 Process Flow (Mermaid)
+
+```mermaid
+graph LR
+    A[👤 Digital Application] --> B[📄 Document Upload]
+    B --> C[🔍 Credit Score Check]
+    C --> D{Eligible?}
+    D -->|Yes| E[✅ Instant Approval]
+    D -->|No| F[📝 Manual Review]
+    F --> G{Approved?}
+    G -->|Yes| E
+    G -->|No| H[❌ Rejection Notify]
+    E --> I[💳 Card Delivery]
+    I --> J[📱 App Activation]
+    J --> K[🛒 First Spend]
+    K --> L[⭐ Rewards Earned]
+    L --> M[🔄 Retention Monitor]
+```

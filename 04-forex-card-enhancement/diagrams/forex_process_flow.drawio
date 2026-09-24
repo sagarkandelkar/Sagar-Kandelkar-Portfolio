@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" modified="2026-09-24T00:00:00.000Z" agent="Sagar Kandelkar Portfolio" version="24.0.0" etag="forex-swimlane" type="device">
+<diagram name="Forex Card Process" id="forex-card-process">
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+<root>
+<mxCell id="0" />
+<mxCell id="1" parent="0" />
+<mxCell id="swimlane-parent" value="" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#0a1628;fontColor=#ffffff;strokeColor=#2563eb;startSize=40;" parent="1" vertex="1">
+<mxGeometry x="40" y="40" width="1080" height="680" as="geometry" />
+</mxCell>
+<mxCell id="customer-lane" value="👤 Customer" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e0e7ff;strokeColor=#2563eb;fontColor=#0a1628;fontStyle=1;" parent="swimlane-parent" vertex="1">
+<mxGeometry x="40" y="40" width="1040" height="120" as="geometry" />
+</mxCell>
+<mxCell id="c1" value="Apply via App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2563eb;fontColor=#ffffff;strokeColor=#1d4ed8;" parent="customer-lane" vertex="1">
+<mxGeometry x="40" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="c2" value="Upload Documents" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2563eb;fontColor=#ffffff;strokeColor=#1d4ed8;" parent="customer-lane" vertex="1">
+<mxGeometry x="200" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="c3" value="Receive Card" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2563eb;fontColor=#ffffff;strokeColor=#1d4ed8;" parent="customer-lane" vertex="1">
+<mxGeometry x="520" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="c4" value="Activate & Load" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2563eb;fontColor=#ffffff;strokeColor=#1d4ed8;" parent="customer-lane" vertex="1">
+<mxGeometry x="680" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="c5" value="Spend Abroad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2563eb;fontColor=#ffffff;strokeColor=#1d4ed8;" parent="customer-lane" vertex="1">
+<mxGeometry x="840" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="ops-lane" value="🏦 Operations / KYC" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#f59e0b;fontColor=#0a1628;fontStyle=1;" parent="swimlane-parent" vertex="1">
+<mxGeometry x="40" y="160" width="1040" height="120" as="geometry" />
+</mxCell>
+<mxCell id="o1" value="KYC Verification" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f59e0b;fontColor=#0a1628;strokeColor=#d97706;" parent="ops-lane" vertex="1">
+<mxGeometry x="360" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="o2" value="LRS Limit Check" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f59e0b;fontColor=#0a1628;strokeColor=#d97706;" parent="ops-lane" vertex="1">
+<mxGeometry x="680" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="tech-lane" value="💻 Technology" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d1fae5;strokeColor=#10b981;fontColor=#0a1628;fontStyle=1;" parent="swimlane-parent" vertex="1">
+<mxGeometry x="40" y="280" width="1040" height="120" as="geometry" />
+</mxCell>
+<mxCell id="t1" value="OCR & Face Match" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#10b981;fontColor=#ffffff;strokeColor=#059669;" parent="tech-lane" vertex="1">
+<mxGeometry x="200" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="t2" value="Rate Engine" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#10b981;fontColor=#ffffff;strokeColor=#059669;" parent="tech-lane" vertex="1">
+<mxGeometry x="840" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="compliance-lane" value="🛡️ Compliance" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fee2e2;strokeColor=#dc2626;fontColor=#0a1628;fontStyle=1;" parent="swimlane-parent" vertex="1">
+<mxGeometry x="40" y="400" width="1040" height="120" as="geometry" />
+</mxCell>
+<mxCell id="co1" value="LRS Reporting" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dc2626;fontColor=#ffffff;strokeColor=#b91c1c;" parent="compliance-lane" vertex="1">
+<mxGeometry x="840" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="arrows" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748b;" parent="1" edge="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="160" y="120" as="sourcePoint" />
+<mxPoint x="200" y="120" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+</root>
+</mxGraphModel>
+</diagram>
+</mxfile>

@@ -81,3 +81,20 @@ This portfolio case study explores how banks and financial institutions can buil
 ---
 
 *Last Updated: September 2026*
+
+## 📊 Process Flow (Mermaid)
+
+```mermaid
+graph LR
+    A[💳 Transaction Initiated] --> B[🤖 Risk Scoring]
+    B --> C{Rule Engine}
+    C -->|Low Risk| D[✅ Auto Approve]
+    C -->|Medium Risk| E[⚠️ Step-Up Auth]
+    C -->|High Risk| F[🚨 Generate Alert]
+    E --> G{Auth Result}
+    G -->|Pass| D
+    G -->|Fail| F
+    F --> H[👁️ Investigation Queue]
+    H --> I[📋 Case Resolution]
+    I --> J[📊 SAR / Closure]
+```

@@ -80,3 +80,19 @@ This project explores how a retail business can use data-driven customer segment
 ---
 
 *Last Updated: September 2026*
+
+## 📊 Process Flow (Mermaid)
+
+```mermaid
+graph LR
+    A[👤 Customer] --> B[📊 RFM Scoring]
+    B --> C{Segment}
+    C -->|Champions| D[🎁 Loyalty Rewards]
+    C -->|Loyal| E[📈 Upsell Campaign]
+    C -->|At Risk| F[🎯 Win-Back Offer]
+    D --> G[💰 Purchase]
+    E --> G
+    F --> G
+    G --> H[📦 Fulfillment]
+    H --> I[⭐ Points Earned]
+```

@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" modified="2026-09-24T00:00:00.000Z" agent="Sagar Kandelkar Portfolio" version="24.0.0" etag="creditcard-swimlane" type="device">
+<diagram name="Credit Card Journey" id="credit-card-journey">
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+<root>
+<mxCell id="0" />
+<mxCell id="1" parent="0" />
+<mxCell id="swimlane-parent" value="" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#0a1628;fontColor=#ffffff;strokeColor=#2563eb;startSize=40;" parent="1" vertex="1">
+<mxGeometry x="40" y="40" width="1080" height="680" as="geometry" />
+</mxCell>
+<mxCell id="customer-lane" value="👤 Customer" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e0e7ff;strokeColor=#2563eb;fontColor=#0a1628;fontStyle=1;" parent="swimlane-parent" vertex="1">
+<mxGeometry x="40" y="40" width="1040" height="120" as="geometry" />
+</mxCell>
+<mxCell id="c1" value="Digital Application" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2563eb;fontColor=#ffffff;strokeColor=#1d4ed8;" parent="customer-lane" vertex="1">
+<mxGeometry x="40" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="c2" value="Document Upload" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2563eb;fontColor=#ffffff;strokeColor=#1d4ed8;" parent="customer-lane" vertex="1">
+<mxGeometry x="200" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="c3" value="Receive Card" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2563eb;fontColor=#ffffff;strokeColor=#1d4ed8;" parent="customer-lane" vertex="1">
+<mxGeometry x="520" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="c4" value="Activate & Spend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2563eb;fontColor=#ffffff;strokeColor=#1d4ed8;" parent="customer-lane" vertex="1">
+<mxGeometry x="680" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="c5" value="Redeem Rewards" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2563eb;fontColor=#ffffff;strokeColor=#1d4ed8;" parent="customer-lane" vertex="1">
+<mxGeometry x="840" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="risk-lane" value="🔍 Risk / Credit Bureau" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#f59e0b;fontColor=#0a1628;fontStyle=1;" parent="swimlane-parent" vertex="1">
+<mxGeometry x="40" y="160" width="1040" height="120" as="geometry" />
+</mxCell>
+<mxCell id="r1" value="Credit Score Check" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f59e0b;fontColor=#0a1628;strokeColor=#d97706;" parent="risk-lane" vertex="1">
+<mxGeometry x="360" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="r2" value="Limit Assignment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f59e0b;fontColor=#0a1628;strokeColor=#d97706;" parent="risk-lane" vertex="1">
+<mxGeometry x="520" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="ops-lane" value="🏦 Operations" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d1fae5;strokeColor=#10b981;fontColor=#0a1628;fontStyle=1;" parent="swimlane-parent" vertex="1">
+<mxGeometry x="40" y="280" width="1040" height="120" as="geometry" />
+</mxCell>
+<mxCell id="o1" value="Card Printing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#10b981;fontColor=#ffffff;strokeColor=#059669;" parent="ops-lane" vertex="1">
+<mxGeometry x="680" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="marketing-lane" value="📢 Marketing / Retention" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fee2e2;strokeColor=#dc2626;fontColor=#0a1628;fontStyle=1;" parent="swimlane-parent" vertex="1">
+<mxGeometry x="40" y="400" width="1040" height="120" as="geometry" />
+</mxCell>
+<mxCell id="mk1" value="Welcome Offer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dc2626;fontColor=#ffffff;strokeColor=#b91c1c;" parent="marketing-lane" vertex="1">
+<mxGeometry x="680" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+<mxCell id="mk2" value="Churn Prevention" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dc2626;fontColor=#ffffff;strokeColor=#b91c1c;" parent="marketing-lane" vertex="1">
+<mxGeometry x="840" y="40" width="120" height="40" as="geometry" />
+</mxCell>
+</root>
+</mxGraphModel>
+</diagram>
+</mxfile>

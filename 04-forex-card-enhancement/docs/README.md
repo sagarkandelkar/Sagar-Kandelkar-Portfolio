@@ -44,3 +44,19 @@ All data in this project is **synthetic and self-created** for demonstration pur
 ---
 
 *Created: September 2026 | Analyst: Sagar Kandelkar*
+
+## 📊 Process Flow (Mermaid)
+
+```mermaid
+graph LR
+    A[👤 Customer Applies] --> B[📝 Digital KYC]
+    B --> C[✅ Approval]
+    C --> D[💳 Card Issuance]
+    D --> E[📱 Digital Activation]
+    E --> F[💰 Currency Load]
+    F --> G[🔒 Rate Lock Option]
+    G --> H[🌍 Spend Abroad]
+    H --> I[📨 Real-Time Alert]
+    I --> J[📊 LRS Tracking]
+    J --> K[🏠 Balance Repatriation]
+```

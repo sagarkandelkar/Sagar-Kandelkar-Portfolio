@@ -44,3 +44,20 @@ All data in this project is **synthetic and self-created** for demonstration pur
 ---
 
 *Created: September 2026 | Analyst: Sagar Kandelkar*
+
+## 📊 Process Flow (Mermaid)
+
+```mermaid
+graph LR
+    A[📱 Customer Initiates] --> B[🤖 Smart Routing]
+    B --> C[🏦 Gateway Auth]
+    C --> D{Success?}
+    D -->|Yes| E[✅ Transaction Approved]
+    D -->|No| F[🔁 Auto Retry]
+    F --> G{Recovered?}
+    G -->|Yes| E
+    G -->|No| H[❌ Failure Logged]
+    H --> I[📋 Root Cause Analysis]
+    E --> J[💰 Merchant Settlement]
+    J --> K[📨 Notification Sent]
+```
