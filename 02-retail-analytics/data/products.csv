@@ -1,0 +1,26 @@
+product_id,product_name,product_category,sub_category,brand,unit_cost,unit_price,profit_margin,stock_level,reorder_point,supplier_rating
+PROD-001,Wireless Headphones,Electronics,Audio,BrandA,1800,2500,0.28,120,30,4.5
+PROD-002,Men's Casual Shirt,Apparel,Men's Clothing,BrandB,720,1200,0.40,200,50,4.2
+PROD-003,Kitchen Blender,Home,Kitchen Appliances,BrandC,2450,3500,0.30,80,20,4.7
+PROD-004,Smart Watch,Electronics,Wearables,BrandD,5600,8000,0.30,45,15,4.3
+PROD-005,Women's Kurti,Apparel,Women's Clothing,BrandE,900,1500,0.40,150,40,4.0
+PROD-006,Skincare Kit,Beauty,Skincare,BrandF,1750,2500,0.30,100,25,4.6
+PROD-007,Laptop Stand,Electronics,Accessories,BrandG,840,1200,0.30,180,45,4.1
+PROD-008,Storage Containers,Home,Storage,BrandH,280,400,0.30,300,75,3.9
+PROD-009,Bluetooth Speaker,Electronics,Audio,BrandA,2450,3500,0.30,90,25,4.5
+PROD-010,Women's Jeans,Apparel,Women's Clothing,BrandE,1080,1800,0.40,120,30,4.2
+PROD-011,Wall Clock,Home,Decor,BrandI,900,1500,0.40,60,15,4.0
+PROD-012,Power Bank,Electronics,Accessories,BrandJ,560,800,0.30,250,60,4.4
+PROD-013,Perfume Set,Beauty,Fragrance,BrandK,2100,3000,0.30,70,20,4.8
+PROD-014,Tablet,Electronics,Computing,BrandD,17500,25000,0.30,25,8,4.3
+PROD-015,Formal Trousers,Apparel,Men's Clothing,BrandB,1200,2000,0.40,110,30,4.1
+PROD-016,Cushion Covers,Home,Decor,BrandI,245,350,0.30,200,50,3.8
+PROD-017,USB Hub,Electronics,Accessories,BrandJ,420,600,0.30,180,45,4.2
+PROD-018,Makeup Kit,Beauty,Makeup,BrandL,1540,2200,0.30,130,35,4.5
+PROD-019,Children's T-Shirt,Apparel,Kids' Clothing,BrandM,350,500,0.30,220,55,4.0
+PROD-020,Noise Cancelling Earbuds,Electronics,Audio,BrandA,3150,4500,0.30,65,18,4.6
+PROD-021,LED Lamp,Home,Lighting,BrandN,560,800,0.30,140,35,4.1
+PROD-022,Sports Shoes,Apparel,Footwear,BrandO,2700,4500,0.40,85,22,4.3
+PROD-023,Mobile Case,Electronics,Accessories,BrandJ,350,500,0.30,400,100,3.9
+PROD-024,Face Cream,Beauty,Skincare,BrandF,560,800,0.30,250,60,4.5
+PROD-025,Dining Set,Home,Furniture,BrandP,12600,18000,0.30,12,4,4.2

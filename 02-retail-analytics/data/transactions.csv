@@ -1,0 +1,26 @@
+transaction_id,customer_id,transaction_date,product_category,product_name,quantity,unit_price,total_amount,payment_method,channel,discount_applied,campaign_code
+TXN-2026-0001,CUST-1001,2026-09-01,Electronics,Wireless Headphones,2,2500,5000,UPI,Online,0.10,FEST24
+TXN-2026-0002,CUST-1002,2026-09-01,Apparel,Men's Casual Shirt,3,1200,3600,COD,Online,0.00,NONE
+TXN-2026-0003,CUST-1001,2026-09-02,Home,Kitchen Blender,1,3500,3500,Credit Card,Online,0.00,NONE
+TXN-2026-0004,CUST-1003,2026-09-02,Electronics,Smart Watch,1,8000,8000,UPI,Online,0.15,SUMMER24
+TXN-2026-0005,CUST-1004,2026-09-03,Apparel,Women's Kurti,2,1500,3000,Debit Card,Store,0.00,NONE
+TXN-2026-0006,CUST-1005,2026-09-03,Beauty,Skincare Kit,1,2500,2500,UPI,Online,0.20,WELCOME24
+TXN-2026-0007,CUST-1006,2026-09-04,Electronics,Laptop Stand,2,1200,2400,Credit Card,Online,0.00,NONE
+TXN-2026-0008,CUST-1007,2026-09-04,Home,Storage Containers,5,400,2000,COD,Online,0.00,NONE
+TXN-2026-0009,CUST-1008,2026-09-05,Electronics,Bluetooth Speaker,1,3500,3500,UPI,Online,0.10,FEST24
+TXN-2026-0010,CUST-1009,2026-09-05,Apparel,Women's Jeans,2,1800,3600,Credit Card,Online,0.00,NONE
+TXN-2026-0011,CUST-1010,2026-09-06,Home,Wall Clock,1,1500,1500,Debit Card,Store,0.00,NONE
+TXN-2026-0012,CUST-1011,2026-09-06,Electronics,Power Bank,3,800,2400,UPI,Online,0.15,SUMMER24
+TXN-2026-0013,CUST-1012,2026-09-07,Beauty,Perfume Set,2,3000,6000,Credit Card,Online,0.00,NONE
+TXN-2026-0014,CUST-1013,2026-09-07,Electronics,Tablet,1,25000,25000,UPI,Online,0.00,NONE
+TXN-2026-0015,CUST-1014,2026-09-08,Apparel,Formal Trousers,2,2000,4000,Debit Card,Online,0.20,WELCOME24
+TXN-2026-0016,CUST-1015,2026-09-08,Home,Cushion Covers,4,350,1400,COD,Online,0.00,NONE
+TXN-2026-0017,CUST-1016,2026-09-09,Electronics,USB Hub,1,600,600,UPI,Online,0.00,NONE
+TXN-2026-0018,CUST-1017,2026-09-09,Beauty,Makeup Kit,3,2200,6600,Credit Card,Online,0.10,FEST24
+TXN-2026-0019,CUST-1018,2026-09-10,Apparel,Children's T-Shirt,4,500,2000,UPI,Online,0.00,NONE
+TXN-2026-0020,CUST-1019,2026-09-10,Electronics,Noise Cancelling Earbuds,2,4500,9000,Debit Card,Online,0.00,NONE
+TXN-2026-0021,CUST-1020,2026-09-11,Home,LED Lamp,2,800,1600,COD,Online,0.00,NONE
+TXN-2026-0022,CUST-1001,2026-09-11,Apparel,Sports Shoes,1,4500,4500,UPI,Online,0.00,NONE
+TXN-2026-0023,CUST-1002,2026-09-12,Electronics,Mobile Case,3,500,1500,Credit Card,Online,0.15,SUMMER24
+TXN-2026-0024,CUST-1003,2026-09-12,Beauty,Face Cream,2,800,1600,UPI,Online,0.00,NONE
+TXN-2026-0025,CUST-1006,2026-09-13,Home,Dining Set,1,18000,18000,Credit Card,Online,0.00,NONE

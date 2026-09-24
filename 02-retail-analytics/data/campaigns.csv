@@ -1,0 +1,7 @@
+campaign_code,campaign_name,campaign_type,start_date,end_date,discount_rate,target_segment,channel,budget_inr,expected_revenue,actual_revenue,status
+FEST24,Festive Sale 2024,Seasonal,2026-08-15,2026-09-15,0.10,All Customers,Multi-channel,500000,2000000,1850000,Completed
+SUMMER24,Summer Collection Launch,Product Launch,2026-06-01,2026-07-15,0.15,New Customers,Online,300000,1200000,950000,Completed
+WELCOME24,Welcome New Customers,Acquisition,2026-09-01,2026-09-30,0.20,New Customers,Online,150000,600000,520000,In Progress
+FLASH24,Flash Friday Deals,Flash Sale,2026-09-13,2026-09-13,0.25,At Risk Customers,Online,50000,200000,185000,Completed
+LOYAL24,Loyalty Rewards Program,Retention,2026-08-01,2026-12-31,0.05,Champions & Loyal,Email & SMS,200000,800000,750000,In Progress
+WINBACK24,Win-Back Campaign,Reactivation,2026-09-05,2026-09-25,0.30,Hibernating,Email,100000,300000,245000,In Progress

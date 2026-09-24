@@ -12,6 +12,10 @@ Sagar-Kandelkar-Portfolio/
 │   ├── data/                        # Sample datasets, dictionaries, and SQL schema
 │   ├── diagrams/                    # Architecture, ERD, and process flow diagrams
 │   └── docs/                        # Project documentation and case studies
+├── 02-retail-analytics/            # Retail Analytics — Customer Segmentation & Sales Optimization
+│   ├── analysis/                    # Python EDA notebooks
+│   ├── data/                        # Sample datasets, dictionaries, and SQL schema
+│   └── docs/                        # Project documentation and requirements
 ├── .github/workflows/               # CI/CD workflows
 │   ├── deploy.yml                   # React + Vite portfolio deployment
 │   └── pages.yml                    # Static site deployment (manual)
@@ -48,6 +52,36 @@ A comprehensive project focused on streamlining and optimizing the customer onbo
 | **Presentation** | `presentation.html` — Scrollable slide deck for interviews |
 
 **Live Demo:** [Interactive Dashboard](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/01-bfsi-customer-onboarding/demo-dashboard.html)
+
+---
+
+### 2. Retail Analytics — Customer Segmentation & Sales Optimization
+A data-driven retail analytics project demonstrating customer segmentation (RFM analysis), sales performance tracking, campaign effectiveness, and churn prediction capabilities.
+
+**Key Areas:**
+- Customer segmentation using RFM (Recency, Frequency, Monetary) scoring
+- Sales trend analysis across categories, channels, and payment methods
+- Marketing campaign ROI tracking and optimization
+- Churn risk identification and retention strategies
+- Inventory and product performance insights
+
+**Project Deliverables:**
+
+| Category | Files |
+|----------|-------|
+| **Data** | `customers.csv` — 20 customer records with RFM scores and segments |
+| **Data** | `transactions.csv` — 25 transaction records across categories and channels |
+| **Data** | `products.csv` — 25 product records with margins and stock levels |
+| **Data** | `campaigns.csv` — 6 marketing campaigns with budget and revenue data |
+| **Data Dictionary** | `data_dictionary.md` — Field definitions for all datasets |
+| **SQL Schema** | `schema.sql` — PostgreSQL DDL for customers, products, transactions, campaigns |
+| **EDA Notebook** | `analysis/eda.ipynb` — Python notebook with RFM analysis, sales trends, campaign ROI |
+| **Documentation** | `docs/README.md` — Project overview and objectives |
+| **Requirements** | `requirements.md` — Functional requirements for segmentation, analytics, campaigns |
+| **Gap Analysis** | `gap_analysis.md` — AS-IS vs TO-BE assessment with recommendations |
+| **Roadmap** | `implementation_roadmap.md` — 3-phase rollout plan |
+
+**Live Demo:** Dashboard coming soon
 
 ---
 
