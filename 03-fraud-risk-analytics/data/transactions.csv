@@ -1,0 +1,26 @@
+transaction_id,customer_id,transaction_date,transaction_time,channel,transaction_type,amount_inr,merchant_category,merchant_name,payment_method,device_type,location_city,location_country,ip_address,is_international,is_recurring,risk_score,alert_triggered,alert_reason,actual_fraud_flag
+TXN-F-0001,CUST-1001,2026-09-01,09:15:00,Mobile App,UPI Payment,2500,Groceries,LocalMart,UPI,Mobile,Mumbai,India,192.168.1.1,No,No,Low,No,,0
+TXN-F-0002,CUST-1002,2026-09-01,10:30:00,Net Banking,IMPS Transfer,15000,Transfer,Self-Transfer,IMPS,Laptop,Delhi,India,203.145.67.89,No,Yes,Low,No,,0
+TXN-F-0003,CUST-1003,2026-09-01,14:45:00,Mobile App,Card Payment,45000,Electronics,Flipzon,Debit Card,Mobile,Bangalore,India,104.28.12.34,No,No,Medium,No,,0
+TXN-F-0004,CUST-1004,2026-09-01,03:20:00,Mobile App,Card Payment,85000,Luxury,WatchWorld,Credit Card,Mobile,New York,USA,72.45.189.22,Yes,No,High,Yes,International + High Amount + Off Hours,1
+TXN-F-0005,CUST-1005,2026-09-02,11:00:00,ATM,Cash Withdrawal,10000,ATM,ICICI ATM,Debit Card,ATM,Chennai,India,182.76.34.11,No,No,Low,No,,0
+TXN-F-0006,CUST-1006,2026-09-02,02:15:00,Mobile App,UPI Payment,1200,Food Delivery,Swiggy,UPI,Mobile,Pune,India,117.234.56.78,No,No,Low,No,,0
+TXN-F-0007,CUST-1007,2026-09-02,16:30:00,POS,Card Payment,3200,Retail,Reliance Fresh,Debit Card,POS,Hyderabad,India,219.87.45.33,No,No,Low,No,,0
+TXN-F-0008,CUST-1008,2026-09-03,04:00:00,Mobile App,Card Payment,125000,Electronics,Apple Store,Credit Card,Mobile,London,UK,88.192.45.67,Yes,No,High,Yes,International + High Amount + Off Hours + Velocity,1
+TXN-F-0009,CUST-1009,2026-09-03,09:45:00,Net Banking,NEFT Transfer,50000,Transfer,Family,NEFT,Laptop,Jaipur,India,165.34.78.90,No,Yes,Low,No,,0
+TXN-F-0010,CUST-1010,2026-09-03,13:20:00,Mobile App,UPI Payment,800,Recharge,PhonePe,UPI,Mobile,Ahmedabad,India,134.56.89.12,No,No,Low,No,,0
+TXN-F-0011,CUST-1011,2026-09-04,22:30:00,Mobile App,Card Payment,95000,Luxury,Gucci Store,Credit Card,Mobile,Dubai,UAE,45.123.67.89,Yes,No,High,Yes,International + High Amount + Off Hours,1
+TXN-F-0012,CUST-1012,2026-09-04,08:00:00,POS,Card Payment,1800,Food,Starbucks,Debit Card,POS,Kochi,India,198.45.67.23,No,No,Low,No,,0
+TXN-F-0013,CUST-1013,2026-09-04,15:10:00,Net Banking,RTGS Transfer,250000,Transfer,Vendor Payment,RTGS,Laptop,Gurgaon,India,210.34.56.78,No,Yes,Medium,No,,0
+TXN-F-0014,CUST-1014,2026-09-05,01:45:00,Mobile App,Card Payment,78000,Electronics,Samsung Store,Credit Card,Mobile,Singapore,SG,103.56.78.90,Yes,No,High,Yes,International + High Amount + Off Hours,1
+TXN-F-0015,CUST-1015,2026-09-05,10:00:00,ATM,Cash Withdrawal,5000,ATM,HDFC ATM,Debit Card,ATM,Indore,India,187.45.23.67,No,No,Low,No,,0
+TXN-F-0016,CUST-1016,2026-09-05,12:30:00,Mobile App,UPI Payment,3500,Shopping,Amazon,UPI,Mobile,Chandigarh,India,156.78.34.12,No,No,Low,No,,0
+TXN-F-0017,CUST-1017,2026-09-06,05:30:00,Mobile App,Card Payment,150000,Luxury,Tiffany,Credit Card,Mobile,Paris,France,78.123.45.67,Yes,No,High,Yes,International + High Amount + Off Hours + Velocity,1
+TXN-F-0018,CUST-1018,2026-09-06,11:15:00,POS,Card Payment,4200,Retail,DMart,Debit Card,POS,Lucknow,India,145.67.89.34,No,No,Low,No,,0
+TXN-F-0019,CUST-1019,2026-09-06,14:00:00,Net Banking,IMPS Transfer,12000,Transfer,Friend,IMPS,Mobile,Patna,India,178.34.56.89,No,No,Low,No,,0
+TXN-F-0020,CUST-1020,2026-09-07,03:00:00,Mobile App,Card Payment,65000,Electronics,Sony Store,Credit Card,Mobile,Tokyo,Japan,56.78.123.45,Yes,No,High,Yes,International + High Amount + Off Hours,1
+TXN-F-0021,CUST-1001,2026-09-07,09:30:00,Mobile App,UPI Payment,1800,Food,Zomato,UPI,Mobile,Mumbai,India,192.168.1.1,No,No,Low,No,,0
+TXN-F-0022,CUST-1002,2026-09-07,10:00:00,Net Banking,NEFT Transfer,25000,Transfer,Investment,NEFT,Laptop,Delhi,India,203.145.67.89,No,Yes,Low,No,,0
+TXN-F-0023,CUST-1003,2026-09-07,11:45:00,POS,Card Payment,5600,Retail,BigBasket,Debit Card,POS,Bangalore,India,104.28.12.34,No,No,Low,No,,0
+TXN-F-0024,CUST-1004,2026-09-07,04:30:00,Mobile App,Card Payment,45000,Electronics,Apple Store,Credit Card,Mobile,Toronto,Canada,72.45.189.22,Yes,No,High,Yes,International + High Amount + Off Hours + Velocity,1
+TXN-F-0025,CUST-1005,2026-09-08,08:00:00,Mobile App,UPI Payment,2200,Groceries,Blinkit,UPI,Mobile,Chennai,India,182.76.34.11,No,No,Low,No,,0

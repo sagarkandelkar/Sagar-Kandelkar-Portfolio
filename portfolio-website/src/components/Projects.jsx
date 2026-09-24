@@ -13,6 +13,12 @@ export default function Projects() {
       repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/02-retail-analytics',
     },
     {
+      title: 'Fraud Detection & Risk Analytics',
+      desc: 'BFSI fraud analytics with real-time risk scoring, rule-based alerting, and fraud pattern analysis across transaction channels.',
+      status: 'completed',
+      repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/03-fraud-risk-analytics',
+    },
+    {
       title: 'BFSI Data Analysis & Dashboard',
       desc: 'Exploratory data analysis and interactive dashboard design for BFSI application pipeline metrics.',
       status: 'completed',

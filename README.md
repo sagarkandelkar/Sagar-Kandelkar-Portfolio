@@ -16,6 +16,10 @@ Sagar-Kandelkar-Portfolio/
 │   ├── analysis/                    # Python EDA notebooks
 │   ├── data/                        # Sample datasets, dictionaries, and SQL schema
 │   └── docs/                        # Project documentation and requirements
+├── 03-fraud-risk-analytics/        # Fraud Detection & Risk Analytics in BFSI
+│   ├── analysis/                    # Python EDA notebooks
+│   ├── data/                        # Sample datasets, dictionaries, and SQL schema
+│   └── docs/                        # Project documentation and requirements
 ├── .github/workflows/               # CI/CD workflows
 │   ├── deploy.yml                   # React + Vite portfolio deployment
 │   └── pages.yml                    # Static site deployment (manual)
@@ -82,6 +86,32 @@ A data-driven retail analytics project demonstrating customer segmentation (RFM 
 | **Roadmap** | `implementation_roadmap.md` — 3-phase rollout plan |
 
 **Live Demo:** Dashboard coming soon
+
+---
+
+### 3. Fraud Detection & Risk Analytics
+A BFSI fraud analytics portfolio case study demonstrating real-time risk scoring, rule-based alerting, and fraud pattern analysis across transaction channels.
+
+**Key Areas:**
+- Transaction monitoring and risk scoring (amount, geography, time, velocity)
+- Rule-based alert generation and triage
+- Fraud pattern analysis (off-hours, geo-anomaly, velocity)
+- Alert investigation workflow and audit trail
+- Channel risk analysis (Branch, Internet Banking, UPI, Mobile, POS)
+
+**Project Deliverables:**
+
+| Category | Files |
+|----------|-------|
+| **Data** | `transactions.csv` — 25 synthetic transactions with fraud flags and risk scores |
+| **Data** | `alerts.csv` — 7 open fraud alerts with assigned investigators |
+| **Data Dictionary** | `data_dictionary.md` — Field definitions for transactions and alerts |
+| **SQL Schema** | `schema.sql` — PostgreSQL DDL with tables and 5 analytical views |
+| **EDA Notebook** | `analysis/eda.ipynb` — Python notebook with fraud distribution, hourly patterns, channel risk, correlation |
+| **Documentation** | `docs/README.md` — Project overview and synthetic data disclaimer |
+| **Requirements** | `docs/requirements.md` — Functional and non-functional requirements |
+| **Gap Analysis** | `docs/gap_analysis.md` — AS-IS vs TO-BE with metrics and recommendations |
+| **Roadmap** | `docs/implementation_roadmap.md` — 3-phase rollout with timeline and budget |
 
 ---
 
