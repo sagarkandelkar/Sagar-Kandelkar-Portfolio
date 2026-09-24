@@ -2,7 +2,7 @@ export default function Skills() {
   const skillCategories = [
     {
       title: 'Business Analysis',
-      skills: ['Requirements Gathering', 'Gap Analysis', 'Process Mapping', 'Stakeholder Management', 'BRD / FRD / PRD', 'User Stories', 'Jira & Confluence'],
+      skills: ['Requirements Gathering', 'Gap Analysis', 'Process Mapping', 'SAP-Aware BRD/FRD', 'Stakeholder Management', 'User Stories', 'Jira & Confluence'],
     },
     {
       title: 'Data & Analytics',
@@ -18,7 +18,7 @@ export default function Skills() {
     },
     {
       title: 'Tools & Platforms',
-      skills: ['Git & GitHub', 'VS Code', 'Jupyter Notebook', 'React + Vite', 'GitHub Actions', 'Markdown'],
+      skills: ['Git & GitHub', 'VS Code', 'Jupyter Notebook', 'React + Vite', 'SAP / ERP Literacy (AI-Assisted)', 'Markdown'],
     },
     {
       title: 'Soft Skills',
