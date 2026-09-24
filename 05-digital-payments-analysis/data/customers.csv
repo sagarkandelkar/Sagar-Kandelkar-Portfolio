@@ -1,0 +1,16 @@
+customer_id,customer_name,email,phone,preferred_payment_method,kyc_status,registered_date,total_payments_count,total_payments_value,lifetime_value_segment
+DPC001,Ravi Kumar,ravi.k@email.com,9876543230,UPI,verified,2023-01-10,45,125000,high
+DPC002,Swati Gupta,swati.g@email.com,9876543231,Wallet,verified,2023-02-15,32,85000,medium
+DPC003,Amit Shah,amit.s@email.com,9876543232,UPI,verified,2023-03-20,67,210000,high
+DPC004,Pooja Rao,pooja.r@email.com,9876543233,Card,verified,2023-04-05,28,56000,medium
+DPC005,Suresh Nair,suresh.n@email.com,9876543234,NetBanking,verified,2023-05-18,15,180000,high
+DPC006,Deepa Menon,deepa.m@email.com,9876543235,Wallet,verified,2023-06-01,38,92000,medium
+DPC007,Harish Reddy,harish.r@email.com,9876543236,UPI,verified,2023-07-14,52,145000,high
+DPC008,Anita Bose,anita.b@email.com,9876543237,Card,pending,2023-08-22,12,24000,low
+DPC009,Vijay Mishra,vijay.m@email.com,9876543238,UPI,verified,2023-09-10,41,112000,medium
+DPC010,Kavita Desai,kavita.d@email.com,9876543239,Wallet,verified,2023-10-05,29,78000,medium
+DPC011,Arun Iyer,arun.i@email.com,9876543240,NetBanking,verified,2023-11-12,22,165000,high
+DPC012,Sonia Patil,sonia.p@email.com,9876543241,Card,verified,2023-12-01,35,68000,medium
+DPC013,Rajesh Khanna,rajesh.k@email.com,9876543242,UPI,verified,2024-01-15,58,198000,high
+DPC014,Meenakshi Joshi,meenakshi.j@email.com,9876543243,Wallet,verified,2024-02-20,25,54000,low
+DPC015,Prakash Sinha,prakash.s@email.com,9876543244,UPI,pending,2024-03-08,8,18000,low

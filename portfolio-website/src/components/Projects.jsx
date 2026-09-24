@@ -38,21 +38,21 @@ export default function Projects() {
     },
     {
       title: 'Forex Card Enhancement Study',
-      desc: 'Portfolio case study exploring the complete Forex card lifecycle and digital enhancement opportunities.',
-      status: 'in-progress',
-      repo: null,
+      desc: 'Forex card lifecycle analysis with multi-currency wallet management, LRS tracking, and digital enhancement opportunities.',
+      status: 'completed',
+      repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/04-forex-card-enhancement',
     },
     {
       title: 'Digital Payments Process Analysis',
-      desc: 'Analysis of digital payment flows, customer journeys, and process improvement opportunities.',
-      status: 'planned',
-      repo: null,
+      desc: 'Digital payment ecosystem analysis covering UPI, wallets, cards, net banking — failure reduction and settlement optimization.',
+      status: 'completed',
+      repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/05-digital-payments-analysis',
     },
     {
       title: 'Credit Card Customer Journey Mapping',
-      desc: 'End-to-end mapping of credit card customer journeys from application to usage.',
-      status: 'planned',
-      repo: null,
+      desc: 'End-to-end credit card journey mapping from application and activation to usage, rewards, and retention strategies.',
+      status: 'completed',
+      repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/06-credit-card-journey',
     },
   ];
 

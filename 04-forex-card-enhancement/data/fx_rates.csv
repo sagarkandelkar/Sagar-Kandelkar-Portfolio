@@ -1,0 +1,10 @@
+currency_code,currency_name,buy_rate_inr,sell_rate_inr,last_updated,markup_percent
+USD,US Dollar,83.50,84.50,2025-09-01,1.20
+GBP,British Pound,108.00,110.00,2025-09-01,1.85
+EUR,Euro,89.50,90.50,2025-09-01,1.12
+JPY,Japanese Yen,0.54,0.55,2025-09-01,1.85
+AED,UAE Dirham,22.60,22.80,2025-09-01,0.88
+SGD,Singapore Dollar,61.00,62.00,2025-09-01,1.64
+AUD,Australian Dollar,54.50,55.50,2025-09-01,1.83
+CAD,Canadian Dollar,59.00,60.50,2025-09-01,2.54
+THB,Thai Baht,2.15,2.25,2025-09-01,4.65

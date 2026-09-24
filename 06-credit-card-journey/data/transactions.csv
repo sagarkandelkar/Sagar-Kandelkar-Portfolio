@@ -1,0 +1,31 @@
+transaction_id,customer_id,transaction_date,transaction_time,merchant_name,merchant_category,amount,payment_method,transaction_type,reward_points_earned,emi_converted
+CCT001,CCC001,2025-08-01,10:30:00,BigBasket,Grocery,3200.00,Card,POS,32,no
+CCT002,CCC002,2025-08-01,12:15:00,MakeMyTrip,Travel,18500.00,Card,Online,185,yes
+CCT003,CCC003,2025-08-02,09:45:00,Local Kirana,Grocery,850.00,Card,POS,8,no
+CCT004,CCC005,2025-08-02,14:00:00,Amazon India,E-commerce,6500.00,Card,Online,65,no
+CCT005,CCC006,2025-08-03,11:30:00,Apollo Pharmacy,Healthcare,1200.00,Card,POS,12,no
+CCT006,CCC007,2025-08-03,16:00:00,Swiggy,Food Delivery,950.00,Card,Online,9,no
+CCT007,CCC008,2025-08-04,08:30:00,Hotel Taj,Travel,22000.00,Card,POS,220,no
+CCT008,CCC009,2025-08-04,13:00:00,Myntra,Fashion,2800.00,Card,Online,28,no
+CCT009,CCC011,2025-08-05,10:00:00,Uber India,Transport,450.00,Card,Online,4,no
+CCT010,CCC012,2025-08-05,15:30:00,Flipkart,E-commerce,4200.00,Card,Online,42,no
+CCT011,CCC013,2025-08-06,09:00:00,Local Restaurant,Food,1100.00,Card,POS,11,no
+CCT012,CCC014,2025-08-06,14:00:00,BookMyShow,Entertainment,3500.00,Card,Online,35,no
+CCT013,CCC015,2025-08-07,11:00:00,BigBasket,Grocery,4800.00,Card,Online,48,no
+CCT014,CCC017,2025-08-07,17:00:00,MakeMyTrip,Travel,12000.00,Card,Online,120,yes
+CCT015,CCC018,2025-08-08,10:30:00,Apollo Pharmacy,Healthcare,2500.00,Card,POS,25,no
+CCT016,CCC020,2025-08-08,12:00:00,Amazon India,E-commerce,8900.00,Card,Online,89,no
+CCT017,CCC001,2025-08-09,09:00:00,Swiggy,Food Delivery,1200.00,Card,Online,12,no
+CCT018,CCC002,2025-08-09,15:00:00,Local Kirana,Grocery,1500.00,Card,POS,15,no
+CCT019,CCC005,2025-08-10,10:00:00,Myntra,Fashion,3200.00,Card,Online,32,no
+CCT020,CCC007,2025-08-10,14:00:00,Uber India,Transport,650.00,Card,Online,6,no
+CCT021,CCC008,2025-08-11,08:00:00,Flipkart,E-commerce,5500.00,Card,Online,55,no
+CCT022,CCC009,2025-08-11,13:00:00,BookMyShow,Entertainment,1800.00,Card,Online,18,no
+CCT023,CCC011,2025-08-12,11:00:00,BigBasket,Grocery,2100.00,Card,Online,21,no
+CCT024,CCC012,2025-08-12,16:00:00,MakeMyTrip,Travel,8500.00,Card,Online,85,yes
+CCT025,CCC014,2025-08-13,09:30:00,Local Restaurant,Food,2200.00,Card,POS,22,no
+CCT026,CCC015,2025-08-13,14:00:00,Apollo Pharmacy,Healthcare,1800.00,Card,POS,18,no
+CCT027,CCC017,2025-08-14,10:00:00,Swiggy,Food Delivery,1400.00,Card,Online,14,no
+CCT028,CCC018,2025-08-14,15:00:00,Amazon India,E-commerce,3600.00,Card,Online,36,no
+CCT029,CCC020,2025-08-15,11:00:00,Myntra,Fashion,4500.00,Card,Online,45,no
+CCT030,CCC002,2025-08-15,17:00:00,Hotel Taj,Travel,28000.00,Card,POS,280,no

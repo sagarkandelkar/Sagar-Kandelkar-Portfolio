@@ -1,0 +1,21 @@
+customer_id,customer_name,email,phone,date_of_birth,gender,annual_income,employment_type,credit_score,customer_segment,onboarding_date,active_cards_count,total_credit_limit,total_utilized,last_payment_date,payment_history
+CCC001,Arjun Mehta,arjun.m@email.com,9876543250,1990-03-15,Male,800000,Salaried,720,gold,2023-01-10,1,100000,35000,2025-08-15,good
+CCC002,Priya Sharma,priya.s@email.com,9876543251,1985-07-22,Female,1200000,Salaried,780,platinum,2023-02-14,1,200000,85000,2025-08-14,excellent
+CCC003,Rahul Kapoor,rahul.k@email.com,9876543252,1992-11-05,Male,450000,Self-Employed,650,silver,2023-03-20,1,50000,22000,2025-08-10,good
+CCC004,Ananya Gupta,ananya.g@email.com,9876543253,1988-01-30,Female,600000,Salaried,580,prospective,2023-04-05,0,0,0,null,poor
+CCC005,Vikram Singh,vikram.s@email.com,9876543254,1995-09-12,Male,1500000,Salaried,810,platinum,2023-05-18,1,250000,120000,2025-08-12,excellent
+CCC006,Neha Patel,neha.p@email.com,9876543255,1983-04-25,Female,350000,Freelancer,620,silver,2023-06-01,1,40000,18000,2025-08-05,good
+CCC007,Karan Malhotra,karan.m@email.com,9876543256,1991-08-08,Male,950000,Salaried,740,gold,2023-07-14,1,150000,65000,2025-08-13,good
+CCC008,Sneha Reddy,sneha.r@email.com,9876543257,1987-12-19,Female,1800000,Business Owner,850,platinum,2023-08-22,1,400000,195000,2025-08-15,excellent
+CCC009,Aditya Nair,aditya.n@email.com,9876543258,1993-06-03,Male,550000,Salaried,690,silver,2023-09-10,1,80000,32000,2025-08-08,good
+CCC010,Divya Iyer,divya.i@email.com,9876543259,1989-10-17,Female,400000,Self-Employed,600,prospective,2023-10-05,0,0,0,null,poor
+CCC011,Rohit Desai,rohit.d@email.com,9876543260,1994-02-28,Male,1100000,Salaried,760,platinum,2023-11-12,1,200000,95000,2025-08-14,excellent
+CCC012,Meera Joshi,meera.j@email.com,9876543261,1986-05-14,Female,700000,Salaried,710,gold,2023-12-01,1,120000,48000,2025-08-11,good
+CCC013,Siddharth Rao,siddharth.r@email.com,9876543262,1990-09-09,Male,500000,Salaried,670,silver,2024-01-15,1,60000,25000,2025-08-09,good
+CCC014,Tanya Bose,tanya.b@email.com,9876543263,1984-11-25,Female,2000000,Salaried,820,platinum,2024-02-20,1,350000,165000,2025-08-15,excellent
+CCC015,Nikhil Menon,nikhil.m@email.com,9876543264,1996-03-07,Male,850000,Salaried,730,gold,2024-03-08,1,130000,58000,2025-08-12,good
+CCC016,Pooja Agarwal,pooja.a@email.com,9876543265,1988-07-31,Female,300000,Freelancer,640,silver,2024-04-18,1,35000,15000,2025-08-06,good
+CCC017,Varun Khanna,varun.k@email.com,9876543266,1992-01-13,Male,1350000,Salaried,790,platinum,2024-05-25,1,220000,105000,2025-08-13,excellent
+CCC018,Kavita Mishra,kavita.m@email.com,9876543267,1985-08-20,Female,750000,Salaried,700,gold,2024-06-30,1,110000,45000,2025-08-10,good
+CCC019,Manoj Tiwari,manoj.t@email.com,9876543268,1991-04-02,Male,480000,Self-Employed,610,prospective,2024-07-14,0,0,0,null,poor
+CCC020,Shalini Verma,shalini.v@email.com,9876543269,1987-10-11,Female,1600000,Salaried,800,platinum,2024-08-22,1,280000,135000,2025-08-14,excellent

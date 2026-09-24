@@ -1,0 +1,16 @@
+merchant_id,merchant_name,merchant_category,settlement_type,settlement_cycle,avg_daily_volume,avg_daily_value,chargeback_rate,merchant_status
+DPM001,Flipkart,E-commerce,T+1,1,1200,850000,0.15,active
+DPM002,Swiggy,Food Delivery,T+0,0,800,320000,0.22,active
+DPM003,BigBasket,Grocery,T+1,1,650,280000,0.08,active
+DPM004,MakeMyTrip,Travel,T+1,1,450,1250000,0.35,active
+DPM005,Zomato,Food Delivery,T+0,0,950,410000,0.18,active
+DPM006,Amazon India,E-commerce,T+1,1,1500,1200000,0.12,active
+DPM007,Local Kirana,Retail,T+2,2,200,45000,0.05,active
+DPM008,Apollo Pharmacy,Healthcare,T+1,1,380,190000,0.04,active
+DPM009,BookMyShow,Entertainment,T+0,0,600,350000,0.28,active
+DPM010,Myntra,Fashion,T+1,1,720,580000,0.20,active
+DPM011,Uber India,Transport,T+0,0,1100,220000,0.10,active
+DPM012,Practo,Healthcare,T+1,1,250,125000,0.06,active
+DPM013,Tata Cliq,E-commerce,T+1,1,540,420000,0.14,active
+DPM014,Local Restaurant,Food,T+2,2,180,72000,0.30,active
+DPM015,Paytm Mall,E-commerce,T+1,1,320,180000,0.25,under_review

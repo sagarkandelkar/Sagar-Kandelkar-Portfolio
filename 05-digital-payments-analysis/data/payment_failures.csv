@@ -1,0 +1,11 @@
+failure_id,payment_id,customer_id,payment_method,failure_reason,failure_timestamp,resolved,retry_count
+DPF001,DP007,DPC007,UPI,bank_server_timeout,2025-08-03 08:45:00,yes,2
+DPF002,DP008,DPC008,Card,insufficient_funds,2025-08-03 10:00:00,yes,1
+DPF003,DP014,DPC014,Wallet,wallet_insufficient_balance,2025-08-05 12:45:00,yes,1
+DPF004,DP015,DPC015,UPI,vpa_not_found,2025-08-06 14:00:00,no,0
+DPF005,DP019,DPC004,Card,transaction_declined_by_bank,2025-08-07 13:00:00,yes,2
+DPF006,DP023,DPC008,Card,card_expired,2025-08-09 12:00:00,no,0
+DPF007,DP027,DPC012,Card,3ds_authentication_failed,2025-08-11 13:30:00,yes,1
+DPF008,DP030,DPC015,UPI,network_timeout,2025-08-12 15:00:00,yes,3
+DPF009,DP031,DPC003,UPI,npci_switch_timeout,2025-08-13 10:00:00,no,2
+DPF010,DP032,DPC010,Wallet,wallet_blocked,2025-08-14 11:30:00,no,0
