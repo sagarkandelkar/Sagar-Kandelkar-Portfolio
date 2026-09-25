@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive One-Pager | Customer Onboarding & KYC</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f1f5f9;
+      padding: 2rem;
+      color: #1e293b;
+    }
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+    .header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a5c 100%);
+      color: white;
+      padding: 2rem 2.5rem;
+    }
+    .header h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .header p { font-size: 0.875rem; opacity: 0.8; }
+    .meta {
+      display: flex;
+      gap: 2rem;
+      margin-top: 1rem;
+      font-size: 0.8125rem;
+    }
+    .meta span { display: flex; align-items: center; gap: 0.35rem; }
+    .content { padding: 2rem 2.5rem; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+    .card {
+      background: #f8fafc;
+      border-radius: 8px;
+      padding: 1.25rem;
+      border: 1px solid #e2e8f0;
+    }
+    .card h3 {
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #64748b;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+    .metric-large {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #0f172a;
+    }
+    .metric-label {
+      font-size: 0.8125rem;
+      color: #64748b;
+      margin-top: 0.25rem;
+    }
+    .positive { color: #10b981; }
+    .problem-box {
+      background: #fef2f2;
+      border-left: 4px solid #ef4444;
+      padding: 1rem 1.25rem;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 1rem;
+    }
+    .solution-box {
+      background: #f0fdf4;
+      border-left: 4px solid #10b981;
+      padding: 1rem 1.25rem;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #e2e8f0;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.8125rem; margin-bottom: 1rem; }
+    th { background: #f1f5f9; text-align: left; padding: 0.6rem 0.75rem; font-weight: 600; color: #475569; }
+    td { padding: 0.6rem 0.75rem; border-bottom: 1px solid #e2e8f0; }
+    .tag {
+      display: inline-block;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      background: #dbeafe;
+      color: #1d4ed8;
+    }
+    .footer {
+      background: #f8fafc;
+      padding: 1rem 2.5rem;
+      font-size: 0.75rem;
+      color: #94a3b8;
+      border-top: 1px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+    }
+    @media print {
+      body { background: white; padding: 0; }
+      .page { box-shadow: none; border-radius: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+      <h1>📋 Customer Onboarding & KYC — Executive Summary</h1>
+      <p>Digital transformation of retail banking account opening</p>
+      <div class="meta">
+        <span>📅 Sept 2026</span>
+        <span>👤 Sagar Kandelkar</span>
+        <span>🏷️ Portfolio Case Study</span>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Top Metrics -->
+      <div class="grid-3">
+        <div class="card">
+          <h3>Net Annual Benefit</h3>
+          <div class="metric-large">₹5.3 Cr</div>
+          <div class="metric-label">Payback: 4 months</div>
+        </div>
+        <div class="card">
+          <h3>Process Time Reduction</h3>
+          <div class="metric-large positive">99%</div>
+          <div class="metric-label">5 days → 10 minutes</div>
+        </div>
+        <div class="card">
+          <h3>Customer Drop-off Rate</h3>
+          <div class="metric-large positive">-65%</div>
+          <div class="metric-label">35% → 12%</div>
+        </div>
+      </div>
+
+      <!-- Problem -->
+      <div class="section-title">🎯 The Problem</div>
+      <div class="problem-box">
+        <strong>Current state:</strong> Customers visit branches twice, submit photocopies, wait 5 days for account opening. 35% abandon mid-application. Manual KYC errors trigger compliance issues.
+      </div>
+
+      <!-- Solution -->
+      <div class="section-title">💡 The Solution</div>
+      <div class="solution-box">
+        <strong>Digital-first onboarding:</strong> Video KYC + OCR auto-validation + real-time AML screening. Single mobile app journey. Automated account creation in under 10 minutes.
+      </div>
+
+      <!-- Key Changes -->
+      <div class="section-title">⚡ Key Transformation Levers</div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Before (AS-IS)</h3>
+          <ul style="margin-left: 1.2rem; font-size: 0.8125rem; color: #475569; line-height: 1.7;">
+            <li>Branch visit required for KYC</li>
+            <li>Paper forms, manual data entry</li>
+            <li>Overnight AML batch processing</li>
+            <li>7-day welcome kit delivery</li>
+            <li>₹2,800 cost per onboarding</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>After (TO-BE)</h3>
+          <ul style="margin-left: 1.2rem; font-size: 0.8125rem; color: #475569; line-height: 1.7;">
+            <li>3-minute Video KYC from home</li>
+            <li>OCR auto-extracts document data</li>
+            <li>Real-time sanctions screening</li>
+            <li>Digital welcome kit in 60 seconds</li>
+            <li>₹450 cost per onboarding</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Financial Impact -->
+      <div class="section-title">💰 Financial Impact (Annual)</div>
+      <table>
+        <tr><th>Benefit Category</th><th>Amount</th><th>Assumption</th></tr>
+        <tr><td>Operational Cost Savings</td><td>₹3.5 Cr</td><td>50,000 onboardings/year, ₹2,350 saved each</td></tr>
+        <tr><td>Customer Acquisition Uplift</td><td>₹1.0 Cr</td><td>40% more applications completed</td></tr>
+        <tr><td>Compliance Risk Reduction</td><td>₹0.5 Cr</td><td>Zero manual KYC errors, fewer penalties</td></tr>
+        <tr><td>NPS & Experience Value</td><td>₹0.3 Cr</td><td>+1.5 NPS points = reduced churn</td></tr>
+        <tr style="font-weight: 700; background: #f0fdf4;"><td>Net Annual Benefit</td><td style="color: #10b981;">₹5.3 Cr</td><td>—</td></tr>
+      </table>
+
+      <!-- Timeline & Risk -->
+      <div class="grid-2">
+        <div class="card">
+          <h3>📅 Implementation Timeline</h3>
+          <div style="font-size: 0.8125rem; color: #475569; line-height: 1.7;">
+            <strong>Month 1–2:</strong> Requirements & vendor selection<br>
+            <strong>Month 3–4:</strong> Video KYC integration & OCR<br>
+            <strong>Month 5:</strong> AML real-time API & testing<br>
+            <strong>Month 6:</strong> Pilot launch & rollout
+          </div>
+        </div>
+        <div class="card">
+          <h3>⚠️ Top Risks & Mitigation</h3>
+          <div style="font-size: 0.8125rem; color: #475569; line-height: 1.7;">
+            <strong>Regulatory:</strong> RBI approval for Video KYC — mitigated by using RBI-approved vendors<br>
+            <strong>Tech:</strong> OCR accuracy for Indian documents — mitigated by hybrid human-AI review<br>
+            <strong>Adoption:</strong> Customer comfort with Video KYC — mitigated by branch-assisted fallback
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>Synthetic data | For demonstration only</span>
+      <span>Analyst: Sagar Kandelkar</span>
+    </div>
+  </div>
+</body>
+</html>

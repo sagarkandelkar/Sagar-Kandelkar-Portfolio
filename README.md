@@ -10,31 +10,52 @@ Welcome to my professional portfolio repository showcasing **23 end-to-end BFSI 
 
 ## 🏆 Featured Projects
 
-| # | Project | Domain | Key Focus |
-|---|---------|--------|-----------|
-| 01 | [BFSI Customer Onboarding](01-bfsi-customer-onboarding) | Banking | KYC, Digital Onboarding, TAT Reduction |
-| 02 | [Retail Analytics & Customer Segmentation](02-retail-analytics) | Retail | RFM Analysis, CLV, Churn Prediction |
-| 03 | [Fraud & Risk Analytics](03-fraud-risk-analytics) | Risk | Fraud Detection, Risk Scoring, Rule Engines |
-| 04 | [Forex Card Customer Journey](04-forex-card-journey) | Payments | Journey Mapping, UX Optimization, Revenue |
-| 05 | [Digital Payments Analysis](05-digital-payments-analysis) | Payments | UPI, Wallet Trends, Transaction Analytics |
-| 06 | [Credit Card Customer Journey](06-credit-card-journey) | Lending | Application to Activation, Engagement |
-| 07 | [Loan Origination Process](07-loan-origination-process) | Lending | End-to-End Loan Lifecycle, TAT, Risk |
-| 08 | [Insurance Claims Processing](08-insurance-claims-processing) | Insurance | Claims TAT, Fraud Detection, Settlement |
-| 09 | [Banking Complaint Management](09-banking-complaint-management) | Banking | TAT Reduction, Root Cause, NPS |
-| 10 | [Bank Account Lifecycle](10-bank-account-lifecycle) | Banking | Acquisition, Activation, Retention, Churn |
-| 11 | [Remittance & International Transfers](11-remittance-international-transfers) | Payments | Cross-Border, SWIFT, Compliance, FX |
-| 12 | [Digital Banking Transformation](12-digital-banking-transformation) | Banking | Core Modernization, Cloud, Mobile-First |
-| 13 | [Branch Operations Improvement](13-branch-operations-improvement) | Banking | TAT, Queue Management, Staff Optimization |
-| 14 | [KYC & AML Compliance](14-kyc-aml-compliance) | Compliance | Regulatory, Screening, Risk Rating |
-| 15 | [Fraud Risk Management](15-fraud-risk-management) | Risk | Real-Time Detection, ML Models, Rules |
-| 16 | [Credit Risk & Loan Operations](16-credit-risk-loan-operations) | Lending | PD/LGD, Scorecards, Portfolio Monitoring |
-| 17 | [BFSI Process Improvement](17-bfsi-process-improvement) | Banking | Lean Six Sigma, Automation, RPA |
-| 18 | [BFSI Data Analysis](18-bfsi-data-analysis) | Analytics | SQL, Python, Data Quality, Reporting |
-| 19 | [BFSI Dashboard & KPI](19-bfsi-dashboard-kpi) | Analytics | Executive Dashboards, KPI Frameworks |
-| 20 | [AI in BFSI](20-ai-in-bfsi) | Technology | AI/ML Use Cases, Chatbots, Predictive Models |
-| 21 | [BFSI Customer Experience](21-bfsi-customer-experience) | CX | NPS, Journey Mapping, Voice of Customer |
-| 22 | [BFSI Product Enhancement](22-bfsi-product-enhancement) | Product | Feature Prioritization, Roadmap, GTM |
-| 23 | [Open Banking API](23-open-banking-api) | Technology | API Strategy, PSD2, Partner Ecosystem |
+| # | Project | Domain | Key Focus | Unique Systematic Artifact |
+|---|---------|--------|-----------|---------------------------|
+| 01 | [BFSI Customer Onboarding](01-bfsi-customer-onboarding) | Banking | KYC, Digital Onboarding, TAT Reduction | 📋 Requirements Traceability Matrix (FR→SQL→Test→Data) |
+| 02 | [Retail Analytics & Customer Segmentation](02-retail-analytics) | Retail | RFM Analysis, CLV, Churn Prediction | 📊 Data Quality Assessment Report (6 dimensions) |
+| 03 | [Fraud & Risk Analytics](03-fraud-risk-analytics) | Risk | Fraud Detection, Risk Scoring, Rule Engines | 📈 Process Maturity Assessment (CMMI-inspired) |
+| 04 | [Forex Card Customer Journey](04-forex-card-journey) | Payments | Journey Mapping, UX Optimization, Revenue | ⚙️ Business Rule Engine Spec + 💰 Cost-Benefit Sensitivity Analysis |
+| 05 | [Digital Payments Analysis](05-digital-payments-analysis) | Payments | UPI, Wallet Trends, Transaction Analytics | — |
+| 06 | [Credit Card Customer Journey](06-credit-card-journey) | Lending | Application to Activation, Engagement | — |
+| 07 | [Loan Origination Process](07-loan-origination-process) | Lending | End-to-End Loan Lifecycle, TAT, Risk | 🔄 Change Impact Assessment Matrix (5-dimension scoring) |
+| 08 | [Insurance Claims Processing](08-insurance-claims-processing) | Insurance | Claims TAT, Fraud Detection, Settlement | — |
+| 09 | [Banking Complaint Management](09-banking-complaint-management) | Banking | TAT Reduction, Root Cause, NPS | 🐞 UAT Defect Log (47 defects, severity/priority) + 👥 RACI Matrix |
+| 10 | [Bank Account Lifecycle](10-bank-account-lifecycle) | Banking | Acquisition, Activation, Retention, Churn | — |
+| 11 | [Remittance & International Transfers](11-remittance-international-transfers) | Payments | Cross-Border, SWIFT, Compliance, FX | — |
+| 12 | [Digital Banking Transformation](12-digital-banking-transformation) | Banking | Core Modernization, Cloud, Mobile-First | 😊 Stakeholder Sentiment Tracker (5-phase journey) |
+| 13 | [Branch Operations Improvement](13-branch-operations-improvement) | Banking | TAT, Queue Management, Staff Optimization | — |
+| 14 | [KYC & AML Compliance](14-kyc-aml-compliance) | Compliance | Regulatory, Screening, Risk Rating | — |
+| 15 | [Fraud Risk Management](15-fraud-risk-management) | Risk | Real-Time Detection, ML Models, Rules | — |
+| 16 | [Credit Risk & Loan Operations](16-credit-risk-loan-operations) | Lending | PD/LGD, Scorecards, Portfolio Monitoring | — |
+| 17 | [BFSI Process Improvement](17-bfsi-process-improvement) | Banking | Lean Six Sigma, Automation, RPA | — |
+| 18 | [BFSI Data Analysis](18-bfsi-data-analysis) | Analytics | SQL, Python, Data Quality, Reporting | — |
+| 19 | [BFSI Dashboard & KPI](19-bfsi-dashboard-kpi) | Analytics | Executive Dashboards, KPI Frameworks | — |
+| 20 | [AI in BFSI](20-ai-in-bfsi) | Technology | AI/ML Use Cases, Chatbots, Predictive Models | — |
+| 21 | [BFSI Customer Experience](21-bfsi-customer-experience) | CX | NPS, Journey Mapping, Voice of Customer | 🎤 Voice of Customer Thematic Analysis (synthetic interviews) |
+| 22 | [BFSI Product Enhancement](22-bfsi-product-enhancement) | Product | Feature Prioritization, Roadmap, GTM | — |
+| 23 | [Open Banking API](23-open-banking-api) | Technology | API Strategy, PSD2, Partner Ecosystem | 🔌 API Specification (OpenAPI 3.0, OAuth 2.0, mTLS) |
+
+---
+
+## 🎁 Systematic BA Deliverables (What Makes This Portfolio Different)
+
+Beyond standard BRDs and user stories, this portfolio includes **11 unique systematic artifacts** that mirror real enterprise BA deliverables:
+
+| # | Artifact | Location | What It Demonstrates |
+|---|----------|----------|---------------------|
+| 1 | **Requirements Traceability Matrix** | `01/docs/requirements_traceability_matrix.md` | Bidirectional tracing: Requirement → SQL Query → Test Case → Data Entity → Gap Pain Point |
+| 2 | **Executive One-Pager** | `01/docs/executive_one_pager.md` | Board-ready single-page summary with AS-IS vs TO-BE, financial impact, risks |
+| 3 | **Data Quality Assessment** | `02/docs/data_quality_assessment.md` | 6-dimension data profiling (completeness, accuracy, consistency, timeliness, uniqueness, validity) with SQL |
+| 4 | **Process Maturity Assessment** | `03/docs/process_maturity_assessment.md` | CMMI-inspired 5-level maturity scoring with gap closure roadmap and business case |
+| 5 | **Business Rule Engine Spec** | `04/docs/business_rule_engine_spec.md` | IF/THEN pseudocode, decision trees, field catalogs, error handling matrices |
+| 6 | **Cost-Benefit Sensitivity Analysis** | `04/docs/cost_benefit_sensitivity_analysis.md` | One-way, two-way, Monte Carlo simulation, tornado diagram, break-even analysis |
+| 7 | **Change Impact Assessment** | `07/docs/change_impact_assessment.md` | 5-dimension impact scoring (Process, System, People, Data, Regulatory) with heat map |
+| 8 | **UAT Defect Log** | `09/docs/uat_defect_log.md` | 47 defects with severity/priority/status, trend analysis, sign-off criteria |
+| 9 | **RACI Matrix** | `09/docs/raci_matrix.md` | 25+ activities across 7 roles with workload analysis and health checks |
+| 10 | **Stakeholder Sentiment Tracker** | `12/docs/stakeholder_sentiment_tracker.md` | Emoji-based sentiment journey across 5 project phases with intervention playbook |
+| 11 | **API Specification (OpenAPI 3.0)** | `13/docs/api_specification_openapi.md` | RESTful API design with OAuth 2.0, mTLS, error handling, consent flow |
+| 12 | **Voice of Customer Thematic Analysis** | `21/docs/voice_of_customer_analysis.md` | Synthetic interview transcripts, thematic coding, sentiment distribution, app store mining |
 
 ---
 

@@ -13,6 +13,16 @@ export default function Deliverables() {
     { name: 'Stakeholder Analysis', icon: '👥' },
     { name: 'Risk Register', icon: '⚠️' },
     { name: 'KPI Framework', icon: '📊' },
+    { name: 'Data Quality Report', icon: '📉' },
+    { name: 'Process Maturity Assessment', icon: '📈' },
+    { name: 'Change Impact Matrix', icon: '🔄' },
+    { name: 'UAT Defect Log', icon: '🐞' },
+    { name: 'RACI Matrix', icon: '🎯' },
+    { name: 'Stakeholder Sentiment Tracker', icon: '😊' },
+    { name: 'API Specification', icon: '🔌' },
+    { name: 'Cost-Benefit Analysis', icon: '💰' },
+    { name: 'Executive One-Pager', icon: '🎯' },
+    { name: 'Voice of Customer', icon: '🎤' },
   ];
 
   return (
@@ -21,7 +31,7 @@ export default function Deliverables() {
         <div className="section-header">
           <span className="section-label">Deliverables</span>
           <h2>Business Analysis Artifacts</h2>
-          <p>Building proficiency in producing structured, professional BA deliverables.</p>
+          <p>Building proficiency in producing structured, professional BA deliverables — from standard BRDs to advanced systematic artifacts that mirror real enterprise consulting outputs.</p>
         </div>
 
         <div className="deliv-grid">

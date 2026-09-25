@@ -20,6 +20,7 @@ export default function CaseStudies() {
         { metric: 'Drop-off Rate', before: '35%', after: '12%', improvement: '65% reduction' },
       ],
       color: '#2563eb',
+      artifact: '📋 Requirements Traceability Matrix + 🎯 Executive One-Pager',
     },
     {
       title: 'Forex Card Enhancement & Digital Travel Experience',
@@ -35,6 +36,7 @@ export default function CaseStudies() {
         { metric: 'Customer Satisfaction', before: '3.2 / 5', after: '4.5 / 5', improvement: '+1.3 points' },
       ],
       color: '#2563eb',
+      artifact: '⚙️ Business Rule Engine + 💰 Cost-Benefit Sensitivity Analysis',
     },
     {
       title: 'Digital Payments',
@@ -80,6 +82,7 @@ export default function CaseStudies() {
         { metric: 'Cost Per Loan', before: '₹4,500', after: '₹1,200', improvement: '73% lower' },
       ],
       color: '#f59e0b',
+      artifact: '🔄 Change Impact Assessment Matrix (5-dimension scoring)',
     },
     {
       title: 'Insurance Claims Processing',
@@ -110,6 +113,7 @@ export default function CaseStudies() {
         { metric: 'Data Prep Time', before: '3 days', after: '4 hours', improvement: '94% faster' },
       ],
       color: '#ec4899',
+      artifact: '📉 Data Quality Assessment Report (6 dimensions)',
     },
     {
       title: 'Fraud Detection & Risk Analytics',
@@ -140,6 +144,7 @@ export default function CaseStudies() {
         { metric: 'Repeat Complaints', before: '28%', after: '8%', improvement: '71% reduction' },
       ],
       color: '#64748b',
+      artifact: '🐞 UAT Defect Log (47 defects) + 👥 RACI Matrix',
     },
     {
       title: 'Bank Account Lifecycle',
@@ -185,6 +190,7 @@ export default function CaseStudies() {
         { metric: 'Release Cycle', before: '6 months', after: '2 weeks', improvement: 'Agile delivery' },
       ],
       color: '#64748b',
+      artifact: '😊 Stakeholder Sentiment Tracker (5-phase journey)',
     },
     {
       title: 'Branch Operations Improvement',
@@ -320,6 +326,7 @@ export default function CaseStudies() {
         { metric: 'Digital Adoption', before: '35%', after: '78%', improvement: '2.2x increase' },
       ],
       color: '#64748b',
+      artifact: '🎤 Voice of Customer Thematic Analysis',
     },
     {
       title: 'BFSI Product Enhancement',
@@ -350,6 +357,7 @@ export default function CaseStudies() {
         { metric: 'New Revenue Stream', before: 'None', after: '₹5 Cr/year', improvement: 'New channel' },
       ],
       color: '#64748b',
+      artifact: '🔌 API Specification (OpenAPI 3.0, OAuth 2.0, mTLS)',
     },
   ];
 
@@ -647,6 +655,26 @@ function CaseStudyCard({ cs }) {
 
       {/* Body */}
       <div style={{ padding: '1.25rem 1.5rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
+        {/* Unique Artifact Badge */}
+        {cs.artifact && (
+          <div style={{ marginBottom: '1rem' }}>
+            <span
+              style={{
+                display: 'inline-block',
+                fontSize: '0.75rem',
+                fontWeight: 600,
+                color: 'var(--blue-accent)',
+                background: 'var(--blue-muted)',
+                padding: '0.35rem 0.75rem',
+                borderRadius: '0.375rem',
+                lineHeight: 1.5,
+              }}
+            >
+              ✨ {cs.artifact}
+            </span>
+          </div>
+        )}
+
         {/* Description */}
         <p style={{ fontSize: '0.875rem', color: 'var(--gray-600)', marginBottom: '1.25rem', lineHeight: 1.6 }}>
           {cs.desc}
