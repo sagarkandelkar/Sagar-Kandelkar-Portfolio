@@ -329,15 +329,6 @@ a:hover { color: var(--blue-light); }
   background: var(--gray-50);
 }
 
-/* Visual separation between adjacent sections */
-.section + .section {
-  border-top: 1px solid var(--gray-200);
-}
-
-.section-alt + .section-alt {
-  border-top: 1px solid var(--gray-200);
-}
-
 .section-inner {
   max-width: 1280px;
   margin: 0 auto;

@@ -48,6 +48,12 @@ export default function Contact() {
               Pune, Maharashtra, India
             </span>
           </div>
+
+          <div className="contact-card">
+            <div className="contact-icon">📞</div>
+            <h3>Phone</h3>
+            <a href="tel:+917276693523">+91 72766 93523</a>
+          </div>
         </div>
       </div>
     </section>

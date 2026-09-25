@@ -1,20 +1,25 @@
 export default function Certifications() {
   const certs = [
-    { name: 'Business Analysis Professional', org: 'IIBA / Pending', status: 'In Progress', icon: '📊' },
-    { name: 'Data Analytics with Python', org: 'Coursera / IBM', status: 'Completed', icon: '🐍' },
-    { name: 'SQL for Data Science', org: 'Coursera / UC Davis', status: 'Completed', icon: '🗄️' },
-    { name: 'Agile Scrum Foundation', org: 'EXIN / Scrum.org', status: 'Completed', icon: '🔄' },
+    { name: 'MS-CIT', org: 'Maharashtra State Certificate in Information Technology', status: 'Completed', icon: '💻' },
+    { name: 'Financial Accounting with Tally', org: 'Tally, Tally Prime & GST', status: 'Completed', icon: '📒' },
+    { name: 'IRDAI Certification', org: 'Insurance Regulatory', status: 'In Progress', icon: '🛡️' },
+    { name: 'Business Analysis Fundamentals', org: 'Self-directed learning', status: 'In Progress', icon: '📊' },
     { name: 'Power BI Data Analyst', org: 'Microsoft', status: 'Planned', icon: '📈' },
-    { name: 'BFSI Domain Certification', org: 'NISM / RBI', status: 'Planned', icon: '🏦' },
+    { name: 'BFSI Domain Certification', org: 'NISM / RBI aligned', status: 'Planned', icon: '🏦' },
   ];
 
+  const completedCount = certs.filter((c) => c.status === 'Completed').length;
+
   return (
-    <section id="certifications" className="section section-alt">
+    <section id="certifications" className="section">
       <div className="section-inner">
         <div className="section-header">
           <span className="section-label">Certifications</span>
-          <h2>Certifications & Credentials</h2>
-          <p>Continuous learning in business analysis, data analytics, and BFSI domain expertise.</p>
+          <h2>Certifications & Learning Path</h2>
+          <p>
+            {completedCount} completed and {certs.length - completedCount} in progress. Building credentials
+            alongside hands-on BA skill development.
+          </p>
         </div>
 
         <div
