@@ -13,25 +13,38 @@ export default function About() {
       <div className="section-inner">
         <div className="section-header">
           <span className="section-label">About</span>
-          <h2>Building Solutions at the Intersection of Business and Technology</h2>
+          <h2>Banking Operations Expert Transitioning to Business Analysis</h2>
         </div>
 
         <div className="about-grid">
           <div className="about-text">
             <p>
-              I am developing my career at the intersection of BFSI, business analysis, technology and digital
-              transformation. My focus is on understanding business problems, translating requirements into structured
-              solutions, improving processes and exploring practical applications of data and AI.
+              I bring <strong>4+ years of hands-on experience at HDFC Bank</strong> in retail banking operations — processing
+              transactions, managing fund transfers, handling FX operations, monitoring AML compliance, and resolving
+              customer issues at the branch level. This ground-level banking knowledge is the foundation for my
+              transition into <strong>Business Analysis</strong>.
             </p>
             <p>
-              I am actively building skills in requirements analysis, process mapping, gap analysis, and digital
-              transformation strategy — with a strong interest in how technology can solve real banking and financial
-              services challenges.
+              Having lived the operational pain points — manual reconciliation, lengthy complaint resolution, fragmented
+              customer data, and regulatory compliance overhead — I now approach BA with <strong>practical domain credibility</strong>.
+              I understand what works, what breaks, and what technology can fix in banking.
+            </p>
+            <p>
+              I hold a <strong>B.Sc. in Microbiology</strong> (Pune University, 2018), have published a research paper in an
+              international journal, and won a national conference model presentation prize — demonstrating analytical
+              rigour and structured thinking that translate directly into BA work.
             </p>
             <div className="mt-2">
               <h3 style={{ fontSize: '1.125rem', marginBottom: '1rem', color: 'var(--navy-800)' }}>Career Focus</h3>
               <div className="focus-grid">
-                {['BFSI Consulting', 'Business Analysis', 'Digital Transformation', 'Banking Technology', 'Process Improvement', 'Data & AI'].map((tag) => (
+                {[
+                  'BFSI Business Analysis',
+                  'Banking Operations → Digital',
+                  'Process Improvement',
+                  'Payments & FX',
+                  'AML & Compliance',
+                  'Data Analytics',
+                ].map((tag) => (
                   <span className="focus-tag" key={tag}>{tag}</span>
                 ))}
               </div>

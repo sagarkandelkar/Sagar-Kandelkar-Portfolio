@@ -5,7 +5,7 @@ export default function Contact() {
         <div className="section-header">
           <span className="section-label">Contact</span>
           <h2>Get In Touch</h2>
-          <p>Open to opportunities in BFSI consulting, business analysis, and digital transformation.</p>
+          <p>Open to Business Analyst, Banking Operations Analyst, and BFSI Functional Analyst opportunities.</p>
         </div>
 
         <div className="contact-grid">
@@ -31,6 +31,22 @@ export default function Contact() {
             >
               github.com/sagarkandelkar
             </a>
+          </div>
+
+          <div className="contact-card">
+            <div className="contact-icon">✉️</div>
+            <h3>Email</h3>
+            <a href="mailto:sagarkandelkar389@gmail.com">
+              sagarkandelkar389@gmail.com
+            </a>
+          </div>
+
+          <div className="contact-card">
+            <div className="contact-icon">📍</div>
+            <h3>Location</h3>
+            <span style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--gray-600)' }}>
+              Pune, Maharashtra, India
+            </span>
           </div>
         </div>
       </div>

@@ -1,35 +1,31 @@
 export default function Experience() {
   const roles = [
     {
-      period: '2023 — Present',
-      title: 'Senior Business Analyst',
-      company: 'BFSI Consulting / Freelance',
+      period: 'August 2022 — Present',
+      title: 'Customer Care Executive',
+      company: 'HDFC Bank — Pune, Maharashtra',
       highlights: [
-        'Led 8+ end-to-end process improvement initiatives across banking onboarding, payments, and risk',
-        'Designed AS-IS / TO-BE process flows using BPMN 2.0 for digital transformation programs',
-        'Built SQL-based analytics frameworks reducing reporting turnaround by 86%',
-        'Created BRD/FRD documents, user stories, and UAT test cases for agile delivery',
+        'Handle day-to-day retail banking operations: transactions, fund transfers, fixed deposits, DD/MC issuance, account closures, salary uploads',
+        'Process cash receipts & payments, cash balancing, cash bundling, and teller-box operations per established banking procedures',
+        'Support cheque and clearing operations: cheque processing, returned-cheque records, and cheque-drop-box monitoring',
+        'Handle retail foreign exchange transactions with required documentation and operational procedures',
+        'Monitor high-value and high-frequency transactions; support transaction-related exception handling',
+        'Support AML-related activities and transaction monitoring in accordance with internal banking procedures',
+        'Monitor suspense-account activities and support reconciliation and resolution of operational items',
+        'Handle customer queries, complaints, and transaction-related issues; coordinate with branch stakeholders for resolution',
+        'Generate and follow up on leads for banking products: savings accounts, credit cards, mutual funds, insurance, RBI Bonds, FX products',
       ],
     },
     {
-      period: '2021 — 2023',
-      title: 'Business Analyst',
-      company: 'Financial Services Domain',
+      period: 'Career Development',
+      title: 'Business Analysis & IT-BFSI Upskilling',
+      company: 'Self-Directed Learning',
       highlights: [
-        'Managed stakeholder workshops for requirements elicitation and gap analysis',
-        'Developed KPI dashboards and executive reporting for operational metrics',
-        'Collaborated with engineering on API specifications for open banking integrations',
-        'Conducted UAT and regression testing for core banking module upgrades',
-      ],
-    },
-    {
-      period: '2019 — 2021',
-      title: 'Associate Analyst / Operations',
-      company: 'Banking & Financial Services',
-      highlights: [
-        'Supported digital banking transformation with process documentation and data analysis',
-        'Performed ETL validation and data quality checks for regulatory reporting',
-        'Assisted in customer journey mapping and UX improvement for mobile banking app',
+        'Building BA capabilities: requirements gathering, process mapping, BRD/FRD documentation, user stories, acceptance criteria',
+        'Learning process analysis, gap analysis, AS-IS / TO-BE mapping, and UAT concepts',
+        'Exploring banking technology, digital banking, FinTech concepts, and digital transformation in BFSI',
+        'Building SQL analytics skills and data visualization competencies for BA deliverables',
+        'Creating 23 end-to-end portfolio case studies with synthetic data to demonstrate structured BA thinking',
       ],
     },
   ];
@@ -40,7 +36,7 @@ export default function Experience() {
         <div className="section-header">
           <span className="section-label">Experience</span>
           <h2>Professional Journey</h2>
-          <p>A progressive career in BFSI business analysis, process optimization, and digital transformation.</p>
+          <p>4+ years in retail banking operations at HDFC Bank, now transitioning into BFSI Business Analysis.</p>
         </div>
 
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
@@ -55,7 +51,6 @@ export default function Experience() {
                 marginLeft: '0.5rem',
               }}
             >
-              {/* Timeline dot */}
               <div
                 style={{
                   position: 'absolute',
@@ -64,9 +59,9 @@ export default function Experience() {
                   width: '16px',
                   height: '16px',
                   borderRadius: '50%',
-                  background: 'var(--blue-accent)',
+                  background: i === 0 ? 'var(--blue-accent)' : 'var(--success)',
                   border: '3px solid var(--white)',
-                  boxShadow: '0 0 0 2px var(--blue-accent)',
+                  boxShadow: `0 0 0 2px ${i === 0 ? 'var(--blue-accent)' : 'var(--success)'}`,
                 }}
               />
 
@@ -109,8 +104,8 @@ export default function Experience() {
                     style={{
                       fontSize: '0.75rem',
                       fontWeight: 700,
-                      color: 'var(--blue-accent)',
-                      background: 'var(--blue-muted)',
+                      color: i === 0 ? 'var(--blue-accent)' : 'var(--success)',
+                      background: i === 0 ? 'var(--blue-muted)' : '#d1fae5',
                       padding: '0.25rem 0.75rem',
                       borderRadius: '9999px',
                       whiteSpace: 'nowrap',
