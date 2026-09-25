@@ -1,0 +1,151 @@
+# ============================================================
+# GitHub Actions Workflow: React + Vite Portfolio Deployment
+# ============================================================
+# This workflow builds and deploys a React + Vite application
+# from the portfolio-website/ directory to GitHub Pages.
+#
+# IMPORTANT PREREQUISITES:
+# 1. portfolio-website/ must exist and contain a Vite project
+#    with package.json and vite.config.js
+# 2. vite.config.js MUST include: base: '/Sagar-Kandelkar-Portfolio/'
+#    Example:
+#      export default defineConfig({
+#        base: '/Sagar-Kandelkar-Portfolio/',
+#        plugins: [react()],
+#      })
+# 3. In repo Settings > Pages > Source must be set to "GitHub Actions"
+# ============================================================
+
+name: Deploy React + Vite Portfolio to Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'portfolio-website/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # --------------------------------------------------------
+      # 1. Checkout repository
+      # --------------------------------------------------------
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # --------------------------------------------------------
+      # 2. Setup Node.js
+      # --------------------------------------------------------
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: portfolio-website/package-lock.json
+
+      # --------------------------------------------------------
+      # 3. Verify portfolio-website directory exists
+      # --------------------------------------------------------
+      - name: Check portfolio-website exists
+        run: |
+          if [ ! -d "portfolio-website" ]; then
+            echo "❌ ERROR: portfolio-website/ directory not found!"
+            echo "Please create your React + Vite project in portfolio-website/"
+            exit 1
+          fi
+          echo "✅ portfolio-website/ found"
+
+      # --------------------------------------------------------
+      # 4. Install dependencies inside portfolio-website
+      # --------------------------------------------------------
+      - name: Install dependencies
+        working-directory: ./portfolio-website
+        run: |
+          if [ ! -f "package.json" ]; then
+            echo "❌ ERROR: package.json not found in portfolio-website/"
+            exit 1
+          fi
+          npm ci
+
+      # --------------------------------------------------------
+      # 5. Verify Vite base path configuration
+      # --------------------------------------------------------
+      - name: Verify Vite base path
+        working-directory: ./portfolio-website
+        run: |
+          if grep -q "base.*Sagar-Kandelkar-Portfolio" vite.config.* 2>/dev/null; then
+            echo "✅ Vite base path configured correctly"
+          else
+            echo "⚠️  WARNING: Vite base path may not be set."
+            echo "   Add this to vite.config.js: base: '/Sagar-Kandelkar-Portfolio/',"
+          fi
+
+      # --------------------------------------------------------
+      # 6. Build production bundle
+      # --------------------------------------------------------
+      - name: Build
+        working-directory: ./portfolio-website
+        run: npm run build
+
+      # --------------------------------------------------------
+      # 7. Verify dist/ was created
+      # --------------------------------------------------------
+      - name: Verify dist output
+        working-directory: ./portfolio-website
+        run: |
+          if [ ! -d "dist" ]; then
+            echo "❌ ERROR: dist/ directory not created by build"
+            exit 1
+          fi
+          echo "✅ dist/ created with $(find dist -type f | wc -l) files"
+          ls -la dist/
+
+      # --------------------------------------------------------
+      # 8. Check asset paths in index.html
+      # --------------------------------------------------------
+      - name: Verify asset paths
+        working-directory: ./portfolio-website
+        run: |
+          if grep -q 'src="/' dist/index.html 2>/dev/null || grep -q 'href="/' dist/index.html 2>/dev/null; then
+            echo "⚠️  WARNING: Absolute paths found in dist/index.html"
+            echo "   Ensure vite.config.js has: base: '/Sagar-Kandelkar-Portfolio/'"
+          else
+            echo "✅ Asset paths look correct"
+          fi
+
+      # --------------------------------------------------------
+      # 9. Upload dist/ as Pages artifact
+      # --------------------------------------------------------
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./portfolio-website/dist
+          name: github-pages
+
+  # --------------------------------------------------------
+  # 10. Deploy to GitHub Pages
+  # --------------------------------------------------------
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages
