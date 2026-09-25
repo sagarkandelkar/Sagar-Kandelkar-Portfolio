@@ -34,9 +34,7 @@ function App() {
       <ScrollReveal>
         <Experience />
       </ScrollReveal>
-      <ScrollReveal>
-        <CaseStudies />
-      </ScrollReveal>
+      <CaseStudies />
       <ScrollReveal>
         <Projects />
       </ScrollReveal>
