@@ -13,12 +13,12 @@ export default function Hero() {
         >
           <div style={{ flex: 1, minWidth: '280px' }}>
             <span className="hero-label">Sagar Namdev Kandelkar</span>
-            <h1>From Banking Operations to Business Analysis</h1>
+            <h1>BFSI Domain Expert | IT + Technology | Aspiring Consultant</h1>
             <p className="hero-subtitle">
-              4+ Years at HDFC Bank | BFSI Operations | Payments | AML & Compliance | Transitioning to Business Analysis
+              4+ Years at HDFC Bank | BFSI Operations | Payments | AML & Compliance | Transitioning to IT BFSI Consultant
             </p>
             <p className="hero-text">
-              Deep hands-on experience in retail banking transactions, fund transfers, FX operations, reconciliation, and customer service. Now building structured BA capabilities to bridge operational expertise with technology-driven transformation.
+              Deep hands-on experience in retail banking transactions, fund transfers, FX operations, reconciliation, and customer service. Now building structured BA and IT capabilities to bridge operational expertise with technology-driven transformation as an IT BFSI Consultant.
             </p>
           </div>
 
@@ -68,7 +68,7 @@ export default function Hero() {
         </div>
 
         <div className="hero-indicators">
-          {['Banking Operations', 'Process Improvement', 'Business Analysis', 'Data & Compliance'].map((item) => (
+          {['BFSI Domain', 'Process Improvement', 'IT Consulting', 'Data & Compliance'].map((item) => (
             <div className="hero-indicator" key={item}>
               <span className="indicator-dot"></span>
               {item}

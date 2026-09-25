@@ -13,7 +13,7 @@ export default function About() {
       <div className="section-inner">
         <div className="section-header">
           <span className="section-label">About</span>
-          <h2>Banking Operations Expert Transitioning to Business Analysis</h2>
+          <h2>Banking Operations Expert Transitioning to IT BFSI Consultant</h2>
         </div>
 
         <div className="about-grid">
@@ -22,28 +22,29 @@ export default function About() {
               I bring <strong>4+ years of hands-on experience at HDFC Bank</strong> in retail banking operations — processing
               transactions, managing fund transfers, handling FX operations, monitoring AML compliance, and resolving
               customer issues at the branch level. This ground-level banking knowledge is the foundation for my
-              transition into <strong>Business Analysis</strong>.
+              transition into <strong>IT BFSI Consulting</strong>.
             </p>
             <p>
               Having lived the operational pain points — manual reconciliation, lengthy complaint resolution, fragmented
-              customer data, and regulatory compliance overhead — I now approach BA with <strong>practical domain credibility</strong>.
-              I understand what works, what breaks, and what technology can fix in banking.
+              customer data, and regulatory compliance overhead — I now approach technology consulting with <strong>practical domain credibility</strong>.
+              I understand what works, what breaks, and what technology can fix in banking. My goal is to bridge BFSI domain expertise
+              with IT and technology skills to deliver business value as a consultant.
             </p>
             <p>
               I hold a <strong>B.Sc. in Microbiology</strong> (Pune University, 2018), have published a research paper in an
               international journal, and won a national conference model presentation prize — demonstrating analytical
-              rigour and structured thinking that translate directly into BA work.
+              rigour and structured thinking that translate directly into consulting work.
             </p>
             <div className="mt-2">
               <h3 style={{ fontSize: '1.125rem', marginBottom: '1rem', color: 'var(--navy-800)' }}>Career Focus</h3>
               <div className="focus-grid">
                 {[
+                  'IT BFSI Consulting',
                   'BFSI Business Analysis',
-                  'Banking Operations → Digital',
+                  'Digital Transformation',
+                  'Banking Technology',
                   'Process Improvement',
-                  'Payments & FX',
-                  'AML & Compliance',
-                  'Data Analytics',
+                  'Data & Analytics',
                 ].map((tag) => (
                   <span className="focus-tag" key={tag}>{tag}</span>
                 ))}

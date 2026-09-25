@@ -18,14 +18,14 @@ export default function Experience() {
     },
     {
       period: 'Career Development',
-      title: 'Business Analysis & IT-BFSI Upskilling',
+      title: 'IT-BFSI Consulting & Business Analysis Upskilling',
       company: 'Self-Directed Learning',
       highlights: [
-        'Building BA capabilities: requirements gathering, process mapping, BRD/FRD documentation, user stories, acceptance criteria',
-        'Learning process analysis, gap analysis, AS-IS / TO-BE mapping, and UAT concepts',
+        'Building IT-BFSI consulting capabilities: requirements gathering, process mapping, BRD/FRD documentation, user stories, acceptance criteria',
+        'Learning process analysis, gap analysis, AS-IS / TO-BE mapping, and UAT concepts for digital transformation projects',
         'Exploring banking technology, digital banking, FinTech concepts, and digital transformation in BFSI',
-        'Building SQL analytics skills and data visualization competencies for BA deliverables',
-        'Creating 23 end-to-end portfolio case studies with synthetic data to demonstrate structured BA thinking',
+        'Building SQL analytics skills and data visualization competencies for consultant deliverables',
+        'Creating 23 end-to-end portfolio case studies with synthetic data to demonstrate structured IT-BFSI consulting thinking',
       ],
     },
   ];
@@ -36,7 +36,7 @@ export default function Experience() {
         <div className="section-header">
           <span className="section-label">Experience</span>
           <h2>Professional Journey</h2>
-          <p>4+ years in retail banking operations at HDFC Bank, now transitioning into BFSI Business Analysis.</p>
+          <p>4+ years in retail banking operations at HDFC Bank, now transitioning into IT BFSI Consulting.</p>
         </div>
 
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>

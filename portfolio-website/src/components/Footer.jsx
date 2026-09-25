@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-name">Sagar Kandelkar</div>
         <div className="footer-tagline">
-          BFSI Operations &rarr; Business Analysis | HDFC Bank Experience | Pune, India
+          BFSI Domain Expert | IT + Technology | Aspiring IT BFSI Consultant | Pune, India
         </div>
 
         <div className="footer-links">

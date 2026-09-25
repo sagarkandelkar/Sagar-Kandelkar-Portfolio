@@ -51,6 +51,17 @@ export default function Skills() {
       ],
     },
     {
+      title: 'Consulting & IT',
+      skills: [
+        'IT Consulting',
+        'Digital Transformation',
+        'FinTech Concepts',
+        'Stakeholder Management',
+        'Solution Design',
+        'Change Management',
+      ],
+    },
+    {
       title: 'Tools & Platforms',
       skills: [
         'Tally / Tally Prime',
@@ -62,18 +73,6 @@ export default function Skills() {
         'Markdown',
       ],
     },
-    {
-      title: 'Soft Skills',
-      skills: [
-        'Customer Service',
-        'Stakeholder Coordination',
-        'Complaint Resolution',
-        'Problem Solving',
-        'Cross-functional Collaboration',
-        'Documentation',
-        'Research & Analysis',
-      ],
-    },
   ];
 
   return (
@@ -83,7 +82,7 @@ export default function Skills() {
           <span className="section-label">Skills</span>
           <h2>Skills & Tools</h2>
           <p>
-            Deep banking operations expertise combined with emerging business analysis, data, and technology
+            Deep BFSI domain expertise combined with emerging IT consulting, business analysis, data, and technology
             capabilities.
           </p>
         </div>

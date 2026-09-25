@@ -5,7 +5,7 @@ export default function Contact() {
         <div className="section-header">
           <span className="section-label">Contact</span>
           <h2>Get In Touch</h2>
-          <p>Open to Business Analyst, Banking Operations Analyst, and BFSI Functional Analyst opportunities.</p>
+          <p>Open to IT BFSI Consultant, BFSI Business Analyst, Digital Banking Consultant, and BFSI Functional Analyst opportunities.</p>
         </div>
 
         <div className="contact-grid">
