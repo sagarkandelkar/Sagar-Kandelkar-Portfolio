@@ -1,0 +1,16 @@
+metric_id,transformation_area,as_is_metric,to_be_metric,target_date
+T001,Mobile App Adoption,34%,72%,2026-06-30
+T002,Online Transaction Share,41%,78%,2026-06-30
+T003,Branch Footfall (monthly),125000,45000,2026-06-30
+T004,ATM Usage (monthly),98000,52000,2026-06-30
+T005,Video Banking Sessions,0,35000,2026-06-30
+T006,Chatbot Resolution Rate,0%,68%,2026-06-30
+T007,Account Opening Time (min),45,8,2026-06-30
+T008,Customer Digital NPS,23,58,2026-06-30
+T009,Paperless Statement Adoption,12%,85%,2026-06-30
+T010,Biometric Login Users,0,420000,2026-06-30
+T011,Voice Banking Users,0,95000,2026-06-30
+T012,Self-Service Transactions,18%,65%,2026-06-30
+T013,Digital Savings Goal Users,0,180000,2026-06-30
+T014,Instant Payment Adoption,8%,55%,2026-06-30
+T015,Open Banking API Calls,0,2500000,2026-06-30

@@ -1,0 +1,21 @@
+complaint_id,customer_id,category,sub_category,channel,date_logged,priority,status,assigned_to,sla_days,date_resolved,resolution_type,customer_rating,repeat_complaint
+COMP001,CUST001,Account Issue,Balance Discrepancy,Branch,2026-01-05,High,Resolved,Officer_A,5,2026-01-08,Refund,4,No
+COMP002,CUST002,Card Issue,Unauthorized Transaction,App,2026-01-06,Critical,Resolved,Officer_B,2,2026-01-07,Investigation,5,No
+COMP003,CUST003,Loan Issue,EMI Deduction Error,Phone,2026-01-07,Medium,Pending,Officer_A,7,,,,
+COMP004,CUST004,Digital Banking,App Login Failure,Email,2026-01-08,High,Resolved,Officer_C,5,2026-01-10,Technical Fix,3,Yes
+COMP005,CUST005,Forex,Rate Discrepancy,Branch,2026-01-09,Medium,Resolved,Officer_A,7,2026-01-12,Rate Adjustment,4,No
+COMP006,CUST006,Account Issue,Statement Error,App,2026-01-10,Low,Resolved,Officer_D,10,2026-01-14,Correction,4,No
+COMP007,CUST007,Card Issue,Lost Card Replacement,Phone,2026-01-11,High,Resolved,Officer_B,5,2026-01-13,Replacement,5,No
+COMP008,CUST008,Loan Issue,Prepayment Charges,Branch,2026-01-12,Medium,Resolved,Officer_A,7,2026-01-18,Waiver,2,Yes
+COMP009,CUST009,Digital Banking,UPI Failure,Social,2026-01-13,High,Pending,Officer_C,5,,,,
+COMP010,CUST010,Account Issue,Account Closure Delay,Email,2026-01-14,Medium,Resolved,Officer_D,7,2026-01-20,Expedited,3,No
+COMP011,CUST011,Card Issue,Reward Points Missing,App,2026-01-15,Low,Resolved,Officer_B,10,2026-01-17,Points Credit,4,No
+COMP012,CUST012,Forex,LRS Limit Query,Phone,2026-01-16,Low,Resolved,Officer_A,10,2026-01-18,Clarification,5,No
+COMP013,CUST013,Loan Issue,Interest Rate Change,Branch,2026-01-17,High,Pending,Officer_A,5,,,,
+COMP014,CUST014,Digital Banking,Fund Transfer Delay,App,2026-01-18,High,Resolved,Officer_C,5,2026-01-19,Reversal,4,No
+COMP015,CUST015,Account Issue,Minimum Balance Charge,Email,2026-01-19,Medium,Resolved,Officer_D,7,2026-01-22,Waiver,3,Yes
+COMP016,CUST016,Card Issue,Credit Limit Reduction,Phone,2026-01-20,High,Resolved,Officer_B,5,2026-01-23,Restoration,2,No
+COMP017,CUST017,Digital Banking,Statement Download Issue,App,2026-01-21,Low,Resolved,Officer_C,10,2026-01-24,Technical Fix,4,No
+COMP018,CUST018,Loan Issue,NOC Delay,Branch,2026-01-22,Medium,Resolved,Officer_A,7,2026-01-28,Expedited,3,No
+COMP019,CUST019,Forex,Card Block Issue,Phone,2026-01-23,Critical,Resolved,Officer_B,2,2026-01-23,Unblock,5,No
+COMP020,CUST020,Account Issue,Joint Account Update,Email,2026-01-24,Medium,Pending,Officer_D,7,,,,

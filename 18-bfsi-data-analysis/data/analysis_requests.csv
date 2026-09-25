@@ -1,0 +1,21 @@
+request_id,request_type,business_unit,dataset_size_mb,tools_used,turnaround_days,business_value_inr,status
+REQ001,Ad-hoc,Retail,45,SQL + Python,3,85000,Completed
+REQ002,Scheduled,Risk,120,Python + Tableau,2,120000,Completed
+REQ003,Predictive,Marketing,200,Python + R,5,180000,Completed
+REQ004,Ad-hoc,Operations,30,SQL + Excel,1,45000,Completed
+REQ005,Scheduled,Retail,80,Python + Power BI,2,95000,Completed
+REQ006,Ad-hoc,Corporate,55,SQL + Python,2,75000,Completed
+REQ007,Predictive,Risk,150,Python + R,4,150000,Completed
+REQ008,Ad-hoc,Marketing,25,SQL + Excel,1,35000,Completed
+REQ009,Scheduled,Operations,90,Python + Tableau,2,110000,Completed
+REQ010,Ad-hoc,Retail,40,SQL + Python,2,65000,Completed
+REQ011,Predictive,Corporate,180,Python + R,6,200000,In Progress
+REQ012,Scheduled,Marketing,60,Python + Power BI,2,85000,Completed
+REQ013,Ad-hoc,Risk,35,SQL + Excel,1,55000,Completed
+REQ014,Ad-hoc,Operations,50,SQL + Python,2,70000,Completed
+REQ015,Scheduled,Retail,100,Python + Tableau,2,130000,Completed
+REQ016,Predictive,Marketing,220,Python + R,5,175000,Completed
+REQ017,Ad-hoc,Corporate,65,SQL + Python,3,90000,Completed
+REQ018,Scheduled,Risk,110,Python + Power BI,2,105000,Completed
+REQ019,Ad-hoc,Operations,28,SQL + Excel,1,40000,Completed
+REQ020,Predictive,Retail,160,Python + R,4,145000,In Progress

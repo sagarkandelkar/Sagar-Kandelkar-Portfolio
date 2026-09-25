@@ -1,0 +1,26 @@
+api_id,api_name,endpoint,method,category,avg_latency_ms,call_volume_monthly,partner_count,status
+API001,Account Balance,/api/v1/accounts/balance,GET,Accounts,45,2500000,12,Active
+API002,Transaction History,/api/v1/accounts/transactions,GET,Accounts,120,1800000,8,Active
+API003,Fund Transfer,/api/v1/payments/transfer,POST,Payments,85,950000,15,Active
+API004,Beneficiary Add,/api/v1/payments/beneficiaries,POST,Payments,60,320000,10,Active
+API005,KYC Verification,/api/v1/customers/kyc,GET,KYC,150,45000,5,Active
+API006,Customer Profile,/api/v1/customers/profile,GET,Accounts,55,1200000,6,Active
+API007,Statement Download,/api/v1/accounts/statements,GET,Accounts,200,680000,4,Active
+API008,Card Block,/api/v1/cards/block,PUT,Cards,35,8500,3,Active
+API009,Forex Rates,/api/v1/fx/rates,GET,Forex,25,420000,7,Active
+API010,Forex Load,/api/v1/fx/load,POST,Forex,90,125000,5,Active
+API011,Loan Eligibility,/api/v1/loans/eligibility,GET,Lending,110,180000,4,Active
+API012,Loan Application,/api/v1/loans/apply,POST,Lending,140,95000,3,Active
+API013,Insurance Quote,/api/v1/insurance/quote,GET,Insurance,75,220000,2,Active
+API014,Insurance Claim,/api/v1/insurance/claims,POST,Insurance,160,45000,2,Active
+API015,Investment Portfolio,/api/v1/investments/portfolio,GET,Wealth,95,320000,3,Active
+API016,SIP Setup,/api/v1/investments/sip,POST,Wealth,130,85000,2,Active
+API017,Credit Score,/api/v1/credit/score,GET,Credit,80,150000,4,Active
+API018,Branch Locator,/api/v1/branches/nearby,GET,Branch,30,280000,1,Active
+API019,Complaint Status,/api/v1/complaints/status,GET,Support,65,12000,1,Active
+API020,Account Opening,/api/v1/accounts/open,POST,Onboarding,180,95000,3,Active
+API021,Consent Grant,/api/v1/consent/grant,POST,Consent,40,85000,8,Active
+API022,Consent Revoke,/api/v1/consent/revoke,PUT,Consent,35,12000,8,Active
+API023,Payment Initiation,/api/v1/payments/initiate,POST,Payments,100,750000,12,Active
+API024,Standing Instruction,/api/v1/payments/si,POST,Payments,115,180000,5,Active
+API025,FD Booking,/api/v1/deposits/fd,POST,Deposits,125,95000,3,Active

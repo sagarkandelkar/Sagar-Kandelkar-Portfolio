@@ -1,420 +1,150 @@
-# Sagar Kandelkar - Portfolio
+# Sagar Kandelkar — BFSI Business Analysis Portfolio
 
-Welcome to my professional portfolio repository. This repository showcases my projects, case studies, and technical work across various domains including BFSI, data engineering, and analytics.
+[![Deploy to GitHub Pages](https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/actions/workflows/deploy.yml)
 
-## 📁 Repository Structure
+> **Senior Business Analyst | BFSI Domain | Process Optimization | Digital Transformation**
+
+Welcome to my professional portfolio repository showcasing **23 end-to-end BFSI case studies** across Banking, Payments, Lending, Insurance, Retail Analytics, and Risk Management. Each project includes complete deliverables: Business Requirements, Process Flows, Data Models, SQL Analytics, Dashboards, and Transformation Roadmaps.
+
+---
+
+## 🏆 Featured Projects
+
+| # | Project | Domain | Key Focus |
+|---|---------|--------|-----------|
+| 01 | [BFSI Customer Onboarding](01-bfsi-customer-onboarding) | Banking | KYC, Digital Onboarding, TAT Reduction |
+| 02 | [Retail Analytics & Customer Segmentation](02-retail-analytics) | Retail | RFM Analysis, CLV, Churn Prediction |
+| 03 | [Fraud & Risk Analytics](03-fraud-risk-analytics) | Risk | Fraud Detection, Risk Scoring, Rule Engines |
+| 04 | [Forex Card Customer Journey](04-forex-card-journey) | Payments | Journey Mapping, UX Optimization, Revenue |
+| 05 | [Digital Payments Analysis](05-digital-payments-analysis) | Payments | UPI, Wallet Trends, Transaction Analytics |
+| 06 | [Credit Card Customer Journey](06-credit-card-journey) | Lending | Application to Activation, Engagement |
+| 07 | [Loan Origination Process](07-loan-origination-process) | Lending | End-to-End Loan Lifecycle, TAT, Risk |
+| 08 | [Insurance Claims Processing](08-insurance-claims-processing) | Insurance | Claims TAT, Fraud Detection, Settlement |
+| 09 | [Banking Complaint Management](09-banking-complaint-management) | Banking | TAT Reduction, Root Cause, NPS |
+| 10 | [Bank Account Lifecycle](10-bank-account-lifecycle) | Banking | Acquisition, Activation, Retention, Churn |
+| 11 | [Remittance & International Transfers](11-remittance-international-transfers) | Payments | Cross-Border, SWIFT, Compliance, FX |
+| 12 | [Digital Banking Transformation](12-digital-banking-transformation) | Banking | Core Modernization, Cloud, Mobile-First |
+| 13 | [Branch Operations Improvement](13-branch-operations-improvement) | Banking | TAT, Queue Management, Staff Optimization |
+| 14 | [KYC & AML Compliance](14-kyc-aml-compliance) | Compliance | Regulatory, Screening, Risk Rating |
+| 15 | [Fraud Risk Management](15-fraud-risk-management) | Risk | Real-Time Detection, ML Models, Rules |
+| 16 | [Credit Risk & Loan Operations](16-credit-risk-loan-operations) | Lending | PD/LGD, Scorecards, Portfolio Monitoring |
+| 17 | [BFSI Process Improvement](17-bfsi-process-improvement) | Banking | Lean Six Sigma, Automation, RPA |
+| 18 | [BFSI Data Analysis](18-bfsi-data-analysis) | Analytics | SQL, Python, Data Quality, Reporting |
+| 19 | [BFSI Dashboard & KPI](19-bfsi-dashboard-kpi) | Analytics | Executive Dashboards, KPI Frameworks |
+| 20 | [AI in BFSI](20-ai-in-bfsi) | Technology | AI/ML Use Cases, Chatbots, Predictive Models |
+| 21 | [BFSI Customer Experience](21-bfsi-customer-experience) | CX | NPS, Journey Mapping, Voice of Customer |
+| 22 | [BFSI Product Enhancement](22-bfsi-product-enhancement) | Product | Feature Prioritization, Roadmap, GTM |
+| 23 | [Open Banking API](23-open-banking-api) | Technology | API Strategy, PSD2, Partner Ecosystem |
+
+---
+
+## 📂 Standard Project Structure
+
+Every case study follows a consistent, professional folder structure:
 
 ```
-Sagar-Kandelkar-Portfolio/
-├── 01-bfsi-customer-onboarding/    # BFSI Customer Onboarding Project
-│   ├── analysis/                    # Python EDA notebooks
-│   ├── dashboard/                   # Interactive HTML dashboards & presentations
-│   ├── data/                        # Sample datasets, dictionaries, and SQL schema
-│   ├── diagrams/                    # Architecture, ERD, and process flow diagrams
-│   └── docs/                        # Project documentation and case studies
-├── 02-retail-analytics/            # Retail Analytics — Customer Segmentation & Sales Optimization
-│   ├── analysis/                    # Python EDA notebooks
-│   ├── dashboard/                   # Interactive HTML dashboards & presentations
-│   ├── data/                        # Sample datasets, dictionaries, and SQL schema
-│   └── docs/                        # Project documentation and requirements
-├── 03-fraud-risk-analytics/        # Fraud Detection & Risk Analytics in BFSI
-│   ├── analysis/                    # Python EDA notebooks
-│   ├── dashboard/                   # Interactive HTML dashboards & presentations
-│   ├── data/                        # Sample datasets, dictionaries, and SQL schema
-│   └── docs/                        # Project documentation and requirements
-├── 04-forex-card-enhancement/        # Forex Card Lifecycle & Digital Enhancement
-│   ├── analysis/                    # Python EDA notebooks
-│   ├── dashboard/                   # Interactive HTML dashboards & presentations
-│   ├── data/                        # Sample datasets, dictionaries, and SQL schema
-│   ├── diagrams/                    # Process flows and journey maps
-│   └── docs/                        # Project documentation and requirements
-├── 05-digital-payments-analysis/     # Digital Payments Process Analysis
-│   ├── analysis/                    # Python EDA notebooks
-│   ├── dashboard/                   # Interactive HTML dashboards & presentations
-│   ├── data/                        # Sample datasets, dictionaries, and SQL schema
-│   ├── diagrams/                    # Payment flow diagrams
-│   └── docs/                        # Project documentation and requirements
-├── 06-credit-card-journey/           # Credit Card Customer Journey Mapping
-│   ├── analysis/                    # Python EDA notebooks
-│   ├── dashboard/                   # Interactive HTML dashboards & presentations
-│   ├── data/                        # Sample datasets, dictionaries, and SQL schema
-│   ├── diagrams/                    # Customer journey maps
-│   └── docs/                        # Project documentation and requirements
-├── 07-loan-origination-process/      # Loan Origination Process Analysis
-│   ├── analysis/                    # Python EDA notebooks
-│   ├── dashboard/                   # Interactive HTML dashboards & presentations
-│   ├── data/                        # Sample datasets, dictionaries, and SQL schema
-│   └── docs/                        # Project documentation and requirements
-├── 08-insurance-claims-processing/   # Insurance Claims Processing Analysis
-│   ├── analysis/                    # Python EDA notebooks
-│   ├── dashboard/                   # Interactive HTML dashboards & presentations
-│   ├── data/                        # Sample datasets, dictionaries, and SQL schema
-│   └── docs/                        # Project documentation and requirements
-├── .github/workflows/               # CI/CD workflows
-│   ├── deploy.yml                   # React + Vite portfolio deployment
-│   └── pages.yml                    # Static site deployment (manual)
-└── README.md                        # This file
-```
-
-## 🚀 Projects
-
-### 1. BFSI Customer Onboarding
-A comprehensive project focused on streamlining and optimizing the customer onboarding process in the Banking, Financial Services, and Insurance sector.
-
-**Key Areas:**
-- Customer data management and validation
-- KYC (Know Your Customer) process optimization
-- Workflow automation
-- Compliance and regulatory requirements
-
-**Project Deliverables:**
-
-| Category | Files |
-|----------|-------|
-| **Data** | `customer_applications.csv` — Sample dataset with 15 applications across channels and statuses |
-| **Data Dictionary** | `data_dictionary.md` — Field definitions and data quality notes |
-| **SQL Schema** | `schema.sql` — PostgreSQL DDL with tables, views, indexes, and sample data |
-| **EDA Notebook** | `analysis/eda.ipynb` — Python Jupyter notebook with full exploratory data analysis |
-| **BI Dashboard** | `dashboard/powerbi-style-dashboard.html` — Power BI-style interactive HTML dashboard |
-| **Documentation** | `docs/README.md` — Project overview and objectives |
-| **Requirements** | `requirements.md` — Functional and non-functional requirements |
-| **Gap Analysis** | `gap_analysis.md` — AS-IS vs TO-BE assessment with metrics |
-| **Roadmap** | `implementation_roadmap.md` — 4-phase rollout plan with timelines |
-| **Process Flow** | `to_be_process_flow.drawio` — Swimlane diagram |
-| **Data Model** | `entity_relationship_diagram.drawio` — ERD |
-| **Demo Dashboard** | `demo-dashboard.html` — Interactive HTML dashboard with charts |
-| **Presentation** | `presentation.html` — Scrollable slide deck for interviews |
-
-**Live Demo:** [Interactive Dashboard](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/01-bfsi-customer-onboarding/demo-dashboard.html)
-
----
-
-### 2. Retail Analytics — Customer Segmentation & Sales Optimization
-A data-driven retail analytics project demonstrating customer segmentation (RFM analysis), sales performance tracking, campaign effectiveness, and churn prediction capabilities.
-
-**Key Areas:**
-- Customer segmentation using RFM (Recency, Frequency, Monetary) scoring
-- Sales trend analysis across categories, channels, and payment methods
-- Marketing campaign ROI tracking and optimization
-- Churn risk identification and retention strategies
-- Inventory and product performance insights
-
-**Project Deliverables:**
-
-| Category | Files |
-|----------|-------|
-| **Data** | `customers.csv` — 20 customer records with RFM scores and segments |
-| **Data** | `transactions.csv` — 25 transaction records across categories and channels |
-| **Data** | `products.csv` — 25 product records with margins and stock levels |
-| **Data** | `campaigns.csv` — 6 marketing campaigns with budget and revenue data |
-| **Data Dictionary** | `data_dictionary.md` — Field definitions for all datasets |
-| **SQL Schema** | `schema.sql` — PostgreSQL DDL for customers, products, transactions, campaigns |
-| **EDA Notebook** | `analysis/eda.ipynb` — Python notebook with RFM analysis, sales trends, campaign ROI |
-| **Dashboard** | `dashboard/retail-dashboard.html` — Interactive HTML dashboard with Chart.js |
-| **Presentation** | `dashboard/presentation.html` — Scrollable slide deck for interviews |
-| **Documentation** | `docs/README.md` — Project overview and objectives |
-| **Requirements** | `requirements.md` — Functional requirements for segmentation, analytics, campaigns |
-| **Gap Analysis** | `gap_analysis.md` — AS-IS vs TO-BE assessment with recommendations |
-| **Roadmap** | `implementation_roadmap.md` — 3-phase rollout plan |
-
-**Live Demo:** [Retail Dashboard](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/02-retail-analytics/dashboard/retail-dashboard.html)
-
----
-
-### 3. Fraud Detection & Risk Analytics
-A BFSI fraud analytics portfolio case study demonstrating real-time risk scoring, rule-based alerting, and fraud pattern analysis across transaction channels.
-
-**Key Areas:**
-- Transaction monitoring and risk scoring (amount, geography, time, velocity)
-- Rule-based alert generation and triage
-- Fraud pattern analysis (off-hours, geo-anomaly, velocity)
-- Alert investigation workflow and audit trail
-- Channel risk analysis (Branch, Internet Banking, UPI, Mobile, POS)
-
-**Project Deliverables:**
-
-| Category | Files |
-|----------|-------|
-| **Data** | `transactions.csv` — 25 synthetic transactions with fraud flags and risk scores |
-| **Data** | `alerts.csv` — 7 open fraud alerts with assigned investigators |
-| **Data Dictionary** | `data_dictionary.md` — Field definitions for transactions and alerts |
-| **SQL Schema** | `schema.sql` — PostgreSQL DDL with tables and 5 analytical views |
-| **EDA Notebook** | `analysis/eda.ipynb` — Python notebook with fraud distribution, hourly patterns, channel risk, correlation |
-| **Dashboard** | `dashboard/fraud-dashboard.html` — Interactive HTML dashboard with Chart.js |
-| **Presentation** | `dashboard/presentation.html` — Scrollable slide deck for interviews |
-| **Documentation** | `docs/README.md` — Project overview and synthetic data disclaimer |
-| **Requirements** | `docs/requirements.md` — Functional and non-functional requirements |
-| **Gap Analysis** | `docs/gap_analysis.md` — AS-IS vs TO-BE with metrics and recommendations |
-| **Roadmap** | `docs/implementation_roadmap.md` — 3-phase rollout with timeline and budget |
-
-**Live Demo:** [Fraud Detection Dashboard](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/03-fraud-risk-analytics/dashboard/fraud-dashboard.html)
-
----
-
-### 4. Forex Card Enhancement Study
-A BFSI product enhancement case study analyzing the complete Forex card lifecycle — from digital application and multi-currency loading to spending, repatriation, and customer support — to identify digital transformation opportunities.
-
-**Key Areas:**
-- Forex card application and digital KYC
-- Multi-currency wallet management and rate transparency
-- Real-time spend tracking and LRS limit monitoring
-- Unused balance repatriation and card self-service
-- Customer segmentation by travel behavior
-
-**Project Deliverables:**
-
-| Category | Files |
-|----------|-------|
-| **Data** | `forex_customers.csv` — 20 customers with LRS limits |
-| **Data** | `forex_cards.csv` — 20 card records with status and balances |
-| **Data** | `forex_transactions.csv` — 30 transactions across 9 currencies |
-| **Data** | `fx_rates.csv` — 9 currency pairs with buy/sell rates |
-| **Data Dictionary** | `data_dictionary.md` — Field definitions |
-| **SQL Schema** | `schema.sql` — PostgreSQL DDL with 6 analytical views |
-| **EDA Notebook** | `analysis/eda.ipynb` — Currency usage, spend patterns, LRS tracking |
-| **Dashboard** | `dashboard/forex-dashboard.html` — Interactive HTML dashboard with Chart.js |
-| **Presentation** | `dashboard/presentation.html` — Scrollable slide deck for interviews |
-| **Documentation** | `docs/README.md` — Project overview |
-| **Requirements** | `docs/requirements.md` — Functional and non-functional requirements |
-| **Gap Analysis** | `docs/gap_analysis.md` — AS-IS vs TO-BE with metrics |
-| **Roadmap** | `docs/implementation_roadmap.md` — 6-month enhancement timeline |
-
-**Live Demo:** [Forex Card Dashboard](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/04-forex-card-enhancement/dashboard/forex-dashboard.html)
-
----
-
-### 5. Digital Payments Process Analysis
-A process improvement case study analyzing digital payment ecosystems — UPI, wallets, cards, and net banking — to identify failure reduction strategies, settlement optimization, and customer experience enhancements.
-
-**Key Areas:**
-- Payment success rate analysis by channel
-- Failure root cause classification and recovery
-- Merchant settlement cycle optimization
-- Chargeback management and dispute resolution
-- Customer payment preference and LTV segmentation
-
-**Project Deliverables:**
-
-| Category | Files |
-|----------|-------|
-| **Data** | `customers.csv` — 15 customers with payment preferences |
-| **Data** | `merchants.csv` — 15 merchant profiles with settlement terms |
-| **Data** | `payments.csv` — 30 payment records with success/failure status |
-| **Data** | `payment_failures.csv` — 10 failure records with retry data |
-| **Data Dictionary** | `data_dictionary.md` — Field definitions |
-| **SQL Schema** | `schema.sql` — PostgreSQL DDL with 5 analytical views |
-| **EDA Notebook** | `analysis/eda.ipynb` — Failure analysis, channel trends, settlement delays |
-| **Dashboard** | `dashboard/payments-dashboard.html` — Interactive HTML dashboard with Chart.js |
-| **Presentation** | `dashboard/presentation.html` — Scrollable slide deck for interviews |
-| **Documentation** | `docs/README.md` — Project overview |
-| **Requirements** | `docs/requirements.md` — Functional and non-functional requirements |
-| **Gap Analysis** | `docs/gap_analysis.md` — AS-IS vs TO-BE with metrics |
-| **Roadmap** | `docs/implementation_roadmap.md` — 6-month improvement timeline |
-
-**Live Demo:** [Digital Payments Dashboard](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/05-digital-payments-analysis/dashboard/payments-dashboard.html)
-
----
-
-### 6. Credit Card Customer Journey Mapping
-A customer experience case study mapping the complete credit card lifecycle — application, approval, activation, usage, rewards, and retention — to identify friction points and engagement opportunities.
-
-**Key Areas:**
-- Application-to-activation funnel analysis
-- Credit limit assignment and utilization patterns
-- Spend analysis by merchant category and channel
-- Rewards accrual, redemption, and expiry management
-- Customer segmentation and retention risk signals
-
-**Project Deliverables:**
-
-| Category | Files |
-|----------|-------|
-| **Data** | `applications.csv` — 20 applications across statuses |
-| **Data** | `customers.csv` — 20 customers with credit profiles |
-| **Data** | `transactions.csv` — 30 spend transactions |
-| **Data** | `rewards.csv` — 30 reward records with redemptions |
-| **Data Dictionary** | `data_dictionary.md` — Field definitions |
-| **SQL Schema** | `schema.sql` — PostgreSQL DDL with 6 analytical views |
-| **EDA Notebook** | `analysis/eda.ipynb` — Funnel analysis, spend patterns, rewards utilization |
-| **Dashboard** | `dashboard/creditcard-dashboard.html` — Interactive HTML dashboard with Chart.js |
-| **Presentation** | `dashboard/presentation.html` — Scrollable slide deck for interviews |
-| **Documentation** | `docs/README.md` — Project overview |
-| **Requirements** | `docs/requirements.md` — Functional and non-functional requirements |
-| **Gap Analysis** | `docs/gap_analysis.md` — AS-IS vs TO-BE with metrics |
-| **Roadmap** | `docs/implementation_roadmap.md` — 6-month enhancement timeline |
-
-**Live Demo:** [Credit Card Journey Dashboard](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/06-credit-card-journey/dashboard/creditcard-dashboard.html)
-
----
-
-### 7. Loan Origination Process Analysis
-A lending operations case study analyzing the complete loan lifecycle — from digital application and credit appraisal through sanction and disbursement — to identify straight-through processing opportunities.
-
-**Key Areas:**
-- Digital loan application and eligibility calculator
-- Credit appraisal: CIBIL, DTI, FOIR, LTV analysis
-- Risk grading and automated approval workflows
-- Disbursement tracking and EMI scheduling
-- STP gap assessment for digital lending
-
-**Project Deliverables:**
-
-| Category | Files |
-|----------|-------|
-| **Data** | `loan_applications.csv` — 20 applications across loan types |
-| **Data** | `credit_appraisal.csv` — 20 appraisal records with risk grades |
-| **Data** | `disbursements.csv` — 15 disbursement records |
-| **Data Dictionary** | `data_dictionary.md` — Field definitions |
-| **SQL Schema** | `schema.sql` — PostgreSQL DDL with 5 analytical views |
-| **EDA Notebook** | `analysis/eda.ipynb` — Approval funnel, risk analysis, disbursement trends |
-| **Dashboard** | `dashboard/loan-dashboard.html` — Interactive HTML dashboard with Chart.js |
-| **Presentation** | `dashboard/presentation.html` — Scrollable slide deck for interviews |
-| **Documentation** | `docs/README.md` — Project overview |
-| **Requirements** | `docs/requirements.md` — Functional and non-functional requirements |
-| **Gap Analysis** | `docs/gap_analysis.md` — AS-IS vs TO-BE with metrics |
-| **Roadmap** | `docs/implementation_roadmap.md` — STP enhancement timeline |
-
-**Live Demo:** [Loan Origination Dashboard](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/07-loan-origination-process/dashboard/loan-dashboard.html)
-
----
-
-### 8. Insurance Claims Processing Analysis
-An insurance operations case study analyzing the complete claims lifecycle — from intimation and survey through assessment and settlement — to identify automation and customer experience improvements.
-
-**Key Areas:**
-- Digital claim intimation and photo upload
-- Surveyor assignment and video survey
-- Damage assessment and depreciation calculation
-- Settlement tracking and TAT analysis
-- Claims fraud detection patterns
-
-**Project Deliverables:**
-
-| Category | Files |
-|----------|-------|
-| **Data** | `claims.csv` — 20 claim records across statuses |
-| **Data** | `policyholders.csv` — 20 policyholder profiles |
-| **Data** | `assessments.csv` — 15 assessment records |
-| **Data Dictionary** | `data_dictionary.md` — Field definitions |
-| **SQL Schema** | `schema.sql` — PostgreSQL DDL with 4 analytical views |
-| **EDA Notebook** | `analysis/eda.ipynb` — Claims analysis, settlement trends, TAT monitoring |
-| **Dashboard** | `dashboard/claims-dashboard.html` — Interactive HTML dashboard with Chart.js |
-| **Presentation** | `dashboard/presentation.html` — Scrollable slide deck for interviews |
-| **Documentation** | `docs/README.md` — Project overview |
-| **Requirements** | `docs/requirements.md` — Functional and non-functional requirements |
-| **Gap Analysis** | `docs/gap_analysis.md` — AS-IS vs TO-BE with metrics |
-| **Roadmap** | `docs/implementation_roadmap.md` — Claims automation timeline |
-
-**Live Demo:** [Insurance Claims Dashboard](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/08-insurance-claims-processing/dashboard/claims-dashboard.html)
-
----
-
-### 📊 Process Flow (Mermaid)
-
-```mermaid
-graph LR
-    A[👤 Customer Applies<br/>Web/Mobile/Branch] --> B[🤖 Duplicate Check<br/>PAN/Aadhaar/Phone]
-    B --> C[📄 Document Upload<br/>OCR + AI Validation]
-    C --> D[🛡️ KYC Verification<br/>UIDAI/NSDL API]
-    D --> E[🔍 AML Screening<br/>Sanctions/PEP]
-    E --> F{Risk Score}
-    F -->|Low Risk| G[✅ Auto Approve]
-    F -->|Medium/High| H[👁️ Manual Review]
-    G --> I[🏦 Account Setup<br/>Core Banking]
-    H --> I
-    I --> J[📨 Welcome Kit<br/>Digital + Physical]
-    J --> K[🎉 Customer Onboarded]
-```
-
-### 🗄️ Data Model (Mermaid ERD)
-
-```mermaid
-erDiagram
-    CUSTOMER ||--o{ CONTACT : has
-    CUSTOMER ||--o{ APPLICATION : submits
-    APPLICATION ||--o{ DOCUMENT : contains
-    APPLICATION ||--|| RISK_ASSESSMENT : assessed_by
-    APPLICATION ||--o{ AUDIT_LOG : tracks
-
-    CUSTOMER {
-        uuid customer_id PK
-        string first_name
-        string last_name
-        date date_of_birth
-        enum gender
-    }
-    CONTACT {
-        uuid contact_id PK
-        uuid customer_id FK
-        string email
-        string phone
-        text address
-    }
-    APPLICATION {
-        string application_id PK
-        uuid customer_id FK
-        datetime application_date
-        enum application_channel
-        enum product_type
-        decimal annual_income
-        string employment_type
-        enum onboarding_status
-    }
-    DOCUMENT {
-        uuid document_id PK
-        string application_id FK
-        enum document_type
-        string document_number
-        enum verification_status
-        datetime uploaded_at
-    }
-    RISK_ASSESSMENT {
-        uuid risk_id PK
-        string application_id FK
-        int credit_score
-        enum aml_risk_score
-        enum kyc_status
-        enum overall_risk
-        datetime assessed_at
-    }
-    AUDIT_LOG {
-        uuid audit_id PK
-        string application_id FK
-        string action
-        string performed_by
-        datetime timestamp
-    }
+XX-project-name/
+├── docs/
+│   ├── README.md                 # Complete Customer Lifecycle, AS-IS vs TO-BE,
+│   │                             # Digital Enhancement Themes, Business Impact,
+│   │                             # Project Deliverables
+│   ├── brd/                      # Business Requirement Documents
+│   ├── frd/                      # Functional Requirement Documents
+│   ├── user-stories/             # Agile user stories with acceptance criteria
+│   ├── gap-analysis/             # AS-IS vs TO-BE gap analysis
+│   ├── roadmap/                  # Implementation roadmap & milestones
+│   └── test-cases/               # UAT test cases & scenarios
+├── data/
+│   ├── schema/                   # PostgreSQL DDL scripts
+│   ├── dictionary/               # Data dictionary & metadata
+│   └── samples/                  # Synthetic sample datasets (CSV)
+├── sql/
+│   ├── analysis/                 # Analytical SQL queries
+│   ├── reports/                  # Report SQL queries
+│   └── optimization/             # Query optimization scripts
+├── dashboard/
+│   ├── requirements/             # Dashboard BRD & wireframes
+│   ├── mockups/                  # Dashboard mockup images
+│   └── kpi/                      # KPI definitions & calculations
+└── bpmn/
+    └── process-flows/            # BPMN 2.0 process diagrams
 ```
 
 ---
 
-## 📚 SAP / ERP Learning Resources
+## 🎓 SAP Business Analyst Mastery Resources
 
-As part of my continuous development as a BFSI Business Analyst, I am building SAP literacy to bridge business requirements with enterprise implementations. The following resources are part of my AI-assisted learning journey:
+This repository also includes a dedicated **SAP Business Analyst** knowledge base:
 
-| Resource | Description |
-|----------|-------------|
-| **SAP BA Mastery Roadmap** | [`docs/sap-ba-mastery-roadmap.md`](docs/sap-ba-mastery-roadmap.md) — 4-week learning plan for non-coders to master SAP from a BA perspective |
-| **SAP-Aligned BRD Sample** | [`docs/sap-aligned-brd-sample.md`](docs/sap-aligned-brd-sample.md) — Complete Business Requirements Document written for SAP FS-CML (Loans Management) |
-| **AI Prompt Cheat Sheet** | [`docs/ai-prompt-cheat-sheet.md`](docs/ai-prompt-cheat-sheet.md) — Reusable AI prompts to learn SAP concepts, map processes, and practice interviews |
+- `sap-ba-roadmap.md` — Complete learning roadmap
+- `sap-brd-sample.md` — SAP BRD template with real-world example
+- `sap-ba-ai-prompts.md` — AI-powered BA productivity cheat sheet
 
-**Key SAP Modules Covered:** FS-CML (Loans), FS-BP (Business Partner), FI (Financial Accounting), GRC (Risk/Compliance), CRM (Customer Management)
+---
+
+## 🌐 Live Portfolio Website
+
+**React + Vite** portfolio deployed on GitHub Pages:
+- **URL**: [https://sagar-kandelkar.github.io/Sagar-Kandelkar-Portfolio/](https://sagar-kandelkar.github.io/Sagar-Kandelkar-Portfolio/)
+- **Source**: [`portfolio-website/`](portfolio-website/)
+
+### Local Development
+```bash
+cd portfolio-website
+npm install      # generates package-lock.json for CI/CD
+npm run dev
+npm run build
+```
+
+### Website Features
+- 23 rich featured case study cards with lifecycle flows & transformation metrics
+- **Searchable** case study grid with domain + status filters
+- Filterable project grid by domain (Banking, Payments, Lending, Insurance, Retail, Risk, Compliance, Technology)
+- **Professional experience timeline** with career highlights
+- **Scroll-triggered animations** for polished UX
+- Interactive dashboards & data visualizations
+- SAP BA resources section
+- Contact & professional profiles
+- **Back-to-top** button for long-page navigation
+- **SEO-ready** with JSON-LD structured data, sitemap, and robots.txt
+- **Print-friendly** styles for offline sharing
+- Resume download button
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Data:** SQL, Python (Pandas, NumPy, Matplotlib, Seaborn), Excel
-- **Visualization:** Power BI, Tableau, Draw.io, Chart.js
-- **Documentation:** Markdown, Confluence
-- **Version Control:** Git, GitHub
-- **CI/CD:** GitHub Actions (GitHub Pages deployment for React + Vite)
-
-## 📫 Contact
-
-- **GitHub:** [@sagarkandelkar](https://github.com/sagarkandelkar)
-- **LinkedIn:** [Sagar Kandelkar](https://linkedin.com/in/sagarkandelkar)
+| Layer | Tools |
+|-------|-------|
+| **Frontend** | React 19, Vite, Custom CSS |
+| **Data** | PostgreSQL, Python (Pandas), CSV |
+| **Analytics** | SQL, Excel, Power BI / Tableau concepts |
+| **Process** | BPMN 2.0, Visio, Draw.io |
+| **Documentation** | Markdown, Confluence-style BRD/FRD |
+| **CI/CD** | GitHub Actions → GitHub Pages |
 
 ---
 
-*This portfolio is a work in progress. New projects and updates are added regularly.*
+## ⚠️ Data Disclaimer
+
+All datasets in this repository are **synthetic** and generated for demonstration purposes only. They do not represent real customer data, financial transactions, or proprietary banking information. No Personally Identifiable Information (PII) is included.
+
+---
+
+## 📬 Contact
+
+- **LinkedIn**: [linkedin.com/in/sagar-kandelkar](https://linkedin.com/in/sagar-kandelkar)
+- **Email**: sagar.kandelkar@example.com
+- **GitHub**: [github.com/sagar-kandelkar](https://github.com/sagar-kandelkar)
+
+---
+
+## 📈 GitHub Stats
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=sagar-kandelkar&show_icons=true&theme=radical)
+
+---
+
+> *"Bridging business needs with technology solutions through structured analysis, data-driven insights, and agile delivery."*
+
+**Co-Authored-By: Claude Code <noreply@anthropic.com>**

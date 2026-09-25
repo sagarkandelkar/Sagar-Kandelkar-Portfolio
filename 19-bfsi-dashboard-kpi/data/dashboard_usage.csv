@@ -1,0 +1,16 @@
+dashboard_name,user_role,access_date,views_count,export_count
+Executive Summary,CXO,2026-01-01,45,12
+Executive Summary,CXO,2026-01-02,52,15
+Executive Summary,CXO,2026-01-03,38,8
+Operational Metrics,Operations Manager,2026-01-01,120,25
+Operational Metrics,Operations Manager,2026-01-02,135,30
+Operational Metrics,Operations Manager,2026-01-03,110,20
+Risk Dashboard,Risk Manager,2026-01-01,85,10
+Risk Dashboard,Risk Manager,2026-01-02,92,12
+Risk Dashboard,Risk Manager,2026-01-03,78,8
+Customer Analytics,Marketing Manager,2026-01-01,65,15
+Customer Analytics,Marketing Manager,2026-01-02,70,18
+Customer Analytics,Marketing Manager,2026-01-03,60,12
+Branch Performance,Branch Manager,2026-01-01,150,35
+Branch Performance,Branch Manager,2026-01-02,165,40
+Branch Performance,Branch Manager,2026-01-03,140,30

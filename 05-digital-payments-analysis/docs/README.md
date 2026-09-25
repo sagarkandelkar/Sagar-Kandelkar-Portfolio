@@ -1,63 +1,82 @@
-# Digital Payments Process Analysis
+# Digital Payments Process Analysis — Portfolio Case Study
 
 ## Overview
 
-This portfolio case study analyzes digital payment ecosystems — including UPI, wallets, card payments, and net banking — to identify process improvement opportunities, failure reduction strategies, and customer experience enhancements in the BFSI sector.
+This portfolio case study analyzes the complete digital payments ecosystem — covering UPI, card, and wallet payment flows — to identify optimization opportunities in processing speed, settlement efficiency, reconciliation automation, and fraud prevention.
 
 **Label:** Portfolio Case Study — Synthetic Scenario
 
-## Objectives
+---
 
-1. Map end-to-end digital payment flows from initiation to settlement
-2. Analyze payment failure patterns and root causes
-3. Identify merchant settlement process gaps
-4. Define customer experience improvement opportunities
-5. Propose a roadmap for payment infrastructure modernization
+## 1. Complete Customer Lifecycle
 
-## Key Areas
+```
+Merchant Onboarding → Payment Initiation → Authentication → Processing → Settlement → Reconciliation → Dispute
+```
 
-- **Payment Initiation:** UPI collect/request, wallet load, card tokenization
-- **Transaction Processing:** Authorization, 2FA, NPCI switches, bank debits
-- **Failure Analysis:** Network timeouts, insufficient funds, VPA errors, bank downtimes
-- **Merchant Settlement:** T+0/T+1 settlement, reconciliation, chargebacks
-- **Customer Experience:** Success notifications, failure recovery, refund timelines
-
-## Deliverables
-
-| Category | Files |
-|----------|-------|
-| **Data** | `payments.csv` — 30 digital payment records across channels |
-| **Data** | `merchants.csv` — 15 merchant profiles with settlement details |
-| **Data** | `customers.csv` — 15 customers with payment preferences |
-| **Data** | `payment_failures.csv` — 10 failure records with root causes |
-| **Data Dictionary** | `data_dictionary.md` — Field definitions |
-| **SQL Schema** | `schema.sql` — PostgreSQL DDL with views |
-| **EDA Notebook** | `analysis/eda.ipynb` — Failure analysis, channel trends, merchant metrics |
-| **Requirements** | `docs/requirements.md` — Functional & non-functional requirements |
-| **Gap Analysis** | `docs/gap_analysis.md` — AS-IS vs TO-BE |
-| **Roadmap** | `docs/implementation_roadmap.md` — Enhancement timeline |
-
-## Data Disclaimer
-
-All data in this project is **synthetic and self-created** for demonstration purposes only. No real customer, bank, or transaction data is used.
+| Stage | AS-IS Experience | TO-BE Experience |
+|-------|------------------|------------------|
+| **Merchant Onboarding** | 7-day paper process | Digital KYC with instant activation |
+| **Payment Initiation** | Limited payment options | UPI + card + wallet + BNPL unified |
+| **Authentication** | Static OTP only | Risk-based auth with biometrics |
+| **Processing** | Batch processing delays | Real-time transaction routing |
+| **Settlement** | T+2 manual reconciliation | T+0 auto-settlement |
+| **Reconciliation** | End-of-day manual matching | 95% auto-match with exception alerts |
+| **Dispute** | 15-day email-based process | 3-day in-app with real-time tracking |
 
 ---
 
-*Created: September 2026 | Analyst: Sagar Kandelkar*
+## 2. Transformation Impact — AS-IS vs TO-BE
 
-## 📊 Process Flow (Mermaid)
+| Metric | Before (AS-IS) | After (TO-BE) | Improvement |
+|--------|---------------|---------------|-------------|
+| **Settlement Time** | T+2 days | T+0 same day | **Instant** |
+| **Reconciliation** | Manual matching | Auto-match 95% | **Fully automated** |
+| **Dispute Resolution** | 15 days | 3 days | **80% faster** |
+| **Payment Success Rate** | 92% | 98.5% | **+6.5 points** |
+| **Merchant Satisfaction** | 3.4 / 5 | 4.5 / 5 | **+1.1 points** |
+| **Cost Per Transaction** | ₹3.20 | ₹1.80 | **44% lower** |
 
-```mermaid
-graph LR
-    A[📱 Customer Initiates] --> B[🤖 Smart Routing]
-    B --> C[🏦 Gateway Auth]
-    C --> D{Success?}
-    D -->|Yes| E[✅ Transaction Approved]
-    D -->|No| F[🔁 Auto Retry]
-    F --> G{Recovered?}
-    G -->|Yes| E
-    G -->|No| H[❌ Failure Logged]
-    H --> I[📋 Root Cause Analysis]
-    E --> J[💰 Merchant Settlement]
-    J --> K[📨 Notification Sent]
-```
+---
+
+## 3. Digital Enhancement Themes
+
+| Theme | Description | Impact |
+|-------|-------------|--------|
+| **UPI Integration** | Deep NPCI integration with intent flow | Highest success rate payment method |
+| **Real-Time Settlement** | Instant credit to merchant account | Cash flow improvement for SMBs |
+| **Fraud Detection** | Transaction velocity, geo-fencing, device checks | Fraud rate below 0.01% |
+| **Reconciliation Automation** | Auto-match with NPCI settlement file | Zero manual effort for 95% txns |
+| **Merchant Analytics** | Real-time transaction dashboard | Merchant retention +35% |
+
+---
+
+## 4. Projected Business Impact
+
+| Category | Annual Benefit |
+|----------|---------------|
+| Operational Cost Reduction | ₹4.2 Cr |
+| Merchant Acquisition | ₹3.0 Cr |
+| Fraud Loss Prevention | ₹1.5 Cr |
+| Customer Retention Value | ₹2.3 Cr |
+| **Net Annual Benefit** | **₹11.0 Cr** |
+| **Payback Period** | **3 months** |
+
+---
+
+## 5. Project Deliverables
+
+| Category | Files |
+|----------|-------|
+| **Data** | `customers.csv`, `merchants.csv`, `payments.csv`, `payment_failures.csv` |
+| **Data Dictionary** | `data_dictionary.md` |
+| **SQL Schema** | `schema.sql` |
+| **EDA Notebook** | `analysis/eda.ipynb` |
+| **Dashboard** | `dashboard/payments-dashboard.html` |
+| **Requirements** | `requirements.md` |
+| **Gap Analysis** | `gap_analysis.md` |
+| **Roadmap** | `implementation_roadmap.md` |
+
+---
+
+*Portfolio Case Study — Synthetic Scenario | Analyst: Sagar Kandelkar*

@@ -1,0 +1,31 @@
+kpi_id,category,metric_name,formula,unit,threshold_red,threshold_amber,owner,refresh_frequency
+KPI001,Financial,Net Interest Margin,(Interest Income - Interest Expense)/Avg Earning Assets,%,2.5,3.0,CFO,Monthly
+KPI002,Financial,Cost-to-Income Ratio,Operating Expenses/Operating Income,%,65,60,CFO,Monthly
+KPI003,Financial,Return on Assets,Net Income/Avg Total Assets,%,0.8,1.0,CFO,Quarterly
+KPI004,Customer,NPS Score,% Promoters - % Detractors,Score,20,35,CMO,Monthly
+KPI005,Customer,Customer Satisfaction,Avg CSAT Rating,Score,3.5,4.0,CMO,Monthly
+KPI006,Customer,First Contact Resolution,Resolved on First Contact/Total,%,60,70,COO,Daily
+KPI007,Operational,Transaction Success Rate,Successful Txns/Total Txns,%,97,98.5,COO,Real-time
+KPI008,Operational,System Uptime,Uptime Hours/Total Hours,%,99.5,99.9,CTO,Real-time
+KPI009,Operational,Average Handle Time,Total Handle Time/Calls,Minutes,8,5,COO,Daily
+KPI010,Risk,NPA Ratio,NPA/Gross Advances,%,5,3,CRO,Monthly
+KPI011,Risk,Provisioning Coverage,Provisions/NPAs,%,70,85,CRO,Monthly
+KPI012,Risk,Capital Adequacy Ratio,CET1/Risk Weighted Assets,%,10.5,12,CRO,Quarterly
+KPI013,Digital,Mobile App Adoption,Active App Users/Total Customers,%,30,50,CDO,Monthly
+KPI014,Digital,Digital Transaction %,Digital Txns/Total Txns,%,50,70,CDO,Monthly
+KPI015,Growth,Customer Acquisition,New Customers/Month,Count,500,800,CMO,Monthly
+KPI016,Growth,Product per Customer,Total Products/Total Customers,Count,2.5,3.5,CMO,Monthly
+KPI017,Compliance,SLA Compliance,Within SLA/Total Cases,%,85,95,Compliance,Daily
+KPI018,Compliance,KYC Refresh Rate,Refreshed/Total KYC,%,90,98,Compliance,Monthly
+KPI019,Efficiency,Cost per Transaction,Total Cost/Total Txns,INR,50,35,COO,Monthly
+KPI020,Efficiency,Employee Productivity,Revenue per Employee,INR,800000,1200000,CHRO,Quarterly
+KPI021,Financial,Fee Income Ratio,Fee Income/Total Income,%,15,20,CFO,Monthly
+KPI022,Customer,Churn Rate,Lost Customers/Avg Customers,%,10,5,CMO,Monthly
+KPI023,Operational,ATM Uptime,Working ATMs/Total ATMs,%,98,99.5,COO,Daily
+KPI024,Risk,Fraud Detection Rate,Detected Frauds/Total Attempts,%,85,95,CRO,Real-time
+KPI025,Digital,API Response Time,Avg Response Latency,ms,500,200,CTO,Real-time
+KPI026,Growth,Deposit Growth,(Current - Previous)/Previous Deposits,%,5,8,CFO,Monthly
+KPI027,Compliance,Audit Findings,Open Findings from Audit,Count,10,3,Compliance,Quarterly
+KPI028,Efficiency,Automation Rate,Automated Processes/Total Processes,%,40,70,COO,Monthly
+KPI029,Financial,CASA Ratio,CASA/Total Deposits,%,35,45,CFO,Monthly
+KPI030,Customer,Digital CSAT,Avg Digital Channel Rating,Score,3.8,4.2,CMO,Monthly

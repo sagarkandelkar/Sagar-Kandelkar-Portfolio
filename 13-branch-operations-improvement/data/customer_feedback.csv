@@ -1,0 +1,21 @@
+feedback_id,branch_id,customer_id,rating,comment_category,feedback_date,resolution_status
+FB001,B001,CUST101,2,Wait Time,2026-01-15,Pending
+FB002,B002,CUST102,3,Staff Behavior,2026-01-16,Resolved
+FB003,B003,CUST103,2,Process Complexity,2026-01-17,Resolved
+FB004,B004,CUST104,4,Service Quality,2026-01-18,Closed
+FB005,B005,CUST105,1,Wait Time,2026-01-19,Escalated
+FB006,B006,CUST106,3,Documentation,2026-01-20,Resolved
+FB007,B007,CUST107,2,System Downtime,2026-01-21,Pending
+FB008,B008,CUST108,4,Staff Helpfulness,2026-01-22,Closed
+FB009,B009,CUST109,3,Queue Management,2026-01-23,Resolved
+FB010,B010,CUST110,2,Process Time,2026-01-24,Pending
+FB011,B001,CUST111,1,Wait Time,2026-01-25,Escalated
+FB012,B002,CUST112,4,Branch Ambiance,2026-01-26,Closed
+FB013,B003,CUST113,3,Documentation,2026-01-27,Resolved
+FB014,B004,CUST114,2,Staff Knowledge,2026-01-28,Pending
+FB015,B005,CUST115,3,Queue Management,2026-01-29,Resolved
+FB016,B006,CUST116,4,Overall Experience,2026-01-30,Closed
+FB017,B007,CUST117,2,Process Complexity,2026-01-31,Pending
+FB018,B008,CUST118,3,Wait Time,2026-02-01,Resolved
+FB019,B009,CUST119,1,System Downtime,2026-02-02,Escalated
+FB020,B010,CUST120,4,Service Speed,2026-02-03,Closed

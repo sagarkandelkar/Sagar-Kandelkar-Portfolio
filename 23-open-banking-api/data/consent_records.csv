@@ -1,0 +1,16 @@
+consent_id,customer_id,partner_name,data_scope,consent_date,expiry_date,status
+CON001,CUST001,BudgetPlanner,Account Balance + Transactions,2025-06-01,2027-06-01,Active
+CON002,CUST002,WealthManager,Investment Portfolio + Risk Profile,2025-07-15,2027-07-15,Active
+CON003,CUST003,PaymentApp,Transaction History + Beneficiaries,2025-08-20,2026-08-20,Active
+CON004,CUST004,LendingPlatform,Credit Score + Income,2025-09-10,2026-09-10,Active
+CON005,CUST005,InsuranceAggregator,Policy Details + Claims,2025-10-05,2027-10-05,Active
+CON006,CUST006,AccountantPro,All Transaction Data,2025-11-01,2026-11-01,Active
+CON007,CUST007,TaxFiler,KYC + Income Documents,2025-12-15,2026-12-15,Active
+CON008,CUST008,ExpenseTracker,Transaction History + Categories,2026-01-10,2028-01-10,Active
+CON009,CUST009,LoanMarketplace,Credit Score + Account History,2026-01-20,2027-01-20,Active
+CON010,CUST010,FinancialAdvisor,Full Portfolio + Goals,2026-02-01,2028-02-01,Active
+CON011,CUST001,WealthManager,Investment Portfolio,2025-09-01,2027-09-01,Revoked
+CON012,CUST003,BudgetPlanner,Account Balance,2025-05-01,2026-05-01,Expired
+CON013,CUST005,ExpenseTracker,Transactions,2025-11-01,2026-11-01,Active
+CON014,CUST007,TaxFiler,Income Documents,2025-10-01,2026-10-01,Active
+CON015,CUST009,FinancialAdvisor,Account History,2026-01-01,2027-01-01,Active

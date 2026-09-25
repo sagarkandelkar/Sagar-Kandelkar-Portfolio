@@ -1,0 +1,11 @@
+system_id,system_name,system_type,current_users,decommission_date,replacement_module
+SYS001,Legacy Core Banking (COBOL),Core,3500,2026-03-31,Modern Core (Cloud Native)
+SYS002,Old Internet Banking,Web,180000,2025-09-30,Next-Gen Mobile App
+SYS003,Standalone ATM Controller,Channel,850,2025-12-31,Unified Channel Layer
+SYS004,SILO CRM Database,CRM,1200,2026-01-31,360° Customer Hub
+SYS005,Manual GL Reconciliation,Finance,45,2025-08-31,Automated Recon Engine
+SYS006,Paper-based KYC System,Compliance,320,2025-10-31,Digital KYC Platform
+SYS007,Legacy Trade Finance,Trade,280,2026-02-28,Global Trade Platform
+SYS008,Old Data Warehouse,Analytics,85,2026-04-30,Cloud Data Lake
+SYS009,Standalone HRMS,HR,120,2025-11-30,Integrated HCM Suite
+SYS010,Branch Server Farms,Infrastructure,156,2025-12-31,Cloud Infrastructure

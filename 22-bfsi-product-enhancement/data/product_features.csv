@@ -1,0 +1,26 @@
+feature_id,product_name,feature_name,priority,development_effort_days,adoption_rate_pct,satisfaction_score,launch_date,status
+FE001,Savings Account,Auto-Save Rules,Must,15,78,4.2,2024-06-15,Live
+FE002,Savings Account,Goal-Based Savings,Must,20,65,4.0,2024-08-01,Live
+FE003,Savings Account,Round-Up Investment,Should,12,45,3.8,2024-10-15,Live
+FE004,Credit Card,Instant Virtual Card,Must,18,85,4.5,2024-05-20,Live
+FE005,Credit Card,Dynamic Cashback,Should,25,52,4.1,2024-09-10,Live
+FE006,Credit Card,Spend Analytics,Should,15,68,4.3,2024-07-01,Live
+FE007,Personal Loan,Pre-Approved Offers,Must,22,72,4.0,2024-04-12,Live
+FE008,Personal Loan,Flexi EMI,Could,30,38,3.5,2024-11-20,Live
+FE009,Home Loan,Property Search Integration,Should,35,28,3.2,2025-01-15,Live
+FE010,Home Loan,Online Valuation,Must,20,55,3.9,2024-08-25,Live
+FE011,Insurance,AI Claim Assessment,Must,40,62,4.1,2024-07-30,Live
+FE012,Insurance,Wellness Rewards,Could,28,35,3.6,2025-02-01,Live
+FE013,Forex Card,Multi-Currency Lock,Should,18,58,4.2,2024-09-05,Live
+FE014,Forex Card,Travel Insurance Bundle,Could,22,42,3.8,2024-12-10,Live
+FE015,Digital Banking,Voice Banking,Must,35,48,3.9,2024-10-01,Live
+FE016,Digital Banking,Biometric Login,Must,12,88,4.6,2024-05-15,Live
+FE017,Investment,SIP Top-Up,Should,15,60,4.0,2024-06-20,Live
+FE018,Investment,Goal Tracker,Should,20,55,4.1,2024-08-15,Live
+FE019,Business Banking,Invoice Financing,Must,30,35,3.7,2025-01-10,Live
+FE020,Business Banking,Payroll Integration,Could,25,40,3.8,2024-11-01,Live
+FE021,Savings Account,Family Pool,Could,18,25,3.5,2025-03-01,In Dev
+FE022,Credit Card,Carbon Footprint,Could,15,15,3.2,2025-04-01,Planned
+FE023,Insurance,Parametric Insurance,Must,45,0,,,Planned
+FE024,Forex Card,Crypto Conversion,Could,35,0,,,Planned
+FE025,Investment,ESG Scoring,Must,25,0,,,In Dev

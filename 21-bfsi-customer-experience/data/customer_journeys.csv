@@ -1,0 +1,21 @@
+journey_id,customer_id,touchpoint,channel,emotion_score,effort_score,satisfaction,journey_date
+J001,CUST001,Account Login,App,8,3,4.5,2026-01-05
+J002,CUST001,Fund Transfer,App,7,4,4.0,2026-01-05
+J003,CUST002,Branch Visit,Branch,4,8,2.5,2026-01-06
+J004,CUST002,Complaint Call,Phone,3,9,2.0,2026-01-06
+J005,CUST003,Card Application,App,9,2,4.8,2026-01-07
+J006,CUST003,Approval Notification,App,9,2,5.0,2026-01-07
+J007,CUST004,Statement Download,Web,6,5,3.5,2026-01-08
+J008,CUST004,Query Chatbot,App,7,4,4.0,2026-01-08
+J009,CUST005,Loan Enquiry,Branch,5,7,3.0,2026-01-09
+J010,CUST005,Document Upload,App,8,3,4.5,2026-01-09
+J011,CUST006,Payment Failure,App,2,9,1.5,2026-01-10
+J012,CUST006,Support Resolution,Phone,6,6,3.5,2026-01-10
+J013,CUST007,Onboarding Welcome,App,9,2,4.8,2026-01-11
+J014,CUST007,First Transaction,App,9,2,5.0,2026-01-11
+J015,CUST008,Forex Load,App,8,3,4.5,2026-01-12
+J016,CUST008,Rate Alert,App,7,4,4.0,2026-01-12
+J017,CUST009,Insurance Claim,App,4,8,2.5,2026-01-13
+J018,CUST009,Claim Status,App,5,7,3.0,2026-01-13
+J019,CUST010,Investment Purchase,Web,8,3,4.5,2026-01-14
+J020,CUST010,Portfolio View,App,8,3,4.5,2026-01-14

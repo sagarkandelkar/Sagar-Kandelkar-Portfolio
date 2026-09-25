@@ -1,0 +1,31 @@
+operation_id,operation_name,branch_type,avg_wait_min,satisfaction_score,transactions_daily,staff_count,automation_level
+OP001,Cash Deposit,Urban,8.5,3.2,340,4,Low
+OP002,Cash Withdrawal,Urban,6.2,3.5,520,5,Medium
+OP003,Demand Draft,Urban,12.0,2.8,45,2,Low
+OP004,Account Opening,Urban,35.0,3.0,18,3,Low
+OP005,Fixed Deposit Booking,Urban,18.0,3.4,12,2,Medium
+OP006,Loan Inquiry,Urban,22.0,3.1,8,2,Low
+OP007,Passbook Update,Urban,4.5,3.6,180,2,High
+OP008,Statement Request,Urban,7.0,3.3,95,2,Medium
+OP009,Cheque Deposit,Urban,9.5,3.0,220,3,Medium
+OP010,NEFT/RTGS Form,Urban,15.0,2.9,65,2,Low
+OP011,Cash Deposit,Semi-Urban,11.2,3.0,280,3,Low
+OP012,Cash Withdrawal,Semi-Urban,8.0,3.3,410,4,Medium
+OP013,Demand Draft,Semi-Urban,15.0,2.6,35,1,Low
+OP014,Account Opening,Semi-Urban,42.0,2.9,12,2,Low
+OP015,Fixed Deposit Booking,Semi-Urban,22.0,3.2,8,1,Low
+OP016,Loan Inquiry,Semi-Urban,28.0,2.8,5,1,Low
+OP017,Passbook Update,Semi-Urban,5.5,3.4,150,1,Medium
+OP018,Statement Request,Semi-Urban,9.0,3.1,75,1,Low
+OP019,Cheque Deposit,Semi-Urban,11.0,2.9,180,2,Low
+OP020,NEFT/RTGS Form,Semi-Urban,18.0,2.7,45,1,Low
+OP021,Cash Deposit,Rural,14.5,2.8,190,2,Low
+OP022,Cash Withdrawal,Rural,10.5,3.0,280,3,Low
+OP023,Demand Draft,Rural,18.0,2.4,22,1,Low
+OP024,Account Opening,Rural,50.0,2.7,6,1,Low
+OP025,Fixed Deposit Booking,Rural,25.0,2.9,5,1,Low
+OP026,Loan Inquiry,Rural,32.0,2.6,3,1,Low
+OP027,Passbook Update,Rural,6.5,3.2,95,1,Low
+OP028,Statement Request,Rural,11.0,2.9,45,1,Low
+OP029,Cheque Deposit,Rural,13.0,2.7,110,1,Low
+OP030,NEFT/RTGS Form,Rural,22.0,2.5,25,1,Low

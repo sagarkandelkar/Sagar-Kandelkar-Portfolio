@@ -1,45 +1,84 @@
-# Loan Origination Process Analysis
+# Loan Origination Process Analysis — Portfolio Case Study
 
 ## Overview
 
-This portfolio case study analyzes the complete loan origination lifecycle — from application and eligibility check through document verification, credit appraisal, sanction, disbursement, and repayment tracking — to identify digital transformation opportunities and process optimization in the BFSI sector.
+This portfolio case study analyzes the complete loan lifecycle — from digital application and credit appraisal through sanction and disbursement — to identify straight-through processing (STP) opportunities that reduce turnaround time while maintaining credit quality.
 
 **Label:** Portfolio Case Study — Synthetic Scenario
 
-## Objectives
+---
 
-1. Map the end-to-end loan origination customer journey
-2. Identify friction points in eligibility, appraisal, and disbursement
-3. Define digital enhancement opportunities (instant approval, e-KYC, e-NACH)
-4. Propose a roadmap for straight-through processing (STP)
-5. Demonstrate business analysis skills in lending operations
+## 1. Complete Customer Lifecycle
 
-## Key Areas
+```
+Application → Document Upload → Credit Appraisal → Risk Scoring → Sanction → Agreement → Disbursement → Repayment → Closure
+```
 
-- **Application:** Digital loan application, eligibility calculator, document upload
-- **Credit Appraisal:** CIBIL check, income verification, FOIR calculation, property valuation
-- **Risk Assessment:** Credit score threshold, DTI ratio, LTV calculation, bureau inquiries
-- **Sanction & Disbursement:** Offer generation, acceptance, agreement execution, fund transfer
-- **Repayment:** EMI scheduling, NACH mandate, collection tracking, NPA management
-
-## Deliverables
-
-| Category | Files |
-|----------|-------|
-| **Data** | `loan_applications.csv` — 20 applications across statuses |
-| **Data** | `credit_appraisal.csv` — 20 credit appraisal records |
-| **Data** | `disbursements.csv` — 15 disbursement records |
-| **Data Dictionary** | `data_dictionary.md` — Field definitions |
-| **SQL Schema** | `schema.sql` — PostgreSQL DDL with views |
-| **EDA Notebook** | `analysis/eda.ipynb` — Approval funnel, risk analysis, disbursement trends |
-| **Requirements** | `docs/requirements.md` — Functional & non-functional requirements |
-| **Gap Analysis** | `docs/gap_analysis.md` — AS-IS vs TO-BE |
-| **Roadmap** | `docs/implementation_roadmap.md` — STP enhancement timeline |
-
-## Data Disclaimer
-
-All data in this project is **synthetic and self-created** for demonstration purposes only. No real customer, bank, or loan data is used.
+| Stage | AS-IS Experience | TO-BE Experience |
+|-------|------------------|------------------|
+| **Application** | Branch visit, paper form | Mobile app with eligibility calculator |
+| **Document Upload** | Photocopies at branch | Camera + OCR with auto-validation |
+| **Credit Appraisal** | Manual CIBIL + income verification | Real-time API + bank statement analysis |
+| **Risk Scoring** | Static rule-based | ML model with 150+ variables |
+| **Sanction** | 10-day credit committee | Auto-sanction for 65% applications |
+| **Agreement** | Physical document signing | E-sign with Aadhaar authentication |
+| **Disbursement** | 3-day processing | Same-day after e-sign |
+| **Repayment** | ECS mandate setup | Auto-debit + flexible EMI options |
+| **Closure** | Branch visit for NOC | Digital NOC + account closure |
 
 ---
 
-*Created: September 2026 | Analyst: Sagar Kandelkar*
+## 2. Transformation Impact — AS-IS vs TO-BE
+
+| Metric | Before (AS-IS) | After (TO-BE) | Improvement |
+|--------|---------------|---------------|-------------|
+| **Sanction Time** | 10 days | 24 hours | **90% faster** |
+| **STP Rate** | 5% | 65% | **12x improvement** |
+| **Cost Per Loan** | ₹4,500 | ₹1,200 | **73% lower** |
+| **Customer Satisfaction** | 3.0 / 5 | 4.3 / 5 | **+1.3 points** |
+| **Credit Decision Accuracy** | 82% | 94% | **+12 points** |
+| **Documentation Errors** | 15% | 2% | **87% reduction** |
+
+---
+
+## 3. Digital Enhancement Themes
+
+| Theme | Description | Impact |
+|-------|-------------|--------|
+| **STP Processing** | End-to-end automation for low-risk applications | 65% of loans auto-approved |
+| **Digital Verification** | API-based income, employment, property verification | Reduces fraud by 40% |
+| **API-Based Bureau** | Real-time CIBIL/Experian/Crif pulls | Instant credit assessment |
+| **Auto-Sanction** | ML model within policy limits | Credit analyst focuses on exceptions only |
+| **EMI Management** | Flexible repayment, moratorium, prepayment | Customer retention +30% |
+
+---
+
+## 4. Projected Business Impact
+
+| Category | Annual Benefit |
+|----------|---------------|
+| Operational Cost Savings | ₹6.2 Cr |
+| Higher Sanction Volume | ₹4.5 Cr |
+| Fraud Prevention | ₹2.1 Cr |
+| Customer Experience | ₹1.5 Cr |
+| **Net Annual Benefit** | **₹14.3 Cr** |
+| **Payback Period** | **3 months** |
+
+---
+
+## 5. Project Deliverables
+
+| Category | Files |
+|----------|-------|
+| **Data** | `loan_applications.csv`, `credit_appraisal.csv`, `disbursements.csv` |
+| **Data Dictionary** | `data_dictionary.md` |
+| **SQL Schema** | `schema.sql` |
+| **EDA Notebook** | `analysis/eda.ipynb` |
+| **Dashboard** | `dashboard/loan-dashboard.html` |
+| **Requirements** | `requirements.md` |
+| **Gap Analysis** | `gap_analysis.md` |
+| **Roadmap** | `implementation_roadmap.md` |
+
+---
+
+*Portfolio Case Study — Synthetic Scenario | Analyst: Sagar Kandelkar*

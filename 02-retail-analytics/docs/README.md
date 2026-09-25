@@ -1,98 +1,81 @@
-# Retail Analytics — Customer Segmentation & Sales Optimization
+# Retail Analytics & Customer Segmentation — Portfolio Case Study
 
 ## Overview
-This project explores how a retail business can use data-driven customer segmentation and sales analytics to improve revenue, reduce churn, and optimize inventory. It demonstrates practical business analysis, data modeling, and analytical storytelling capabilities applied to the retail domain.
 
-## Objectives
+This portfolio case study applies advanced customer analytics techniques — RFM analysis, cohort retention analysis, and basket analysis — to retail transaction data for targeted marketing, personalization, and revenue optimization.
 
-1. **Customer Segmentation**: Classify customers into actionable segments (RFM analysis)  
-2. **Sales Performance Analysis**: Identify trends, seasonality, and growth drivers  
-3. **Churn Prediction**: Flag at-risk customers before they leave  
-4. **Inventory Optimization**: Align stock levels with demand patterns  
-5. **Revenue Uplift**: Identify cross-sell and upsell opportunities  
-
-## Scope
-
-### In Scope
-- Customer transaction data analysis and profiling
-- RFM (Recency, Frequency, Monetary) segmentation
-- Product category performance tracking
-- Seasonal sales trend identification
-- Churn risk scoring framework
-- Inventory turnover analysis
-- Promotional campaign effectiveness
-
-### Out of Scope
-- Real-time streaming data pipeline
-- Machine learning model deployment in production
-- Supply chain logistics optimization (covered separately)
-- Pricing algorithm automation
-
-## Key Stakeholders
-
-| Role | Responsibility |
-|------|--------------|
-| Marketing Team | Campaign targeting and customer communication |
-| Sales Team | Revenue targets and customer acquisition |
-| Operations Team | Inventory planning and stock management |
-| Data Analyst | Reporting, dashboards, and insights |
-| Business Analyst | Requirements, process mapping, and recommendations |
-| Category Managers | Product assortment and promotion decisions |
-
-## Success Metrics
-
-| Metric | Target |
-|--------|--------|
-| Customer Retention Rate | > 70% |
-| Inventory Turnover | > 6x per year |
-| Campaign Conversion Rate | > 8% |
-| Average Order Value Growth | > 10% YoY |
-| Churn Rate | < 15% annually |
-| Segment Coverage | 100% of active customers segmented |
-
-## Methodology
-
-1. **Data Exploration**: Understand data structure, quality, and distributions
-2. **Customer Segmentation**: Apply RFM scoring to create customer cohorts
-3. **Sales Trend Analysis**: Identify patterns across time, product, and region
-4. **Predictive Scoring**: Build churn risk and CLV (Customer Lifetime Value) models
-5. **Recommendation Engine**: Propose targeted actions per segment
-6. **Implementation Roadmap**: Phased rollout with quick wins
-
-## Deliverables
-
-1. Sample datasets for customer, transactions, products, and campaigns
-2. SQL schema for data warehouse design
-3. ERD and process flow diagrams
-4. Requirements documentation
-5. Gap analysis and recommendations
-6. Implementation roadmap
-7. Interactive dashboard mockup
-8. Python EDA notebook with visualizations
-
-## Tools & Technologies
-
-- **Data Analysis**: Python (Pandas, Scikit-learn), SQL, Excel
-- **Visualization**: Power BI, Tableau, Matplotlib, Seaborn
-- **Documentation**: Markdown, Confluence
-- **Version Control**: Git, GitHub
+**Label:** Portfolio Case Study — Synthetic Scenario
 
 ---
 
-*Last Updated: September 2026*
+## 1. Complete Customer Lifecycle
 
-## 📊 Process Flow (Mermaid)
-
-```mermaid
-graph LR
-    A[👤 Customer] --> B[📊 RFM Scoring]
-    B --> C{Segment}
-    C -->|Champions| D[🎁 Loyalty Rewards]
-    C -->|Loyal| E[📈 Upsell Campaign]
-    C -->|At Risk| F[🎯 Win-Back Offer]
-    D --> G[💰 Purchase]
-    E --> G
-    F --> G
-    G --> H[📦 Fulfillment]
-    H --> I[⭐ Points Earned]
 ```
+Data Collection → Cleaning → Segmentation → Profiling → Targeting → Campaign → Measurement
+```
+
+| Stage | AS-IS Experience | TO-BE Experience |
+|-------|------------------|------------------|
+| **Data Collection** | Siloed data across POS, CRM, web | Unified data lake with automated ingestion |
+| **Cleaning** | Manual Excel cleanup | Automated validation and standardization |
+| **Segmentation** | Simple demographic splits | RFM + behavioral clustering + predictive scoring |
+| **Profiling** | Static customer personas | Dynamic 360° profiles updated in real-time |
+| **Targeting** | Mass marketing blasts | Hyper-personalized segment-specific offers |
+| **Campaign** | Generic promotions | AI-optimized offer timing, channel, and content |
+| **Measurement** | Monthly sales reports | Real-time campaign attribution and ROI tracking |
+
+---
+
+## 2. Transformation Impact — AS-IS vs TO-BE
+
+| Metric | Before (AS-IS) | After (TO-BE) | Improvement |
+|--------|---------------|---------------|-------------|
+| **Campaign ROI** | 3.2x | 6.8x | **2.1x better** |
+| **Customer Retention** | 42% | 61% | **+19 points** |
+| **Data Preparation Time** | 3 days | 4 hours | **94% faster** |
+| **Segmentation Granularity** | 4 segments | 12 micro-segments | **3x more precise** |
+| **Churn Prediction Accuracy** | N/A (reactive) | 78% | **Proactive** |
+| **Personalization Rate** | 5% | 65% | **13x improvement** |
+
+---
+
+## 3. Digital Enhancement Themes
+
+| Theme | Description | Impact |
+|-------|-------------|--------|
+| **RFM Analysis** | Recency, Frequency, Monetary scoring for customer value | Identifies VIPs and at-risk customers |
+| **Cohort Retention** | Track behavior by acquisition cohort | Reveals true retention drivers |
+| **Basket Analysis** | Market basket and association rules | Cross-sell and upsell optimization |
+| **Personalization** | Individual recommendations vs segment averages | Conversion rate +45% |
+| **Churn Prediction** | ML models predicting churn probability | Early intervention saves customers |
+
+---
+
+## 4. Projected Business Impact
+
+| Category | Annual Benefit |
+|----------|---------------|
+| Revenue Uplift from Targeting | ₹2.8 Cr |
+| Churn Prevention Value | ₹1.5 Cr |
+| Operational Efficiency | ₹45 Lakh |
+| **Net Annual Benefit** | **₹4.75 Cr** |
+| **Payback Period** | **3 months** |
+
+---
+
+## 5. Project Deliverables
+
+| Category | Files |
+|----------|-------|
+| **Data** | `customers.csv`, `transactions.csv`, `products.csv` |
+| **Data Dictionary** | `data_dictionary.md` |
+| **SQL Schema** | `schema.sql` |
+| **EDA Notebook** | `analysis/eda.ipynb` — RFM, cohort, basket analysis |
+| **Dashboard** | `dashboard/retail-dashboard.html` |
+| **Requirements** | `requirements.md` |
+| **Gap Analysis** | `gap_analysis.md` |
+| **Roadmap** | `implementation_roadmap.md` |
+
+---
+
+*Portfolio Case Study — Synthetic Scenario | Analyst: Sagar Kandelkar*

@@ -1,0 +1,26 @@
+remittance_id,sender_customer_id,beneficiary_name,beneficiary_country,send_currency,receive_currency,send_amount,fx_rate,fees_inr,total_inr,status,initiation_date,completion_date,routing_method,compliance_status
+REM001,CUST001,John Smith,USA,INR,USD,500000,82.50,3500,416000,Completed,2026-01-05,2026-01-06,SWIFT_gpi,Approved
+REM002,CUST002,Maria Garcia,UK,INR,GBP,300000,105.20,2800,318400,Completed,2026-01-06,2026-01-07,SWIFT_gpi,Approved
+REM003,CUST003,Ahmed Hassan,UAE,INR,AED,200000,22.50,1800,468000,Pending,2026-01-07,,Correspondent,Under_Review
+REM004,CUST004,Li Wei,China,INR,CNY,400000,11.80,3200,4752000,Completed,2026-01-08,2026-01-10,Correspondent,Approved
+REM005,CUST005,Pierre Dubois,France,INR,EUR,250000,91.50,2500,2313750,Completed,2026-01-09,2026-01-10,SWIFT_gpi,Approved
+REM006,CUST006,Kenji Tanaka,Japan,INR,JPY,150000,1.85,1500,279000,Completed,2026-01-10,2026-01-12,Correspondent,Approved
+REM007,CUST007,Hans Mueller,Germany,INR,EUR,350000,91.50,3100,3239750,Completed,2026-01-11,2026-01-12,SWIFT_gpi,Approved
+REM008,CUST008,Siti Rahman,Singapore,INR,SGD,180000,61.80,1900,1134240,Failed,2026-01-12,,Correspondent,Rejected
+REM009,CUST009,Carlos Silva,Brazil,INR,BRL,220000,14.70,2200,3255600,Completed,2026-01-13,2026-01-16,Correspondent,Approved
+REM010,CUST010,Anna Kowalski,Poland,INR,PLN,120000,21.30,1400,2571600,Completed,2026-01-14,2026-01-15,SWIFT_gpi,Approved
+REM011,CUST011,David Chen,Canada,INR,CAD,280000,60.50,2600,1716200,Completed,2026-01-15,2026-01-16,SWIFT_gpi,Approved
+REM012,CUST012,Sarah Johnson,Australia,INR,AUD,320000,54.20,2900,1763240,Pending,2026-01-16,,Correspondent,Under_Review
+REM013,CUST013,Raj Patel,India,INR,INR,100000,1.00,500,100500,Completed,2026-01-17,2026-01-17,Internal,Approved
+REM014,CUST014,Fatima Al-Rashid,Saudi Arabia,INR,SAR,450000,22.30,3800,10081500,Completed,2026-01-18,2026-01-19,Correspondent,Approved
+REM015,CUST015,Thomas Brown,New Zealand,INR,NZD,200000,49.80,2100,10026000,Completed,2026-01-19,2026-01-20,SWIFT_gpi,Approved
+REM016,CUST016,Elena Rossi,Italy,INR,EUR,275000,91.50,2700,25331250,Completed,2026-01-20,2026-01-21,SWIFT_gpi,Approved
+REM017,CUST017,Yuki Yamamoto,Japan,INR,JPY,160000,1.85,1650,297600,Failed,2026-01-21,,Correspondent,Rejected
+REM018,CUST018,Omar Farooq,Pakistan,INR,PKR,80000,3.25,950,260750,Completed,2026-01-22,2026-01-23,Correspondent,Approved
+REM019,CUST019,Lisa Anderson,Sweden,INR,SEK,190000,7.85,1950,1496150,Completed,2026-01-23,2026-01-24,SWIFT_gpi,Approved
+REM020,CUST020,Kumar Singh,Nepal,INR,NPR,50000,1.60,600,80600,Completed,2026-01-24,2026-01-24,Internal,Approved
+REM021,CUST001,Robert Taylor,USA,INR,USD,600000,82.50,4200,4992000,Completed,2026-01-25,2026-01-26,SWIFT_gpi,Approved
+REM022,CUST005,Sophie Martin,France,INR,EUR,380000,91.50,3500,35132000,Pending,2026-01-26,,SWIFT_gpi,Under_Review
+REM023,CUST008,James Wilson,UK,INR,GBP,420000,105.20,3800,44596400,Completed,2026-01-27,2026-01-28,SWIFT_gpi,Approved
+REM024,CUST013,Linda White,Canada,INR,CAD,290000,60.50,2700,17781500,Completed,2026-01-28,2026-01-29,SWIFT_gpi,Approved
+REM025,CUST016,Michael Scott,USA,INR,USD,750000,82.50,5000,62437500,Completed,2026-01-29,2026-01-30,SWIFT_gpi,Approved

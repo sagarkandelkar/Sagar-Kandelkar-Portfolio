@@ -1,100 +1,82 @@
-# Fraud Detection & Risk Analytics in BFSI
+# Fraud Detection & Risk Analytics — Portfolio Case Study
 
 ## Overview
-This portfolio case study explores how banks and financial institutions can build frameworks to detect, analyze, and mitigate fraud risk across customer transactions, digital channels, and payment systems. It demonstrates business analysis, risk modeling, and anomaly detection capabilities applied to financial crime prevention.
 
-## Important Notice
-**Portfolio Case Study — Synthetic Scenario.** All data, scenarios, and metrics in this project are synthetic and created for learning and demonstration purposes. No real customer data, actual fraud incidents, or proprietary banking systems are represented.
+This portfolio case study designs a multi-layered fraud detection framework combining rule-based detection with machine learning scoring to identify, prevent, and respond to transaction fraud in real-time.
 
-## Objectives
-
-1. **Transaction Anomaly Detection**: Identify patterns that indicate potential fraudulent activity  
-2. **Risk Scoring Framework**: Build a multi-factor risk model for real-time assessment  
-3. **Alert Triage and Investigation**: Design workflows for prioritizing and investigating suspicious activity  
-4. **Regulatory Reporting**: Structure compliance-ready fraud risk documentation  
-5. **Prevention Strategy**: Recommend controls to reduce fraud occurrence and impact  
-
-## Scope
-
-### In Scope
-- Synthetic transaction data profiling and risk scoring
-- Fraud pattern analysis (velocity, amount anomalies, geographic, device)
-- Risk rule engine design
-- Alert management and case investigation workflows
-- SAR (Suspicious Activity Report) concept framework
-- Dashboard design for fraud monitoring teams
-- Regulatory compliance mapping (RBI, NPCI guidelines)
-
-### Out of Scope
-- Real-time ML model deployment in production
-- Integration with live core banking systems
-- Actual law enforcement reporting
-- Card network (Visa/Mastercard) integration
-
-## Key Stakeholders
-
-| Role | Responsibility |
-|------|--------------|
-| Fraud Operations Team | Alert triage, investigation, and case closure |
-| Risk Manager | Fraud risk appetite, policy setting, and reporting |
-| Compliance Officer | Regulatory adherence and SAR filing oversight |
-| Data Analyst | Pattern detection, rule tuning, and trend reporting |
-| Business Analyst | Requirements, process design, and system specifications |
-| Technology Team | Rule engine implementation and alert system support |
-
-## Success Metrics
-
-| Metric | Target |
-|--------|--------|
-| Alert-to-Fraud Hit Rate | > 15% |
-| False Positive Rate | < 85% |
-| Average Investigation Time | < 24 hours |
-| Fraud Loss Reduction | > 20% YoY |
-| Regulatory Audit Compliance | 100% |
-
-## Methodology
-
-1. **Data Understanding**: Profile synthetic transaction patterns and fraud indicators
-2. **Risk Rule Design**: Define multi-factor scoring rules (velocity, amount, geography, device)
-3. **Alert Framework**: Design alert severity levels and routing workflows
-4. **Investigation Process**: Map case management from alert to resolution
-5. **Reporting**: Build fraud risk dashboards and regulatory summaries
-6. **Recommendation**: Propose prevention and detection enhancements
-
-## Deliverables
-
-1. Synthetic transaction and fraud alert datasets
-2. SQL schema for fraud detection data warehouse
-3. Risk scoring framework documentation
-4. Alert triage and investigation workflow diagrams
-5. Python EDA notebook with anomaly detection analysis
-6. Fraud monitoring dashboard mockup
-7. Requirements and gap analysis documents
-
-## Tools & Technologies
-
-- **Data Analysis**: Python (Pandas, Scikit-learn), SQL, Excel
-- **Visualization**: Power BI, Tableau, Matplotlib, Seaborn
-- **Documentation**: Markdown, Confluence
-- **Version Control**: Git, GitHub
+**Label:** Portfolio Case Study — Synthetic Scenario
 
 ---
 
-*Last Updated: September 2026*
+## 1. Complete Customer Lifecycle
 
-## 📊 Process Flow (Mermaid)
-
-```mermaid
-graph LR
-    A[💳 Transaction Initiated] --> B[🤖 Risk Scoring]
-    B --> C{Rule Engine}
-    C -->|Low Risk| D[✅ Auto Approve]
-    C -->|Medium Risk| E[⚠️ Step-Up Auth]
-    C -->|High Risk| F[🚨 Generate Alert]
-    E --> G{Auth Result}
-    G -->|Pass| D
-    G -->|Fail| F
-    F --> H[👁️ Investigation Queue]
-    H --> I[📋 Case Resolution]
-    I --> J[📊 SAR / Closure]
 ```
+Transaction Capture → Rule Engine → ML Scoring → Alert Generation → Investigation → Resolution → Reporting
+```
+
+| Stage | AS-IS Experience | TO-BE Experience |
+|-------|------------------|------------------|
+| **Transaction Capture** | End-of-day batch processing | Real-time stream ingestion |
+| **Rule Engine** | Static rules updated quarterly | Dynamic rules with self-tuning |
+| **ML Scoring** | No ML, rule-only | Behavioral biometrics + anomaly detection |
+| **Alert Generation** | Manual review queue | Priority-ranked alerts with context |
+| **Investigation** | Spreadsheet case management | Integrated case workflow with timeline |
+| **Resolution** | 3-5 days average | Same-day resolution for clear cases |
+| **Reporting** | Monthly fraud summaries | Real-time dashboards + regulatory reports |
+
+---
+
+## 2. Transformation Impact — AS-IS vs TO-BE
+
+| Metric | Before (AS-IS) | After (TO-BE) | Improvement |
+|--------|---------------|---------------|-------------|
+| **Fraud Detection Rate** | 65% | 94% | **+29 points** |
+| **False Positive Rate** | 12% | 3% | **75% reduction** |
+| **Alert Response Time** | 4 hours | 5 minutes | **98% faster** |
+| **Case Resolution Time** | 5 days | 1 day | **80% faster** |
+| **Fraud Loss Prevention** | ₹3.2 Cr recovered | ₹8.5 Cr recovered | **2.7x better** |
+| **Customer Friction** | 8% legitimate txns blocked | 2% legitimate txns challenged | **75% less friction** |
+
+---
+
+## 3. Digital Enhancement Themes
+
+| Theme | Description | Impact |
+|-------|-------------|--------|
+| **Anomaly Detection** | Unsupervised ML identifies unusual patterns | Catches novel fraud types |
+| **Behavioral Biometrics** | Device fingerprint, typing pattern, swipe behavior | Passive authentication layer |
+| **Real-Time Scoring** | Sub-second risk score on every transaction | Block before completion |
+| **Case Management** | Integrated investigation workflow | Investigator productivity +60% |
+| **Regulatory Reporting** | Auto-generate RBI/FinCEN reports | Zero manual compliance work |
+
+---
+
+## 4. Projected Business Impact
+
+| Category | Annual Benefit |
+|----------|---------------|
+| Fraud Loss Prevention | ₹8.5 Cr |
+| Operational Efficiency | ₹1.2 Cr |
+| Regulatory Compliance | ₹50 Lakh |
+| Customer Trust Value | ₹2.0 Cr |
+| **Net Annual Benefit** | **₹12.2 Cr** |
+| **Payback Period** | **2 months** |
+
+---
+
+## 5. Project Deliverables
+
+| Category | Files |
+|----------|-------|
+| **Data** | `transactions.csv`, `alerts.csv`, `rules.csv` |
+| **Data Dictionary** | `data_dictionary.md` |
+| **SQL Schema** | `schema.sql` |
+| **EDA Notebook** | `analysis/eda.ipynb` — Fraud pattern analysis |
+| **Dashboard** | `dashboard/fraud-dashboard.html` |
+| **Requirements** | `requirements.md` |
+| **Gap Analysis** | `gap_analysis.md` |
+| **Roadmap** | `implementation_roadmap.md` |
+
+---
+
+*Portfolio Case Study — Synthetic Scenario | Analyst: Sagar Kandelkar*
