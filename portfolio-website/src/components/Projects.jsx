@@ -1,17 +1,7 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
-
-  const filters = [
-    { label: 'All', count: 8 },
-    { label: 'Banking', count: 5 },
-    { label: 'Payments', count: 1 },
-    { label: 'Lending', count: 1 },
-    { label: 'Insurance', count: 1 },
-    { label: 'Retail', count: 1 },
-    { label: 'Risk / Fraud', count: 1 },
-  ];
 
   const projects = [
     {
@@ -35,7 +25,7 @@ export default function Projects() {
       desc: 'Transaction fraud detection using rule engines and ML scoring. Real-time alerting, behavioral biometrics, and regulatory reporting frameworks.',
       status: 'completed',
       repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/03-fraud-risk-analytics',
-      domain: 'Risk / Fraud',
+      domain: 'Risk',
       tags: ['ML Scoring', 'Anomaly Detection', 'Compliance'],
     },
     {
@@ -43,7 +33,7 @@ export default function Projects() {
       desc: 'Complete Forex card lifecycle with multi-currency wallets, real-time rate transparency, and self-service management. ₹4.2 Cr projected benefits.',
       status: 'completed',
       repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/04-forex-card-enhancement',
-      domain: 'Banking',
+      domain: 'Payments',
       tags: ['Multi-Currency', 'LRS Tracking', 'Self-Service'],
     },
     {
@@ -59,7 +49,7 @@ export default function Projects() {
       desc: 'Full credit card lifecycle from application to retention. Instant approval, dynamic limits, spend analytics, and churn prevention strategies.',
       status: 'completed',
       repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/06-credit-card-journey',
-      domain: 'Banking',
+      domain: 'Lending',
       tags: ['Customer Journey', 'Rewards', 'Churn'],
     },
     {
@@ -78,7 +68,64 @@ export default function Projects() {
       domain: 'Insurance',
       tags: ['Claims Automation', 'TAT', 'Fraud'],
     },
+    {
+      title: 'Banking Complaint Management',
+      desc: 'Structured complaint handling from multi-channel intake to resolution with SLA tracking and regulatory compliance.',
+      status: 'completed',
+      repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/09-banking-complaint-management',
+      domain: 'Banking',
+      tags: ['SLA Tracking', 'NPS', 'Root Cause'],
+    },
+    {
+      title: 'Bank Account Lifecycle',
+      desc: 'Complete account lifecycle management from prospecting through dormancy prevention to structured closure.',
+      status: 'completed',
+      repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/10-bank-account-lifecycle',
+      domain: 'Banking',
+      tags: ['Retention', 'Cross-Sell', 'Dormancy'],
+    },
+    {
+      title: 'Remittance & International Transfers',
+      desc: 'International money transfer analysis covering SWIFT, correspondent banking, and emerging fintech alternatives.',
+      status: 'completed',
+      repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/11-remittance-international-transfers',
+      domain: 'Payments',
+      tags: ['SWIFT', 'FX', 'Cross-Border'],
+    },
+    {
+      title: 'Digital Banking Transformation',
+      desc: 'Legacy-to-digital transformation roadmap for banking platforms with phased migration and risk mitigation.',
+      status: 'completed',
+      repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/12-digital-banking-transformation',
+      domain: 'Banking',
+      tags: ['Core Modernization', 'Cloud', 'API'],
+    },
+    {
+      title: 'KYC / AML Compliance Process',
+      desc: 'Anti-money laundering and KYC compliance with perpetual monitoring, AI-driven screening, and regulatory reporting.',
+      status: 'completed',
+      repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/14-kyc-aml-compliance',
+      domain: 'Compliance',
+      tags: ['RegTech', 'Screening', 'SAR'],
+    },
+    {
+      title: 'Open Banking & API Banking',
+      desc: 'Open banking ecosystem design with API strategy, consent management, and fintech partnership models.',
+      status: 'completed',
+      repo: 'https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/23-open-banking-api',
+      domain: 'Technology',
+      tags: ['API Strategy', 'OAuth', 'PSD2'],
+    },
   ];
+
+  const filters = useMemo(() => {
+    const map = new Map();
+    map.set('All', projects.length);
+    projects.forEach((p) => {
+      map.set(p.domain, (map.get(p.domain) || 0) + 1);
+    });
+    return Array.from(map.entries()).map(([label, count]) => ({ label, count }));
+  }, [projects]);
 
   const filteredProjects = activeFilter === 'All'
     ? projects

@@ -1,9 +1,16 @@
+import { useState, useMemo } from 'react';
+
 export default function CaseStudies() {
+  const [activeDomain, setActiveDomain] = useState('All');
+  const [activeStatus, setActiveStatus] = useState('All');
+  const [searchQuery, setSearchQuery] = useState('');
+
   const caseStudies = [
     {
       title: 'Customer Onboarding & KYC',
       status: 'Completed',
       repo: '01-bfsi-customer-onboarding',
+      domain: 'Banking',
       lifecycle: ['Discovery', 'Application', 'Document Upload', 'KYC Verification', 'AML Screening', 'Account Opening', 'Welcome Kit'],
       themes: ['Digital KYC', 'Video Verification', 'OCR Automation', 'AML Compliance', 'Frictionless UX'],
       desc: 'End-to-end digital onboarding reducing account opening time from 5 days to under 10 minutes with full regulatory compliance.',
@@ -18,6 +25,7 @@ export default function CaseStudies() {
       title: 'Forex Card Enhancement & Digital Travel Experience',
       status: 'In Progress',
       repo: '04-forex-card-enhancement',
+      domain: 'Payments',
       lifecycle: ['Discovery', 'Application', 'KYC', 'Issuance', 'Activation', 'Currency Loading', 'Spend Abroad', 'Tracking', 'Reload', 'Support', 'Closure'],
       themes: ['Multi-Currency Wallet', 'Rate Lock', 'Real-Time Alerts', 'LRS Tracking', 'Self-Service Controls'],
       desc: 'Complete Forex card lifecycle analysis with ₹4.2 Cr projected annual benefits and 7.7x ROI through digital transformation.',
@@ -32,6 +40,7 @@ export default function CaseStudies() {
       title: 'Digital Payments',
       status: 'Completed',
       repo: '05-digital-payments-analysis',
+      domain: 'Payments',
       lifecycle: ['Merchant Onboarding', 'Payment Initiation', 'Authentication', 'Processing', 'Settlement', 'Reconciliation', 'Dispute'],
       themes: ['UPI Integration', 'Real-Time Settlement', 'Fraud Detection', 'Reconciliation Automation', 'Merchant Analytics'],
       desc: 'Payment systems analysis covering UPI, wallets, and cards with settlement optimization and fraud prevention strategies.',
@@ -46,6 +55,7 @@ export default function CaseStudies() {
       title: 'Credit Card Customer Journey',
       status: 'Completed',
       repo: '06-credit-card-journey',
+      domain: 'Lending',
       lifecycle: ['Lead Generation', 'Application', 'Credit Bureau Check', 'Risk Assessment', 'Approval', 'Card Issuance', 'Activation', 'Spend', 'Billing', 'Payment', 'Retention'],
       themes: ['Instant Approval', 'Dynamic Limit Management', 'Spend Analytics', 'Rewards Optimization', 'Churn Prevention'],
       desc: 'Full credit card lifecycle from prospecting to retention with digital approval and personalized limit strategies.',
@@ -60,6 +70,7 @@ export default function CaseStudies() {
       title: 'Digital Loan Journey',
       status: 'Completed',
       repo: '07-loan-origination-process',
+      domain: 'Lending',
       lifecycle: ['Application', 'Document Upload', 'Credit Appraisal', 'Risk Scoring', 'Sanction', 'Agreement', 'Disbursement', 'Repayment', 'Closure'],
       themes: ['STP Processing', 'Digital Verification', 'API-Based Bureau', 'Auto-Sanction', 'EMI Management'],
       desc: 'Loan origination from digital application to disbursement with straight-through processing and automated credit decisions.',
@@ -74,6 +85,7 @@ export default function CaseStudies() {
       title: 'Insurance Claims Processing',
       status: 'Completed',
       repo: '08-insurance-claims-processing',
+      domain: 'Insurance',
       lifecycle: ['Intimation', 'Survey', 'Assessment', 'Approval', 'Settlement', 'Disbursal', 'Closure'],
       themes: ['Digital Intimation', 'AI Assessment', 'Fraud Detection', 'Fast-Track Settlement', 'Customer Communication'],
       desc: 'Insurance claims lifecycle analysis with automation opportunities and customer experience improvements.',
@@ -88,6 +100,7 @@ export default function CaseStudies() {
       title: 'Retail Analytics & Customer Segmentation',
       status: 'Completed',
       repo: '02-retail-analytics',
+      domain: 'Retail',
       lifecycle: ['Data Collection', 'Cleaning', 'Segmentation', 'Profiling', 'Targeting', 'Campaign', 'Measurement'],
       themes: ['RFM Analysis', 'Cohort Retention', 'Basket Analysis', 'Personalization', 'Churn Prediction'],
       desc: 'Customer segmentation and retail analytics using RFM, cohort analysis, and basket analysis for targeted marketing.',
@@ -102,6 +115,7 @@ export default function CaseStudies() {
       title: 'Fraud Detection & Risk Analytics',
       status: 'Completed',
       repo: '03-fraud-risk-analytics',
+      domain: 'Risk',
       lifecycle: ['Transaction Capture', 'Rule Engine', 'ML Scoring', 'Alert Generation', 'Investigation', 'Resolution', 'Reporting'],
       themes: ['Anomaly Detection', 'Behavioral Biometrics', 'Real-Time Scoring', 'Case Management', 'Regulatory Reporting'],
       desc: 'Transaction fraud detection using rule engines and machine learning with real-time alerting and investigation workflows.',
@@ -115,6 +129,8 @@ export default function CaseStudies() {
     {
       title: 'Banking Complaint Management',
       status: 'Planned',
+      repo: '09-banking-complaint-management',
+      domain: 'Banking',
       lifecycle: ['Complaint Intake', 'Categorization', 'Triage', 'Investigation', 'Resolution', 'Customer Communication', 'Closure', 'Root Cause Analysis'],
       themes: ['Omnichannel Intake', 'Auto-Categorization', 'SLA Tracking', 'Escalation Matrix', 'Feedback Loop'],
       desc: 'Structured complaint handling from multi-channel intake to resolution with SLA tracking and regulatory compliance.',
@@ -128,6 +144,8 @@ export default function CaseStudies() {
     {
       title: 'Bank Account Lifecycle',
       status: 'Planned',
+      repo: '10-bank-account-lifecycle',
+      domain: 'Banking',
       lifecycle: ['Prospecting', 'Onboarding', 'Activation', 'Usage', 'Up-sell', 'Retention', 'Dormancy', 'Revival', 'Closure'],
       themes: ['360° Customer View', 'Product Cross-Sell', 'Dormancy Prediction', 'Relationship Pricing', 'Exit Interviews'],
       desc: 'Complete account lifecycle management from prospecting through dormancy prevention to structured closure.',
@@ -141,6 +159,8 @@ export default function CaseStudies() {
     {
       title: 'Remittance & International Transfers',
       status: 'Planned',
+      repo: '11-remittance-international-transfers',
+      domain: 'Payments',
       lifecycle: ['Initiation', 'Compliance Check', 'FX Conversion', 'Intermediary Routing', 'Beneficiary Credit', 'Confirmation', 'Reconciliation'],
       themes: ['Real-Time Tracking', 'SWIFT gpi', 'Compliance Automation', 'FX Optimization', 'Cost Transparency'],
       desc: 'International money transfer analysis covering SWIFT, correspondent banking, and emerging fintech alternatives.',
@@ -154,6 +174,8 @@ export default function CaseStudies() {
     {
       title: 'Digital Banking Transformation',
       status: 'Planned',
+      repo: '12-digital-banking-transformation',
+      domain: 'Banking',
       lifecycle: ['Strategy', 'Platform Selection', 'Migration', 'Integration', 'Testing', 'Pilot', 'Rollout', 'Optimization'],
       themes: ['Core Modernization', 'API Architecture', 'Cloud Migration', 'Mobile-First', 'Open Banking'],
       desc: 'Legacy-to-digital transformation roadmap for banking platforms with phased migration and risk mitigation.',
@@ -167,6 +189,8 @@ export default function CaseStudies() {
     {
       title: 'Branch Operations Improvement',
       status: 'Planned',
+      repo: '13-branch-operations-improvement',
+      domain: 'Banking',
       lifecycle: ['Customer Entry', 'Service Request', 'Teller Processing', 'Approval', 'Fulfillment', 'Feedback', 'Reporting'],
       themes: ['Queue Management', 'Staff Optimization', 'Paperless Branch', 'Sales Enablement', 'Cost Reduction'],
       desc: 'Branch efficiency analysis with queue optimization, staff allocation models, and paperless operation strategies.',
@@ -180,6 +204,8 @@ export default function CaseStudies() {
     {
       title: 'KYC / AML Compliance Process',
       status: 'Planned',
+      repo: '14-kyc-aml-compliance',
+      domain: 'Compliance',
       lifecycle: ['Customer Identification', 'Verification', 'Risk Rating', 'Ongoing Monitoring', 'Screening', 'Investigation', 'Reporting'],
       themes: ['Perpetual KYC', 'AI Screening', 'Risk-Based Approach', 'RegTech Integration', 'SAR Filing'],
       desc: 'Anti-money laundering and KYC compliance with perpetual monitoring, AI-driven screening, and regulatory reporting.',
@@ -193,6 +219,8 @@ export default function CaseStudies() {
     {
       title: 'Fraud Risk Management',
       status: 'Planned',
+      repo: '15-fraud-risk-management',
+      domain: 'Risk',
       lifecycle: ['Threat Identification', 'Control Design', 'Implementation', 'Monitoring', 'Incident Response', 'Recovery', 'Lessons Learned'],
       themes: ['Fraud Triangle', 'Control Framework', 'Red Flag Indicators', 'Whistleblower', 'Forensic Investigation'],
       desc: 'Enterprise fraud risk framework covering prevention, detection, and response across all banking channels.',
@@ -206,6 +234,8 @@ export default function CaseStudies() {
     {
       title: 'Credit Risk & Loan Operations',
       status: 'Planned',
+      repo: '16-credit-risk-loan-operations',
+      domain: 'Lending',
       lifecycle: ['Application', 'Bureau Check', 'Income Verification', 'Collateral Assessment', 'Credit Scoring', 'Approval', 'Monitoring', 'NPA Management'],
       themes: ['PD/LGD Modeling', 'Basel Compliance', 'Portfolio Monitoring', 'Early Warning', 'Recovery Strategy'],
       desc: 'Credit risk lifecycle from application scoring to NPA recovery with Basel-compliant risk modeling.',
@@ -219,6 +249,8 @@ export default function CaseStudies() {
     {
       title: 'BFSI Process Improvement',
       status: 'Planned',
+      repo: '17-bfsi-process-improvement',
+      domain: 'Banking',
       lifecycle: ['Process Discovery', 'As-Is Mapping', 'Pain Point Analysis', 'Solution Design', 'To-Be Mapping', 'Implementation', 'Measurement'],
       themes: ['Lean Six Sigma', 'BPMN Modeling', 'Automation Roadmap', 'Change Management', 'ROI Tracking'],
       desc: 'Structured process improvement methodology using Lean Six Sigma and BPMN for banking operations.',
@@ -232,6 +264,8 @@ export default function CaseStudies() {
     {
       title: 'BFSI Data Analysis',
       status: 'Planned',
+      repo: '18-bfsi-data-analysis',
+      domain: 'Analytics',
       lifecycle: ['Requirement', 'Data Sourcing', 'Cleaning', 'Exploration', 'Modeling', 'Visualization', 'Insight Delivery', 'Action'],
       themes: ['SQL Analytics', 'Python Pandas', 'Statistical Testing', 'Segmentation', 'Predictive Modeling'],
       desc: 'Data-driven business analysis using SQL, Python, and statistical methods to uncover actionable insights.',
@@ -245,6 +279,8 @@ export default function CaseStudies() {
     {
       title: 'BFSI Dashboard & KPI Analysis',
       status: 'Planned',
+      repo: '19-bfsi-dashboard-kpi',
+      domain: 'Analytics',
       lifecycle: ['KPI Definition', 'Metric Design', 'Data Pipeline', 'Visualization', 'Drill-Down', 'Alerting', 'Governance'],
       themes: ['Executive Dashboards', 'Operational Metrics', 'Leading Indicators', 'Self-Service BI', 'Data Governance'],
       desc: 'KPI framework design and dashboard development for executive and operational decision-making.',
@@ -258,6 +294,8 @@ export default function CaseStudies() {
     {
       title: 'AI in BFSI',
       status: 'Planned',
+      repo: '20-ai-in-bfsi',
+      domain: 'Technology',
       lifecycle: ['Use Case Identification', 'Data Preparation', 'Model Development', 'Validation', 'Deployment', 'Monitoring', 'Retraining'],
       themes: ['Conversational AI', 'Credit Scoring', 'Fraud Detection', 'Process Automation', 'Personalization'],
       desc: 'Artificial intelligence applications in banking from chatbots and credit models to process automation.',
@@ -271,6 +309,8 @@ export default function CaseStudies() {
     {
       title: 'BFSI Customer Experience',
       status: 'Planned',
+      repo: '21-bfsi-customer-experience',
+      domain: 'CX',
       lifecycle: ['Journey Mapping', 'Voice of Customer', 'Friction Analysis', 'Design Thinking', 'Prototype', 'Test', 'Scale'],
       themes: ['NPS Improvement', 'Journey Orchestration', 'Emotional Mapping', 'Effort Reduction', 'Loyalty Programs'],
       desc: 'Customer experience transformation using journey mapping, design thinking, and continuous feedback loops.',
@@ -284,6 +324,8 @@ export default function CaseStudies() {
     {
       title: 'BFSI Product Enhancement',
       status: 'Planned',
+      repo: '22-bfsi-product-enhancement',
+      domain: 'Product',
       lifecycle: ['Market Research', 'Concept Development', 'Feasibility', 'Design', 'Development', 'Launch', 'Post-Launch Review'],
       themes: ['Competitive Analysis', 'Feature Prioritization', 'MVP Approach', 'Go-to-Market', 'Iteration'],
       desc: 'Product management lifecycle for banking products from market research through iterative enhancement.',
@@ -297,6 +339,8 @@ export default function CaseStudies() {
     {
       title: 'Open Banking & API Banking',
       status: 'Planned',
+      repo: '23-open-banking-api',
+      domain: 'Technology',
       lifecycle: ['Strategy', 'API Design', 'Security Framework', 'Developer Portal', 'Partner Onboarding', 'Consent Management', 'Monitoring'],
       themes: ['REST APIs', 'OAuth 2.0', 'Consent Architecture', 'Fintech Partnerships', 'Revenue Models'],
       desc: 'Open banking ecosystem design with API strategy, consent management, and fintech partnership models.',
@@ -308,6 +352,39 @@ export default function CaseStudies() {
       color: '#64748b',
     },
   ];
+
+  const domains = useMemo(() => {
+    const map = new Map();
+    map.set('All', caseStudies.length);
+    caseStudies.forEach((cs) => {
+      map.set(cs.domain, (map.get(cs.domain) || 0) + 1);
+    });
+    return Array.from(map.entries()).map(([label, count]) => ({ label, count }));
+  }, [caseStudies]);
+
+  const statuses = useMemo(() => {
+    const map = new Map();
+    map.set('All', caseStudies.length);
+    caseStudies.forEach((cs) => {
+      map.set(cs.status, (map.get(cs.status) || 0) + 1);
+    });
+    return Array.from(map.entries()).map(([label, count]) => ({ label, count }));
+  }, [caseStudies]);
+
+  const filtered = useMemo(() => {
+    return caseStudies.filter((cs) => {
+      const matchDomain = activeDomain === 'All' || cs.domain === activeDomain;
+      const matchStatus = activeStatus === 'All' || cs.status === activeStatus;
+      const q = searchQuery.toLowerCase();
+      const matchSearch =
+        !q ||
+        cs.title.toLowerCase().includes(q) ||
+        cs.desc.toLowerCase().includes(q) ||
+        cs.themes.some((t) => t.toLowerCase().includes(q)) ||
+        cs.domain.toLowerCase().includes(q);
+      return matchDomain && matchStatus && matchSearch;
+    });
+  }, [caseStudies, activeDomain, activeStatus, searchQuery]);
 
   const completedCount = caseStudies.filter((c) => c.status === 'Completed' || c.status === 'In Progress').length;
 
@@ -323,6 +400,116 @@ export default function CaseStudies() {
           </p>
         </div>
 
+        {/* Search & Filters */}
+        <div style={{ maxWidth: '800px', margin: '0 auto 2.5rem' }}>
+          {/* Search */}
+          <div style={{ position: 'relative', marginBottom: '1rem' }}>
+            <input
+              type="text"
+              placeholder="Search case studies by title, theme, or domain..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              style={{
+                width: '100%',
+                padding: '0.75rem 1rem 0.75rem 2.5rem',
+                borderRadius: '0.5rem',
+                border: '1.5px solid var(--gray-300)',
+                fontSize: '0.9375rem',
+                fontFamily: 'var(--font)',
+                color: 'var(--gray-700)',
+                outline: 'none',
+                transition: 'border-color 0.2s ease',
+              }}
+              onFocus={(e) => (e.currentTarget.style.borderColor = 'var(--blue-accent)')}
+              onBlur={(e) => (e.currentTarget.style.borderColor = 'var(--gray-300)')}
+            />
+            <span
+              style={{
+                position: 'absolute',
+                left: '0.875rem',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                color: 'var(--gray-400)',
+                fontSize: '1rem',
+              }}
+            >
+              🔍
+            </span>
+          </div>
+
+          {/* Domain filters */}
+          <div
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '0.5rem',
+              justifyContent: 'center',
+              marginBottom: '0.75rem',
+            }}
+          >
+            {domains.map((f) => (
+              <FilterChip
+                key={f.label}
+                label={f.label}
+                count={f.count}
+                active={activeDomain === f.label}
+                onClick={() => setActiveDomain(f.label)}
+              />
+            ))}
+          </div>
+
+          {/* Status filters */}
+          <div
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '0.5rem',
+              justifyContent: 'center',
+            }}
+          >
+            {statuses.map((f) => (
+              <FilterChip
+                key={f.label}
+                label={f.label}
+                count={f.count}
+                active={activeStatus === f.label}
+                onClick={() => setActiveStatus(f.label)}
+              />
+            ))}
+          </div>
+
+          {filtered.length < caseStudies.length && (
+            <div
+              style={{
+                textAlign: 'center',
+                marginTop: '0.75rem',
+                fontSize: '0.8125rem',
+                color: 'var(--gray-500)',
+              }}
+            >
+              Showing {filtered.length} of {caseStudies.length} case studies
+              <button
+                onClick={() => {
+                  setActiveDomain('All');
+                  setActiveStatus('All');
+                  setSearchQuery('');
+                }}
+                style={{
+                  marginLeft: '0.5rem',
+                  background: 'none',
+                  border: 'none',
+                  color: 'var(--blue-accent)',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  fontSize: '0.8125rem',
+                }}
+              >
+                Clear filters
+              </button>
+            </div>
+          )}
+        </div>
+
         <div
           style={{
             display: 'grid',
@@ -330,253 +517,299 @@ export default function CaseStudies() {
             gap: '1.5rem',
           }}
         >
-          {caseStudies.map((cs) => (
-            <div
-              key={cs.title}
-              style={{
-                background: 'var(--white)',
-                border: '1px solid var(--gray-200)',
-                borderRadius: '0.75rem',
-                overflow: 'hidden',
-                transition: 'all 0.25s ease',
-                display: 'flex',
-                flexDirection: 'column',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = 'var(--shadow-lg)';
-                e.currentTarget.style.transform = 'translateY(-3px)';
-                e.currentTarget.style.borderColor = cs.color;
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.boxShadow = 'none';
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.borderColor = 'var(--gray-200)';
-              }}
-            >
-              {/* Header */}
-              <div
-                style={{
-                  padding: '1.25rem 1.5rem',
-                  borderBottom: '1px solid var(--gray-100)',
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'flex-start',
-                  gap: '1rem',
-                }}
-              >
-                <div>
-                  <h3 style={{ fontSize: '1rem', color: 'var(--navy-800)', marginBottom: '0.35rem', lineHeight: 1.3 }}>
-                    {cs.title}
-                  </h3>
-                  <div
-                    style={{
-                      fontSize: '0.6875rem',
-                      fontWeight: 700,
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.08em',
-                      color: 'var(--gray-400)',
-                    }}
-                  >
-                    Portfolio Case Study
-                  </div>
-                </div>
-                <span
-                  style={{
-                    display: 'inline-block',
-                    fontSize: '0.6875rem',
-                    fontWeight: 700,
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.05em',
-                    padding: '0.25rem 0.625rem',
-                    borderRadius: '9999px',
-                    background:
-                      cs.status === 'Completed'
-                        ? '#d1fae5'
-                        : cs.status === 'In Progress'
-                        ? '#fef3c7'
-                        : 'var(--gray-100)',
-                    color:
-                      cs.status === 'Completed'
-                        ? '#065f46'
-                        : cs.status === 'In Progress'
-                        ? '#92400e'
-                        : 'var(--gray-600)',
-                    flexShrink: 0,
-                  }}
-                >
-                  {cs.status}
-                </span>
-              </div>
-
-              {/* Body */}
-              <div style={{ padding: '1.25rem 1.5rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                {/* Description */}
-                <p style={{ fontSize: '0.875rem', color: 'var(--gray-600)', marginBottom: '1.25rem', lineHeight: 1.6 }}>
-                  {cs.desc}
-                </p>
-
-                {/* Lifecycle */}
-                <div style={{ marginBottom: '1.25rem' }}>
-                  <div
-                    style={{
-                      fontSize: '0.6875rem',
-                      fontWeight: 700,
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.08em',
-                      color: 'var(--gray-400)',
-                      marginBottom: '0.5rem',
-                    }}
-                  >
-                    Lifecycle
-                  </div>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem' }}>
-                    {cs.lifecycle.map((step, i) => (
-                      <span key={step} style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
-                        <span
-                          style={{
-                            fontSize: '0.75rem',
-                            color: 'var(--gray-600)',
-                            background: 'var(--gray-50)',
-                            padding: '0.3rem 0.6rem',
-                            borderRadius: '0.25rem',
-                          }}
-                        >
-                          {step}
-                        </span>
-                        {i < cs.lifecycle.length - 1 && (
-                          <span style={{ color: 'var(--gray-300)', fontSize: '0.7rem' }}>→</span>
-                        )}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Impact Metrics */}
-                <div
-                  style={{
-                    background: 'var(--gray-50)',
-                    borderRadius: '0.5rem',
-                    padding: '1rem',
-                    marginBottom: '1.25rem',
-                  }}
-                >
-                  <div
-                    style={{
-                      fontSize: '0.6875rem',
-                      fontWeight: 700,
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.08em',
-                      color: 'var(--gray-400)',
-                      marginBottom: '0.75rem',
-                    }}
-                  >
-                    Transformation Impact
-                  </div>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                    {cs.impact.map((item) => (
-                      <div key={item.metric} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                        <div style={{ flex: 1, minWidth: 0 }}>
-                          <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--navy-800)' }}>
-                            {item.metric}
-                          </div>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.2rem' }}>
-                            <span style={{ fontSize: '0.7rem', color: 'var(--gray-400)', textDecoration: 'line-through' }}>
-                              {item.before}
-                            </span>
-                            <span style={{ fontSize: '0.75rem', color: cs.color, fontWeight: 700 }}>
-                              {item.after}
-                            </span>
-                          </div>
-                        </div>
-                        <div
-                          style={{
-                            fontSize: '0.7rem',
-                            fontWeight: 700,
-                            color: 'var(--success)',
-                            background: '#ecfdf5',
-                            padding: '0.2rem 0.5rem',
-                            borderRadius: '0.25rem',
-                            flexShrink: 0,
-                          }}
-                        >
-                          {item.improvement}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Themes */}
-                <div style={{ marginBottom: '1.25rem' }}>
-                  <div
-                    style={{
-                      fontSize: '0.6875rem',
-                      fontWeight: 700,
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.08em',
-                      color: 'var(--gray-400)',
-                      marginBottom: '0.5rem',
-                    }}
-                  >
-                    Enhancement Themes
-                  </div>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
-                    {cs.themes.map((t) => (
-                      <span
-                        key={t}
-                        style={{
-                          fontSize: '0.75rem',
-                          background: `${cs.color}10`,
-                          color: cs.color,
-                          padding: '0.3rem 0.7rem',
-                          borderRadius: '0.25rem',
-                          fontWeight: 600,
-                        }}
-                      >
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Link */}
-                <div style={{ marginTop: 'auto' }}>
-                  {cs.repo ? (
-                    <a
-                      href={`https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/${cs.repo}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        gap: '0.35rem',
-                        fontSize: '0.8125rem',
-                        fontWeight: 600,
-                        color: 'var(--blue-accent)',
-                        textDecoration: 'none',
-                        padding: '0.5rem 0',
-                      }}
-                    >
-                      View Full Case Study →
-                    </a>
-                  ) : (
-                    <span
-                      style={{
-                        fontSize: '0.8125rem',
-                        fontWeight: 600,
-                        color: 'var(--gray-400)',
-                        padding: '0.5rem 0',
-                      }}
-                    >
-                      Coming Soon
-                    </span>
-                  )}
-                </div>
-              </div>
-            </div>
+          {filtered.map((cs) => (
+            <CaseStudyCard key={cs.title} cs={cs} />
           ))}
         </div>
       </div>
     </section>
+  );
+}
+
+function FilterChip({ label, count, active, onClick }) {
+  return (
+    <button
+      onClick={onClick}
+      style={{
+        padding: '0.4rem 0.9rem',
+        borderRadius: '9999px',
+        border: '1.5px solid',
+        borderColor: active ? 'var(--blue-accent)' : 'var(--gray-300)',
+        background: active ? 'var(--blue-accent)' : 'var(--white)',
+        color: active ? 'var(--white)' : 'var(--gray-600)',
+        fontSize: '0.8125rem',
+        fontWeight: 600,
+        cursor: 'pointer',
+        transition: 'all 0.2s ease',
+        fontFamily: 'var(--font)',
+      }}
+      onMouseEnter={(e) => {
+        if (!active) {
+          e.currentTarget.style.borderColor = 'var(--blue-accent)';
+          e.currentTarget.style.color = 'var(--blue-accent)';
+        }
+      }}
+      onMouseLeave={(e) => {
+        if (!active) {
+          e.currentTarget.style.borderColor = 'var(--gray-300)';
+          e.currentTarget.style.color = 'var(--gray-600)';
+        }
+      }}
+    >
+      {label}
+      <span style={{ marginLeft: '0.35rem', fontSize: '0.75rem', opacity: 0.7 }}>({count})</span>
+    </button>
+  );
+}
+
+function CaseStudyCard({ cs }) {
+  return (
+    <div
+      style={{
+        background: 'var(--white)',
+        border: '1px solid var(--gray-200)',
+        borderRadius: '0.75rem',
+        overflow: 'hidden',
+        transition: 'all 0.25s ease',
+        display: 'flex',
+        flexDirection: 'column',
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.boxShadow = 'var(--shadow-lg)';
+        e.currentTarget.style.transform = 'translateY(-3px)';
+        e.currentTarget.style.borderColor = cs.color;
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.boxShadow = 'none';
+        e.currentTarget.style.transform = 'translateY(0)';
+        e.currentTarget.style.borderColor = 'var(--gray-200)';
+      }}
+    >
+      {/* Header */}
+      <div
+        style={{
+          padding: '1.25rem 1.5rem',
+          borderBottom: '1px solid var(--gray-100)',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'flex-start',
+          gap: '1rem',
+        }}
+      >
+        <div>
+          <h3 style={{ fontSize: '1rem', color: 'var(--navy-800)', marginBottom: '0.35rem', lineHeight: 1.3 }}>
+            {cs.title}
+          </h3>
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              fontSize: '0.6875rem',
+              fontWeight: 700,
+              textTransform: 'uppercase',
+              letterSpacing: '0.08em',
+              color: 'var(--gray-400)',
+            }}
+          >
+            <span>{cs.domain}</span>
+            <span style={{ color: 'var(--gray-300)' }}>•</span>
+            <span>Portfolio Case Study</span>
+          </div>
+        </div>
+        <span
+          style={{
+            display: 'inline-block',
+            fontSize: '0.6875rem',
+            fontWeight: 700,
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em',
+            padding: '0.25rem 0.625rem',
+            borderRadius: '9999px',
+            background:
+              cs.status === 'Completed'
+                ? '#d1fae5'
+                : cs.status === 'In Progress'
+                ? '#fef3c7'
+                : 'var(--gray-100)',
+            color:
+              cs.status === 'Completed'
+                ? '#065f46'
+                : cs.status === 'In Progress'
+                ? '#92400e'
+                : 'var(--gray-600)',
+            flexShrink: 0,
+          }}
+        >
+          {cs.status}
+        </span>
+      </div>
+
+      {/* Body */}
+      <div style={{ padding: '1.25rem 1.5rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
+        {/* Description */}
+        <p style={{ fontSize: '0.875rem', color: 'var(--gray-600)', marginBottom: '1.25rem', lineHeight: 1.6 }}>
+          {cs.desc}
+        </p>
+
+        {/* Lifecycle */}
+        <div style={{ marginBottom: '1.25rem' }}>
+          <div
+            style={{
+              fontSize: '0.6875rem',
+              fontWeight: 700,
+              textTransform: 'uppercase',
+              letterSpacing: '0.08em',
+              color: 'var(--gray-400)',
+              marginBottom: '0.5rem',
+            }}
+          >
+            Lifecycle
+          </div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem' }}>
+            {cs.lifecycle.map((step, i) => (
+              <span key={step} style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                <span
+                  style={{
+                    fontSize: '0.75rem',
+                    color: 'var(--gray-600)',
+                    background: 'var(--gray-50)',
+                    padding: '0.3rem 0.6rem',
+                    borderRadius: '0.25rem',
+                  }}
+                >
+                  {step}
+                </span>
+                {i < cs.lifecycle.length - 1 && (
+                  <span style={{ color: 'var(--gray-300)', fontSize: '0.7rem' }}>→</span>
+                )}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Impact Metrics */}
+        <div
+          style={{
+            background: 'var(--gray-50)',
+            borderRadius: '0.5rem',
+            padding: '1rem',
+            marginBottom: '1.25rem',
+          }}
+        >
+          <div
+            style={{
+              fontSize: '0.6875rem',
+              fontWeight: 700,
+              textTransform: 'uppercase',
+              letterSpacing: '0.08em',
+              color: 'var(--gray-400)',
+              marginBottom: '0.75rem',
+            }}
+          >
+            Transformation Impact
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            {cs.impact.map((item) => (
+              <div key={item.metric} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--navy-800)' }}>
+                    {item.metric}
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.2rem' }}>
+                    <span style={{ fontSize: '0.7rem', color: 'var(--gray-400)', textDecoration: 'line-through' }}>
+                      {item.before}
+                    </span>
+                    <span style={{ fontSize: '0.75rem', color: cs.color, fontWeight: 700 }}>
+                      {item.after}
+                    </span>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    fontSize: '0.7rem',
+                    fontWeight: 700,
+                    color: 'var(--success)',
+                    background: '#ecfdf5',
+                    padding: '0.2rem 0.5rem',
+                    borderRadius: '0.25rem',
+                    flexShrink: 0,
+                  }}
+                >
+                  {item.improvement}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Themes */}
+        <div style={{ marginBottom: '1.25rem' }}>
+          <div
+            style={{
+              fontSize: '0.6875rem',
+              fontWeight: 700,
+              textTransform: 'uppercase',
+              letterSpacing: '0.08em',
+              color: 'var(--gray-400)',
+              marginBottom: '0.5rem',
+            }}
+          >
+            Enhancement Themes
+          </div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+            {cs.themes.map((t) => (
+              <span
+                key={t}
+                style={{
+                  fontSize: '0.75rem',
+                  background: `${cs.color}10`,
+                  color: cs.color,
+                  padding: '0.3rem 0.7rem',
+                  borderRadius: '0.25rem',
+                  fontWeight: 600,
+                }}
+              >
+                {t}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Link */}
+        <div style={{ marginTop: 'auto' }}>
+          {cs.repo ? (
+            <a
+              href={`https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/${cs.repo}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.35rem',
+                fontSize: '0.8125rem',
+                fontWeight: 600,
+                color: 'var(--blue-accent)',
+                textDecoration: 'none',
+                padding: '0.5rem 0',
+              }}
+            >
+              View Full Case Study →
+            </a>
+          ) : (
+            <span
+              style={{
+                fontSize: '0.8125rem',
+                fontWeight: 600,
+                color: 'var(--gray-400)',
+                padding: '0.5rem 0',
+              }}
+            >
+              Coming Soon
+            </span>
+          )}
+        </div>
+      </div>
+    </div>
   );
 }

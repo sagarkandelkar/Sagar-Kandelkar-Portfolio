@@ -897,6 +897,49 @@ a:hover { color: var(--blue-light); }
   }
 }
 
+/* Print Styles */
+@media print {
+  .navbar,
+  .hero-buttons,
+  .footer-links,
+  .back-to-top,
+  .mobile-toggle {
+    display: none !important;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+    background: var(--navy-900) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .section {
+    padding: 1.5rem 1rem;
+    page-break-inside: avoid;
+  }
+
+  .cs-card,
+  .proj-card,
+  .cap-card {
+    break-inside: avoid;
+    box-shadow: none !important;
+    border: 1px solid var(--gray-300) !important;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--gray-800) !important;
+  }
+
+  a[href]::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.75rem;
+    color: var(--gray-500);
+    word-break: break-all;
+  }
+}
+
 /* Utility */
 .text-center { text-align: center; }
 .mb-0 { margin-bottom: 0; }

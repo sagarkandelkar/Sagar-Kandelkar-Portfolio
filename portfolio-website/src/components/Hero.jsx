@@ -20,6 +20,14 @@ export default function Hero() {
           >
             Connect on LinkedIn
           </a>
+          <a
+            href="/Sagar-Kandelkar-Portfolio/resume.pdf"
+            className="btn btn-outline"
+            style={{ color: 'white', borderColor: 'rgba(255,255,255,0.3)' }}
+            download
+          >
+            📄 Download Resume
+          </a>
         </div>
 
         <div className="hero-indicators">

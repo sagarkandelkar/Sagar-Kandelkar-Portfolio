@@ -7,11 +7,11 @@ export default function Navbar() {
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
     { href: '#capabilities', label: 'Capabilities' },
-    { href: '#featured-case', label: 'Featured Case' },
+    { href: '#featured-case', label: 'Featured' },
     { href: '#skills', label: 'Skills' },
-    { href: '#case-studies', label: 'BFSI Case Studies' },
+    { href: '#experience', label: 'Experience' },
+    { href: '#case-studies', label: 'Case Studies' },
     { href: '#projects', label: 'Projects' },
-    { href: '#deliverables', label: 'Deliverables' },
     { href: '#contact', label: 'Contact' },
   ];
 
