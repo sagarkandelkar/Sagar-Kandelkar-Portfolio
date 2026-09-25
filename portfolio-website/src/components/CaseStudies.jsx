@@ -389,7 +389,7 @@ export default function CaseStudies() {
   const completedCount = caseStudies.filter((c) => c.status === 'Completed' || c.status === 'In Progress').length;
 
   return (
-    <section id="case-studies" className="section">
+    <section id="case-studies" className="section section-alt">
       <div className="section-inner">
         <div className="section-header">
           <span className="section-label">BFSI Case Studies</span>

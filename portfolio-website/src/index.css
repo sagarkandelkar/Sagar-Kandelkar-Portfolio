@@ -322,11 +322,20 @@ a:hover { color: var(--blue-light); }
 
 /* Sections */
 .section {
-  padding: 5rem 1.5rem;
+  padding: 3.5rem 1.5rem;
 }
 
 .section-alt {
   background: var(--gray-50);
+}
+
+/* Visual separation between adjacent sections */
+.section + .section {
+  border-top: 1px solid var(--gray-200);
+}
+
+.section-alt + .section-alt {
+  border-top: 1px solid var(--gray-200);
 }
 
 .section-inner {
