@@ -1,10 +1,19 @@
 # Sagar Kandelkar — BFSI Business Analysis Portfolio
 
 [![Deploy to GitHub Pages](https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/actions/workflows/deploy.yml)
+![Case Studies](https://img.shields.io/badge/Case%20Studies-23-blue?style=flat-square)
+![Artifacts](https://img.shields.io/badge/BA%20Artifacts-12-green?style=flat-square)
+![Completed](https://img.shields.io/badge/Completed-8%2F23-brightgreen?style=flat-square)
+![Domains](https://img.shields.io/badge/Domains-8-navy?style=flat-square)
 
 > **Senior Business Analyst | BFSI Domain | Process Optimization | Digital Transformation**
 
 Welcome to my professional portfolio repository showcasing **23 end-to-end BFSI case studies** across Banking, Payments, Lending, Insurance, Retail Analytics, and Risk Management. Each project includes complete deliverables: Business Requirements, Process Flows, Data Models, SQL Analytics, Dashboards, and Transformation Roadmaps.
+
+🌐 **Live Portfolio:** [sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/)  
+📊 **Infographic Gallery:** [View All Case Studies Visually](infographics/index.html)  
+📄 **One-Pager Summary:** [Print / Share / Interview Ready](infographics/portfolio-one-pager.html)  
+💼 **LinkedIn:** [linkedin.com/in/sagar-kandelkar](https://www.linkedin.com/in/sagar-kandelkar-b42b0b209)
 
 ---
 

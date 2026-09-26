@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sagar Kandelkar — BFSI Portfolio Summary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0a1628;--blue:#2563eb;--light:#f4f6fb;--text:#1e293b;--muted:#64748b;--white:#fff;--success:#10b981;}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;}
+body{background:var(--light);color:var(--text);line-height:1.6;}
+.container{max-width:900px;margin:0 auto;padding:2rem 1.5rem;}
+
+/* Header */
+.header{background:linear-gradient(135deg,var(--navy) 0%,#1a3a5c 100%);color:var(--white);padding:3rem 1.5rem 2.5rem;text-align:center;}
+.header h1{font-size:clamp(1.6rem,4vw,2.5rem);font-weight:800;margin-bottom:0.5rem;}
+.header .subtitle{font-size:1rem;color:rgba(255,255,255,0.75);margin-bottom:1.5rem;}
+.header .meta{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;font-size:0.8125rem;color:rgba(255,255,255,0.6);}
+.header .meta span{display:flex;align-items:center;gap:0.35rem;}
+
+/* Quick Stats */
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin:2rem 0;}
+.stat-card{background:var(--white);border-radius:0.75rem;padding:1.25rem;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,.06);}
+.stat-card .value{font-size:1.75rem;font-weight:800;color:var(--blue);}
+.stat-card .label{font-size:0.75rem;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:0.04em;margin-top:0.25rem;}
+
+/* Sections */
+.section{background:var(--white);border-radius:0.75rem;padding:1.75rem;margin-bottom:1.25rem;box-shadow:0 1px 4px rgba(0,0,0,.06);}
+.section h2{font-size:1.125rem;color:var(--navy);margin-bottom:1rem;display:flex;align-items:center;gap:0.5rem;}
+
+/* Case Studies Table */
+.cs-table{width:100%;border-collapse:collapse;font-size:0.8125rem;}
+.cs-table th{text-align:left;padding:0.6rem 0.5rem;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:0.04em;font-size:0.6875rem;border-bottom:1.5px solid #e2e8f0;}
+.cs-table td{padding:0.6rem 0.5rem;border-bottom:1px solid #f1f5f9;vertical-align:top;}
+.cs-table tr:hover td{background:#f8fafc;}
+.cs-table .domain{font-size:0.6875rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;padding:0.15rem 0.4rem;border-radius:0.25rem;background:#dbeafe;color:#1e40af;}
+.cs-table .artifact{color:var(--muted);font-size:0.75rem;}
+.cs-table a{color:var(--blue);text-decoration:none;font-weight:600;}
+.cs-table a:hover{text-decoration:underline;}
+
+/* Skills */
+.skill-grid{display:flex;flex-wrap:wrap;gap:0.5rem;}
+.skill-tag{background:#f1f5f9;color:#475569;padding:0.4rem 0.75rem;border-radius:0.375rem;font-size:0.8125rem;font-weight:500;}
+
+/* Contact CTA */
+.cta{background:linear-gradient(135deg,var(--blue),#1d4ed8);color:var(--white);padding:2rem;text-align:center;border-radius:0.75rem;margin-top:1rem;}
+.cta h3{font-size:1.25rem;margin-bottom:0.5rem;}
+.cta p{font-size:0.875rem;color:rgba(255,255,255,0.8);margin-bottom:1rem;}
+.cta-buttons{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;}
+.cta a{background:var(--white);color:var(--navy);padding:0.625rem 1.25rem;border-radius:0.5rem;font-size:0.8125rem;font-weight:700;text-decoration:none;transition:transform 0.2s;}
+.cta a:hover{transform:translateY(-2px);}
+
+.footer{text-align:center;padding:2rem;font-size:0.75rem;color:var(--muted);}
+
+@media print{
+  body{background:#fff;}
+  .section{box-shadow:none;border:1px solid #e2e8f0;}
+  .header{background:var(--navy)!important;-webkit-print-color-adjust:exact;}
+  .cta{background:var(--blue)!important;-webkit-print-color-adjust:exact;}
+  .stat-card{break-inside:avoid;}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="container" style="padding:0;">
+    <h1>Sagar Kandelkar</h1>
+    <p class="subtitle">BFSI Domain Expert | IT + Technology | Aspiring IT BFSI Consultant</p>
+    <div class="meta">
+      <span>📍 Pune, India</span>
+      <span>🏦 4+ Years at HDFC Bank</span>
+      <span>📊 23 BFSI Case Studies</span>
+      <span>🎓 Savitribai Phule Pune University</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="stats-grid">
+    <div class="stat-card"><div class="value">23</div><div class="label">Case Studies</div></div>
+    <div class="stat-card"><div class="value">12</div><div class="label">BA Artifacts</div></div>
+    <div class="stat-card"><div class="value">8</div><div class="label">BFSI Domains</div></div>
+    <div class="stat-card"><div class="value">4+</div><div class="label">Years Experience</div></div>
+  </div>
+
+  <div class="section">
+    <h2>📂 Completed Case Studies</h2>
+    <table class="cs-table">
+      <thead><tr><th>#</th><th>Case Study</th><th>Domain</th><th>Key Impact</th><th>Unique Artifact</th></tr></thead>
+      <tbody>
+        <tr><td>01</td><td><a href="https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/01-bfsi-customer-onboarding">Customer Onboarding & KYC</a></td><td><span class="domain">Banking</span></td><td>5 days → 10 min</td><td class="artifact">📋 Requirements Traceability Matrix</td></tr>
+        <tr><td>02</td><td><a href="https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/02-retail-analytics">Retail Analytics & Segmentation</a></td><td><span class="domain">Retail</span></td><td>Campaign ROI 3.2x → 6.8x</td><td class="artifact">📉 Data Quality Assessment (6D)</td></tr>
+        <tr><td>03</td><td><a href="https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/03-fraud-risk-analytics">Fraud Detection & Risk Analytics</a></td><td><span class="domain">Risk</span></td><td>Detection 65% → 94%</td><td class="artifact">📈 Process Maturity Assessment</td></tr>
+        <tr><td>04</td><td><a href="https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/04-forex-card-enhancement">Forex Card Enhancement</a></td><td><span class="domain">Payments</span></td><td>Issuance 5-7 days → <2 hrs</td><td class="artifact">⚙️ Business Rule Engine + 💰 Cost-Benefit</td></tr>
+        <tr><td>05</td><td><a href="https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/05-digital-payments-analysis">Digital Payments Analysis</a></td><td><span class="domain">Payments</span></td><td>Settlement T+2 → T+0</td><td class="artifact">—</td></tr>
+        <tr><td>06</td><td><a href="https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/06-credit-card-journey">Credit Card Customer Journey</a></td><td><span class="domain">Lending</span></td><td>Approval 7 days → <5 min</td><td class="artifact">—</td></tr>
+        <tr><td>07</td><td><a href="https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/07-loan-origination-process">Loan Origination Process</a></td><td><span class="domain">Lending</span></td><td>Sanction 10 days → 24 hrs</td><td class="artifact">🔄 Change Impact Assessment</td></tr>
+        <tr><td>08</td><td><a href="https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/08-insurance-claims-processing">Insurance Claims Processing</a></td><td><span class="domain">Insurance</span></td><td>Settlement 21 days → 3 days</td><td class="artifact">—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>🛠️ Core Skills</h2>
+    <div class="skill-grid">
+      <span class="skill-tag">Business Analysis</span>
+      <span class="skill-tag">BRD / FRD</span>
+      <span class="skill-tag">User Stories</span>
+      <span class="skill-tag">Gap Analysis</span>
+      <span class="skill-tag">Process Mapping (BPMN)</span>
+      <span class="skill-tag">SQL / PostgreSQL</span>
+      <span class="skill-tag">Python (Pandas)</span>
+      <span class="skill-tag">Data Visualization</span>
+      <span class="skill-tag">UAT / Test Cases</span>
+      <span class="skill-tag">Stakeholder Management</span>
+      <span class="skill-tag">KYC / AML</span>
+      <span class="skill-tag">Payments (UPI, NEFT, RTGS)</span>
+      <span class="skill-tag">FX Operations</span>
+      <span class="skill-tag">Reconciliation</span>
+      <span class="skill-tag">Compliance</span>
+      <span class="skill-tag">Agile / Scrum</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🎁 Systematic BA Artifacts</h2>
+    <p style="font-size:0.8125rem;color:var(--muted);margin-bottom:0.75rem;">Beyond standard BRDs, this portfolio includes 12 unique systematic artifacts that mirror real enterprise BA deliverables:</p>
+    <div class="skill-grid">
+      <span class="skill-tag">Requirements Traceability Matrix</span>
+      <span class="skill-tag">Executive One-Pager</span>
+      <span class="skill-tag">Data Quality Assessment</span>
+      <span class="skill-tag">Process Maturity Assessment</span>
+      <span class="skill-tag">Business Rule Engine Spec</span>
+      <span class="skill-tag">Cost-Benefit Sensitivity Analysis</span>
+      <span class="skill-tag">Change Impact Assessment</span>
+      <span class="skill-tag">UAT Defect Log</span>
+      <span class="skill-tag">RACI Matrix</span>
+      <span class="skill-tag">Stakeholder Sentiment Tracker</span>
+      <span class="skill-tag">API Specification (OpenAPI 3.0)</span>
+      <span class="skill-tag">Voice of Customer Analysis</span>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h3>Let's Connect</h3>
+    <p>Open to IT BFSI Consultant roles, Business Analyst positions, and digital transformation projects.</p>
+    <div class="cta-buttons">
+      <a href="https://www.linkedin.com/in/sagar-kandelkar-b42b0b209" target="_blank">💼 LinkedIn</a>
+      <a href="https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/" target="_blank">🌐 Portfolio Website</a>
+      <a href="https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio" target="_blank">📁 GitHub Repo</a>
+      <a href="mailto:sagar.kandelkar@example.com">📧 Email</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  Portfolio Summary — Synthetic Scenarios for Demonstration | Analyst: Sagar Kandelkar
+</div>
+
+</body>
+</html>

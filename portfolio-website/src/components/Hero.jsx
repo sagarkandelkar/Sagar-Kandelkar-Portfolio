@@ -65,6 +65,15 @@ export default function Hero() {
           >
             📄 Download Resume
           </a>
+          <a
+            href="https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/infographics/portfolio-one-pager.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline"
+            style={{ color: 'white', borderColor: 'rgba(255,255,255,0.3)' }}
+          >
+            📊 One-Pager Summary
+          </a>
         </div>
 
         <div className="hero-indicators">
