@@ -8,6 +8,10 @@ Welcome to my professional portfolio repository showcasing **23 end-to-end BFSI 
 
 ---
 
+## 📊 Infographic Gallery
+
+Quick visual summaries of all case studies: **[View Infographic Gallery](infographics/index.html)**
+
 ## 🏆 Featured Projects
 
 | # | Project | Domain | Key Focus | Unique Systematic Artifact |

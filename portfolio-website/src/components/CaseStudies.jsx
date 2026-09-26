@@ -21,6 +21,7 @@ export default function CaseStudies() {
       ],
       color: '#2563eb',
       artifact: '📋 Requirements Traceability Matrix + 🎯 Executive One-Pager',
+      infographic: 'https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/infographics/01-customer-onboarding.html',
     },
     {
       title: 'Forex Card Enhancement & Digital Travel Experience',
@@ -37,6 +38,7 @@ export default function CaseStudies() {
       ],
       color: '#2563eb',
       artifact: '⚙️ Business Rule Engine + 💰 Cost-Benefit Sensitivity Analysis',
+      infographic: 'https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/infographics/04-forex-card.html',
     },
     {
       title: 'Digital Payments',
@@ -52,6 +54,7 @@ export default function CaseStudies() {
         { metric: 'Dispute Resolution', before: '15 days', after: '3 days', improvement: '80% faster' },
       ],
       color: '#10b981',
+      infographic: 'https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/infographics/05-digital-payments.html',
     },
     {
       title: 'Credit Card Customer Journey',
@@ -67,6 +70,7 @@ export default function CaseStudies() {
         { metric: 'Churn Rate', before: '18%', after: '9%', improvement: '50% reduction' },
       ],
       color: '#8b5cf6',
+      infographic: 'https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/infographics/06-credit-card.html',
     },
     {
       title: 'Digital Loan Journey',
@@ -83,6 +87,7 @@ export default function CaseStudies() {
       ],
       color: '#f59e0b',
       artifact: '🔄 Change Impact Assessment Matrix (5-dimension scoring)',
+      infographic: 'https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/infographics/07-loan-origination.html',
     },
     {
       title: 'Insurance Claims Processing',
@@ -98,6 +103,7 @@ export default function CaseStudies() {
         { metric: 'Customer NPS', before: '28', after: '52', improvement: '+24 points' },
       ],
       color: '#ef4444',
+      infographic: 'https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/infographics/08-insurance-claims.html',
     },
     {
       title: 'Retail Analytics & Customer Segmentation',
@@ -114,6 +120,7 @@ export default function CaseStudies() {
       ],
       color: '#ec4899',
       artifact: '📉 Data Quality Assessment Report (6 dimensions)',
+      infographic: 'https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/infographics/02-retail-analytics.html',
     },
     {
       title: 'Fraud Detection & Risk Analytics',
@@ -129,6 +136,7 @@ export default function CaseStudies() {
         { metric: 'Alert Response', before: '4 hours', after: '5 minutes', improvement: '98% faster' },
       ],
       color: '#dc2626',
+      infographic: 'https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/infographics/03-fraud-risk.html',
     },
     {
       title: 'Banking Complaint Management',
@@ -804,8 +812,8 @@ function CaseStudyCard({ cs }) {
           </div>
         </div>
 
-        {/* Link */}
-        <div style={{ marginTop: 'auto' }}>
+        {/* Links */}
+        <div style={{ marginTop: 'auto', display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
           {cs.repo ? (
             <a
               href={`https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/tree/main/${cs.repo}`}
@@ -835,6 +843,25 @@ function CaseStudyCard({ cs }) {
             >
               Coming Soon
             </span>
+          )}
+          {cs.infographic && (
+            <a
+              href={cs.infographic}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.35rem',
+                fontSize: '0.8125rem',
+                fontWeight: 600,
+                color: 'var(--success)',
+                textDecoration: 'none',
+                padding: '0.5rem 0',
+              }}
+            >
+              📊 View Infographic →
+            </a>
           )}
         </div>
       </div>

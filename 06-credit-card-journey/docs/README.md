@@ -6,6 +6,8 @@ This portfolio case study maps the complete credit card customer lifecycle — f
 
 **Label:** Portfolio Case Study — Synthetic Scenario
 
+📊 **[View Infographic Summary](../../infographics/06-credit-card.html)**
+
 ---
 
 ## 1. Complete Customer Lifecycle

@@ -6,6 +6,8 @@ This portfolio case study analyzes the complete loan lifecycle — from digital 
 
 **Label:** Portfolio Case Study — Synthetic Scenario
 
+📊 **[View Infographic Summary](../../infographics/07-loan-origination.html)**
+
 ---
 
 ## 1. Complete Customer Lifecycle

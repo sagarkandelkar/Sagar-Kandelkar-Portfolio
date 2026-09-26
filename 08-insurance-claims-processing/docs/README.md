@@ -6,6 +6,8 @@ This portfolio case study analyzes the complete insurance claims lifecycle — f
 
 **Label:** Portfolio Case Study — Synthetic Scenario
 
+📊 **[View Infographic Summary](../../infographics/08-insurance-claims.html)**
+
 ---
 
 ## 1. Complete Customer Lifecycle

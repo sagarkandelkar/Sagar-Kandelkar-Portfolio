@@ -6,6 +6,8 @@ This portfolio case study analyzes the complete customer onboarding journey — 
 
 **Label:** Portfolio Case Study — Synthetic Scenario
 
+📊 **[View Infographic Summary](../infographics/01-customer-onboarding.html)**
+
 ---
 
 ## 1. Complete Customer Lifecycle

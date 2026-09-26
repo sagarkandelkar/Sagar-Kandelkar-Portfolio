@@ -6,6 +6,8 @@ This portfolio case study applies advanced customer analytics techniques — RFM
 
 **Label:** Portfolio Case Study — Synthetic Scenario
 
+📊 **[View Infographic Summary](../../infographics/02-retail-analytics.html)**
+
 ---
 
 ## 1. Complete Customer Lifecycle

@@ -6,6 +6,8 @@ This portfolio case study designs a multi-layered fraud detection framework comb
 
 **Label:** Portfolio Case Study — Synthetic Scenario
 
+📊 **[View Infographic Summary](../../infographics/03-fraud-risk.html)**
+
 ---
 
 ## 1. Complete Customer Lifecycle

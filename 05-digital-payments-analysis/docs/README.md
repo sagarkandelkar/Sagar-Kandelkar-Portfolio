@@ -6,6 +6,8 @@ This portfolio case study analyzes the complete digital payments ecosystem — c
 
 **Label:** Portfolio Case Study — Synthetic Scenario
 
+📊 **[View Infographic Summary](../../infographics/05-digital-payments.html)**
+
 ---
 
 ## 1. Complete Customer Lifecycle

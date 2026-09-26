@@ -23,6 +23,7 @@ export default function Deliverables() {
     { name: 'Cost-Benefit Analysis', icon: '💰' },
     { name: 'Executive One-Pager', icon: '🎯' },
     { name: 'Voice of Customer', icon: '🎤' },
+    { name: 'Infographic Summaries', icon: '📊' },
   ];
 
   return (

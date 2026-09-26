@@ -6,6 +6,8 @@ This portfolio case study analyzes the complete Forex card lifecycle — from ap
 
 **Label:** Portfolio Case Study — Synthetic Scenario
 
+📊 **[View Infographic Summary](../../infographics/04-forex-card.html)**
+
 ## Objectives
 
 1. Map the end-to-end Forex card customer journey
