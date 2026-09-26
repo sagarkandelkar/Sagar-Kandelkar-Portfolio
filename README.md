@@ -1,25 +1,51 @@
+<div align="center">
+
 # Sagar Kandelkar — BFSI Business Analysis Portfolio
+
+**> Senior Business Analyst | BFSI Domain | Process Optimization | Digital Transformation**
 
 [![Deploy to GitHub Pages](https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/actions/workflows/deploy.yml)
 ![Case Studies](https://img.shields.io/badge/Case%20Studies-23-blue?style=flat-square)
 ![Artifacts](https://img.shields.io/badge/BA%20Artifacts-12-green?style=flat-square)
 ![Completed](https://img.shields.io/badge/Completed-8%2F23-brightgreen?style=flat-square)
 ![Domains](https://img.shields.io/badge/Domains-8-navy?style=flat-square)
+![Visitors](https://komarev.com/ghpvc/?username=sagarkandelkar&label=Visitors&color=0e75b6&style=flat-square)
 
-> **Senior Business Analyst | BFSI Domain | Process Optimization | Digital Transformation**
+[<img src="https://img.shields.io/badge/🔗%20Live%20Portfolio-View%20Now-2ea44f?style=for-the-badge">](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/)
+[<img src="https://img.shields.io/badge/🔗%20LinkedIn-Connect-0A66C2?style=for-the-badge">](https://www.linkedin.com/in/sagar-kandelkar-b42b0b209)
 
-Welcome to my professional portfolio repository showcasing **23 end-to-end BFSI case studies** across Banking, Payments, Lending, Insurance, Retail Analytics, and Risk Management. Each project includes complete deliverables: Business Requirements, Process Flows, Data Models, SQL Analytics, Dashboards, and Transformation Roadmaps.
+</div>
 
-🌐 **Live Portfolio:** [sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/)  
-📊 **Infographic Gallery:** [View All Case Studies Visually](infographics/index.html)  
-📄 **One-Pager Summary:** [Print / Share / Interview Ready](infographics/portfolio-one-pager.html)  
-💼 **LinkedIn:** [linkedin.com/in/sagar-kandelkar](https://www.linkedin.com/in/sagar-kandelkar-b42b0b209)
+---
+
+## 🎯 What Makes This Portfolio Different
+
+This isn't just a collection of documents. It's a **systematic, end-to-end demonstration** of how a Senior Business Analyst operates in complex BFSI environments:
+
+- **23 complete case studies** across 8 domains — Banking, Payments, Lending, Insurance, Retail, Risk, Compliance, Technology
+- **12 unique enterprise-grade artifacts** beyond standard BRDs — Traceability Matrices, Maturity Assessments, Sensitivity Analysis, Sentiment Trackers, OpenAPI specs, and more
+- **Real tooling** — PostgreSQL DDL, analytical SQL, Python data pipelines, BPMN process flows, dashboard wireframes
+- **Synthetic but realistic data** — Every dataset is engineered to look and behave like real production data, without any PII risk
+- **Live, deployed portfolio** — A React + Vite website with search, filters, animations, and print-friendly resume output
+
+---
+
+## 🌐 Quick Links
+
+| Resource | Link |
+|----------|------|
+| 🖥️ **Live Portfolio** | [sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio](https://sagarkandelkar.github.io/Sagar-Kandelkar-Portfolio/) |
+| 📊 **Infographic Gallery** | [View All Case Studies Visually](infographics/index.html) |
+| 📄 **One-Pager Summary** | [Print / Share / Interview Ready](infographics/portfolio-one-pager.html) |
+| 💼 **LinkedIn** | [linkedin.com/in/sagar-kandelkar](https://www.linkedin.com/in/sagar-kandelkar-b42b0b209) |
 
 ---
 
 ## 📊 Infographic Gallery
 
 Quick visual summaries of all case studies: **[View Infographic Gallery](infographics/index.html)**
+
+---
 
 ## 🏆 Featured Projects
 
@@ -51,9 +77,9 @@ Quick visual summaries of all case studies: **[View Infographic Gallery](infogra
 
 ---
 
-## 🎁 Systematic BA Deliverables (What Makes This Portfolio Different)
+## 🎁 Systematic BA Deliverables
 
-Beyond standard BRDs and user stories, this portfolio includes **11 unique systematic artifacts** that mirror real enterprise BA deliverables:
+Beyond standard BRDs and user stories, this portfolio includes **12 unique systematic artifacts** that mirror real enterprise BA deliverables:
 
 | # | Artifact | Location | What It Demonstrates |
 |---|----------|----------|---------------------|
@@ -110,9 +136,9 @@ XX-project-name/
 
 This repository also includes a dedicated **SAP Business Analyst** knowledge base:
 
-- `sap-ba-roadmap.md` — Complete learning roadmap
-- `sap-brd-sample.md` — SAP BRD template with real-world example
-- `sap-ba-ai-prompts.md` — AI-powered BA productivity cheat sheet
+- `docs/sap-ba-mastery-roadmap.md` — Complete learning roadmap
+- `docs/sap-aligned-brd-sample.md` — SAP BRD template with real-world example
+- `docs/ai-prompt-cheat-sheet.md` — AI-powered BA productivity cheat sheet
 
 ---
 
@@ -122,12 +148,18 @@ This repository also includes a dedicated **SAP Business Analyst** knowledge bas
 - **URL**: [https://sagar-kandelkar.github.io/Sagar-Kandelkar-Portfolio/](https://sagar-kandelkar.github.io/Sagar-Kandelkar-Portfolio/)
 - **Source**: [`portfolio-website/`](portfolio-website/)
 
-### Local Development
+### Quick Start
+
 ```bash
-cd portfolio-website
-npm install      # generates package-lock.json for CI/CD
-npm run dev
-npm run build
+# Clone
+git clone https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio.git
+cd Sagar-Kandelkar-Portfolio/portfolio-website
+
+# Install & run
+npm install
+npm run dev        # Local dev server
+npm run build      # Production build
+npm run preview    # Preview production build
 ```
 
 ### Website Features
@@ -175,10 +207,17 @@ All datasets in this repository are **synthetic** and generated for demonstratio
 
 ## 📈 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=sagar-kandelkar&show_icons=true&theme=radical)
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=sagarkandelkar&show_icons=true&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sagarkandelkar&layout=compact&theme=radical)
+
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=sagarkandelkar&theme=radical&no-frame=true&row=1)
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=sagarkandelkar&theme=radical)
+
+</div>
 
 ---
 
 > *"Bridging business needs with technology solutions through structured analysis, data-driven insights, and agile delivery."*
-
-**Co-Authored-By: Claude Code <noreply@anthropic.com>**

@@ -1,0 +1,12 @@
+# Default owner for everything in the repo
+* @sagarkandelkar
+
+# Portfolio website source code
+portfolio-website/ @sagarkandelkar
+
+# Case study documentation and artifacts
+**/docs/ @sagarkandelkar
+
+# SQL and data schemas
+**/sql/ @sagarkandelkar
+**/data/ @sagarkandelkar

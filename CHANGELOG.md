@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Repository health files: `CODE_OF_CONDUCT.md`, `SECURITY.md`, `ARCHITECTURE.md`
+- GitHub community files: `.github/CODEOWNERS`, `.github/dependabot.yml`
+- Assets folder with social preview setup guide (`assets/README.md`)
+- Enhanced README with visitor counter, GitHub trophies, top languages, activity graph, and centered hero badges
+- "What Makes This Portfolio Different" value proposition section in README
 - 15 new BFSI portfolio case studies (09–23) with standard `docs/`, `data/`, `sql/`, `dashboard/` structure
 - `Experience` section with interactive career timeline on portfolio website
 - `ScrollReveal` component for scroll-triggered fade-in animations
