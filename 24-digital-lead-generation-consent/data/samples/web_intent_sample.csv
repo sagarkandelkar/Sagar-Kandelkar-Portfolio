@@ -1,0 +1,11 @@
+anonymous_id,session_start,session_end,landing_page,product_interest,page_views,duration_seconds,calculator_used,calculator_input,scroll_depth_pct,exit_intent_triggered,consent_mkt_granted,preferred_channel,device_type,city_tier
+anon_a1b2c3d4e5f6,2025-09-26T10:00:00Z,2025-09-26T10:08:00Z,/personal-loan,PERSONAL_LOAN,5,480,TRUE,"{""loan_amount"":500000,""tenure_years"":3}",85,TRUE,TRUE,WHATSAPP,MOBILE,T1
+anon_b2c3d4e5f6g7,2025-09-26T10:15:00Z,2025-09-26T10:18:00Z,/home-loan,HOME_LOAN,3,180,FALSE,,60,FALSE,FALSE,,DESKTOP,T1
+anon_c3d4e5f6g7h8,2025-09-26T10:30:00Z,2025-09-26T10:45:00Z,/credit-card,CREDIT_CARD,8,900,TRUE,"{""annual_income"":1200000,""employment"":""SALARIED_MNC""}",90,TRUE,TRUE,EMAIL,MOBILE,T1
+anon_d4e5f6g7h8i9,2025-09-26T11:00:00Z,2025-09-26T11:02:00Z,/personal-loan,PERSONAL_LOAN,2,120,FALSE,,45,FALSE,FALSE,,MOBILE,T2
+anon_e5f6g7h8i9j0,2025-09-26T11:20:00Z,2025-09-26T11:35:00Z,/insurance-life,INSURANCE_LIFE,6,900,TRUE,"{""age"":32,""dependents"":2}",80,TRUE,TRUE,PHONE,MOBILE,T2
+anon_f6g7h8i9j0k1,2025-09-26T11:45:00Z,2025-09-26T11:48:00Z,/fixed-deposit,FIXED_DEPOSIT,4,180,FALSE,,70,FALSE,FALSE,,DESKTOP,T3
+anon_g7h8i9j0k1l2,2025-09-26T12:00:00Z,2025-09-26T12:15:00Z,/personal-loan,PERSONAL_LOAN,7,900,TRUE,"{""loan_amount"":800000,""tenure_years"":5}",95,TRUE,TRUE,WHATSAPP,MOBILE,T1
+anon_h8i9j0k1l2m3,2025-09-26T12:30:00Z,2025-09-26T12:32:00Z,/credit-card,CREDIT_CARD,3,120,FALSE,,50,FALSE,FALSE,,MOBILE,T2
+anon_i9j0k1l2m3n4,2025-09-26T13:00:00Z,2025-09-26T13:10:00Z,/home-loan,HOME_LOAN,5,600,FALSE,,75,TRUE,FALSE,,DESKTOP,T1
+anon_j0k1l2m3n4o5,2025-09-26T13:30:00Z,2025-09-26T13:50:00Z,/mutual-fund,MUTUAL_FUND,9,1200,TRUE,"{""investment_amount"":100000,""risk_appetite"":""MODERATE""}",88,TRUE,TRUE,EMAIL,MOBILE,T1

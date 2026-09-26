@@ -5,9 +5,9 @@
 **> Senior Business Analyst | BFSI Domain | Process Optimization | Digital Transformation**
 
 [![Deploy to GitHub Pages](https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/sagarkandelkar/Sagar-Kandelkar-Portfolio/actions/workflows/deploy.yml)
-![Case Studies](https://img.shields.io/badge/Case%20Studies-23-blue?style=flat-square)
-![Artifacts](https://img.shields.io/badge/BA%20Artifacts-12-green?style=flat-square)
-![Completed](https://img.shields.io/badge/Completed-8%2F23-brightgreen?style=flat-square)
+![Case Studies](https://img.shields.io/badge/Case%20Studies-24-blue?style=flat-square)
+![Artifacts](https://img.shields.io/badge/BA%20Artifacts-15-green?style=flat-square)
+![Completed](https://img.shields.io/badge/Completed-8%2F24-brightgreen?style=flat-square)
 ![Domains](https://img.shields.io/badge/Domains-8-navy?style=flat-square)
 ![Visitors](https://komarev.com/ghpvc/?username=sagarkandelkar&label=Visitors&color=0e75b6&style=flat-square)
 
@@ -22,8 +22,8 @@
 
 This isn't just a collection of documents. It's a **systematic, end-to-end demonstration** of how a Senior Business Analyst operates in complex BFSI environments:
 
-- **23 complete case studies** across 8 domains — Banking, Payments, Lending, Insurance, Retail, Risk, Compliance, Technology
-- **12 unique enterprise-grade artifacts** beyond standard BRDs — Traceability Matrices, Maturity Assessments, Sensitivity Analysis, Sentiment Trackers, OpenAPI specs, and more
+- **24 complete case studies** across 8 domains — Banking, Payments, Lending, Insurance, Retail, Risk, Compliance, Technology, Marketing Technology
+- **15 unique enterprise-grade artifacts** beyond standard BRDs — Traceability Matrices, Maturity Assessments, Sensitivity Analysis, Sentiment Trackers, OpenAPI specs, Consent Matrices, Lead Scoring Models, DPIAs, and more
 - **Real tooling** — PostgreSQL DDL, analytical SQL, Python data pipelines, BPMN process flows, dashboard wireframes
 - **Synthetic but realistic data** — Every dataset is engineered to look and behave like real production data, without any PII risk
 - **Live, deployed portfolio** — A React + Vite website with search, filters, animations, and print-friendly resume output
@@ -74,6 +74,7 @@ Quick visual summaries of all case studies: **[View Infographic Gallery](infogra
 | 21 | [BFSI Customer Experience](21-bfsi-customer-experience) | CX | NPS, Journey Mapping, Voice of Customer | 🎤 Voice of Customer Thematic Analysis (synthetic interviews) |
 | 22 | [BFSI Product Enhancement](22-bfsi-product-enhancement) | Product | Feature Prioritization, Roadmap, GTM | — |
 | 23 | [Open Banking API](23-open-banking-api) | Technology | API Strategy, PSD2, Partner Ecosystem | 🔌 API Specification (OpenAPI 3.0, OAuth 2.0, mTLS) |
+| 24 | [Digital Lead Generation & Consent-Based Outreach](24-digital-lead-generation-consent) | Marketing Technology | Intent Tracking, Consent Mgmt, Lead Scoring, Omnichannel | 🔒 Consent Management Matrix + 📊 Lead Scoring Model + 🛡️ DPIA |
 
 ---
 
@@ -95,6 +96,9 @@ Beyond standard BRDs and user stories, this portfolio includes **12 unique syste
 | 10 | **Stakeholder Sentiment Tracker** | `12/docs/stakeholder_sentiment_tracker.md` | Emoji-based sentiment journey across 5 project phases with intervention playbook |
 | 11 | **API Specification (OpenAPI 3.0)** | `13/docs/api_specification_openapi.md` | RESTful API design with OAuth 2.0, mTLS, error handling, consent flow |
 | 12 | **Voice of Customer Thematic Analysis** | `21/docs/voice_of_customer_analysis.md` | Synthetic interview transcripts, thematic coding, sentiment distribution, app store mining |
+| 13 | **Consent Management Matrix** | `24/docs/systematic-artifacts/consent_management_matrix.md` | Granular consent capture, storage, withdrawal, and audit trail design (6 categories, GDPR-aligned) |
+| 14 | **Lead Scoring Model** | `24/docs/systematic-artifacts/lead_scoring_model.md` | Multi-dimensional scoring: behavioral (50%) + demographic (30%) + propensity (20%) |
+| 15 | **Data Privacy Impact Assessment (DPIA)** | `24/docs/systematic-artifacts/data_privacy_impact_assessment.md` | GDPR-style risk assessment for web tracking, profiling, and automated decision-making |
 
 ---
 
